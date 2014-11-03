@@ -1,0 +1,49 @@
+
+<div class="row top"> 
+
+  <div class="large-3 medium-3 columns">
+    <input ng-model="search"tabindex="1" id="autocomplete" type="search" placeholder="Name, Club etc" autocomplete="off"></li>
+  </div>
+  <div class="large-2 medium-2 columns">      
+    <a class="button prefix" ng-click="openFencerModel(false,{})">Add New Fencer</a>     
+  </div>
+  <div class="large-7 medium-7 columns">      
+  </div>   
+</div>
+
+
+</div>
+
+
+</div>
+<div class="row">
+  <div class="large-12 columns">
+
+
+
+
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th >Club</th>
+          <th >Gender</th>
+          <th >Edit</th>
+          <th >Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="fencer in getFencers() | filter : search ">
+          <td>{{fencer.id}}</td>
+          <td>{{fencer.firstname}} {{fencer.lastname}}</td>
+          <td>{{fencer.club}}</td>
+          <td>{{fencer.gender}}</td>
+         <td><a class="no-bottom-margin button tiny radius" ng-click="openFencerModel(true,fencer)">Edit</a></td>             
+          <td><a class="no-bottom-margin button tiny radius alert">Delete</a></td> 
+
+        </tr>    
+      </tbody>
+    </table>
+  </div>
+</div>

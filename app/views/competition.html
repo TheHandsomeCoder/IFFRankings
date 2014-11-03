@@ -1,0 +1,51 @@
+<div class="row">	
+	<div class="large-12 columns">
+		<h1 >{{competition.name}}</h1>
+		<hr>
+
+		<table style="width: 100%">
+			<thead>
+				<tr>
+					<th>Placeing</th>
+					<th>Fencer</th>
+					<th>Comp</th>							
+					<th>Points</th>							
+					<th>Edit</th>							
+					<th>Delete</th>							
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat='result in getResultsForCompetition(competitionID)'>
+					<td>{{result.placing}}</td>
+					<td>{{getFencerFromResult(result).firstname}} {{getFencerFromResult(result).lastname}}</td>
+					<td>{{getFencerFromResult(result).club}}</td>
+					<td>{{result.points}}</td>												
+					<td><a class="no-bottom-margin button tiny radius">Edit</a></td>							
+					<td><a class="no-bottom-margin button tiny radius ">Delete</a></td>							
+				</tr> 						
+			</tbody>
+		</table>
+		<div class="row">
+			<div class="large-6 medium-6 columns">
+				<form ng-submit="addNewResult()">
+					<div class="row collapse prefix-radius">
+						<div class="small-3 columns">
+							<span class="prefix">Fencer Lookup</span>
+						</div>
+						<div class="small-6 columns">
+							<input type="search" ng-model="selectedFencer" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control">								
+						</div>
+						<div class="small-3 columns">
+							<input type="submit" id="submit" value="Add Result" class="button postfix"/>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="large-6 columns">
+
+
+			</div>
+		</div>
+
+	</div>
+</div>

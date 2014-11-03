@@ -1,0 +1,8 @@
+app/js/vendor/
+dist/
+node_modules/
+tmp/
+.sublime-grunt.cache
+.editorconfig
+resources/
+.jshintrc
