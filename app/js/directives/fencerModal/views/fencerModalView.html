@@ -1,0 +1,44 @@
+<h3>Add a new fencer</h3>
+
+<a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+
+<div class="row" ng-model="fencer">
+	<form novalidate ng-submit="ok()">
+	<div class="large-12 columns" ng-class="{error: submitted == true && firstNameIsNotValid()}">
+		<label>First Name</label>
+		<input type="text" placeholder="First Name"  ng-model="fencer.firstname" required>
+		<small ng-show="submitted == true && firstNameIsNotValid()" class="error">Required</small>
+	</div>
+	<div class="large-12 columns" ng-class="{error: submitted == true && lastNameIsNotValid()}">
+		<label>Last Name</label>
+		<input type="text" placeholder="Last Name" ng-model="fencer.lastname" required>
+		<small ng-show="submitted == true && lastNameIsNotValid()" class="error">Required</small>
+	</div>
+
+	<div class="large-12 columns" ng-class="{error: submitted == true && clubIsNotValid()}">
+		<label>Club</label>
+		<input type="text" placeholder="Club" ng-model="fencer.club" required>
+		<small ng-show="submitted == true && clubIsNotValid()" class="error">Required</small>
+	</div>
+
+	<div class="large-12 columns" ng-class="{error: submitted == true && genderIsNotValid()}">
+		<label>Sex</label>
+		<select name="Sex" id="Sex" ng-model="fencer.gender">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+		<small ng-show="submitted == true && genderIsNotValid()" class="error">Required</small>
+	</div>
+
+	<div class="large-12 columns">
+		<div class="large-4 medium-4 columns" ng-class="{error: submitted == true && fencer.club == ''}">      
+			<button ng-click="cancel()" type="button" class="button prefix alert">Cancel</button>     
+		</div>
+		<div class="large-4 medium-4 columns">      
+			<input type="submit" class="button prefix success"/>     
+		</div>
+	</div>
+	</form>
+
+	
+</div>
