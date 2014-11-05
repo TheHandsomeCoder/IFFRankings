@@ -2,7 +2,7 @@ angular.module('RankingsApp')
 .directive('fencerModal', function()
 {
   return {
-    restrict: 'A',
+    restrict: 'E',
     scope: {
         fencer: '=fencer',
         edit: '@',
@@ -10,7 +10,8 @@ angular.module('RankingsApp')
         class:'@'
     },
     replace: true,
-    template: '<a class="button {{class}}" ng-click="openFencerModel()"> {{text}} </a>',
+    transclude: true,
+    template: '<a class="button {{class}}" ng-click="openFencerModel()">{{text}} <ng-transclude></ng-transclude></a>',
     controller: function($scope, $element, $modal)
     {
 

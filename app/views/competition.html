@@ -1,8 +1,24 @@
-<div class="row">	
-	<div class="large-12 columns">
-		<h1 >{{competition.name}}</h1>
-		<hr>
+<div class="row"> 
 
+	<div class="large-7 medium-7 columns">
+		<h1 >{{competition.name}}</h1>
+	</div> 
+
+
+	
+	<div class="large-5 medium-5 columns top right">
+
+		<div class="row top">      
+			<div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">      
+				<fencer-modal edit=false fencer='{}' text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>     
+			</div>  
+		</div>
+	</div> 
+	<hr>
+</div>
+
+<div class="row">
+	<div class="large-12 medium-12 columns">	
 		<table style="width: 100%">
 			<thead>
 				<tr>
@@ -48,4 +64,5 @@
 		</div>
 
 	</div>
+</div>
 </div>

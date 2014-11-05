@@ -6,3 +6,4 @@ tmp/
 .editorconfig
 resources/
 .jshintrc
+.DS_Store

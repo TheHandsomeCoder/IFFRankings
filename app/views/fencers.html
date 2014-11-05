@@ -1,21 +1,26 @@
+<div class="row"> 
 
-<div class="row top"> 
+  <div class="large-7 medium-7 columns">
+    <h1 >Fencers</h1>
+  </div> 
 
-  <div class="large-3 medium-3 columns">
-    <input ng-model="search"tabindex="1" id="autocomplete" type="search" placeholder="Name, Club etc" autocomplete="off"></li>
-  </div>
-  <div class="large-2 medium-2 columns">      
-    <a class="button prefix" ng-click="openFencerModel(false,{})">Add New Fencer</a>     
-  </div>
-  <div class="large-7 medium-7 columns">      
-  </div>   
+
+  
+  <div class="large-5 medium-5 columns top right">
+
+    <div class="row top">      
+      <div class="large-5 medium-5 large-offset-1 medium-offset-1 columns">      
+        <fencer-modal edit=false fencer='{}' text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>     
+      </div>  
+      <div class="large-5 medium-5 columns">
+        <input ng-model="search"tabindex="1" id="autocomplete" type="search" placeholder="Name, Club etc" autocomplete="off"/>
+      </div>
+
+    </div>
+  </div> 
+  <hr>
 </div>
 
-
-</div>
-
-
-</div>
 <div class="row">
   <div class="large-12 columns">
 
@@ -39,8 +44,8 @@
           <td>{{fencer.firstname}} {{fencer.lastname}}</td>
           <td>{{fencer.club}}</td>
           <td>{{fencer.gender}}</td>
-         <td><a class="no-bottom-margin button tiny radius" ng-click="openFencerModel(true,fencer)">Edit</a></td>             
-          <td><a class="no-bottom-margin button tiny radius alert">Delete</a></td> 
+          <td><fencer-modal edit=true fencer='fencer' text="Edit" class="no-bottom-margin tiny radius"></fencer-modal></td>             
+          <td><a class="no-bottom-margin button tiny radius alert">Delete</a></td>
 
         </tr>    
       </tbody>
