@@ -5,6 +5,7 @@ angular.module('RankingsApp')
     restrict: 'E',
     scope: {
         fencer: '=fencer',
+        fencers: '=fencers',
         edit: '@',
         text: '@',
         class:'@'
@@ -23,7 +24,8 @@ angular.module('RankingsApp')
                 windowClass: 'small',
                 resolve: {
                     edit: function () {return $scope.edit},
-                    fencer: function(){return $scope.fencer}                   
+                    fencer: function(){return $scope.fencer},                  
+                    fencers: function(){return $scope.fencers}                  
                 }
             });     
         }

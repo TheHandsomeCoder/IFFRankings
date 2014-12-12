@@ -1,10 +1,22 @@
 'use strict';
 
 angular.module('RankingsApp')
-.controller('CompetitionCtrl', function ($scope, competitions,fencers,results, $routeParams) {
+.controller('CompetitionCtrl', function ($scope, Competition,Fencer,Result, $routeParams) {
 
 	$scope.competitionID = $routeParams.competitionID;
-	$scope.competition = competitions.getCompetition($routeParams.competitionID);
+	
+
+	competitions.getCompetition($routeParams.competitionID).then(function(competition) 
+		{
+	    	$scope.competition = competition;
+	    	console.log($scope.competition);
+	    }, 
+	    function(error) 
+	    {	             
+	    	console.log("Nav Controller Error", error);
+	    });
+
+	
 	$scope.fencers = fencers.getFencers();	
 	
 	

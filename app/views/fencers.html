@@ -1,7 +1,7 @@
 <div class="row"> 
 
   <div class="large-7 medium-7 columns">
-    <h1 >Fencers</h1>
+    <h1>Fencers</h1>
   </div> 
 
 
@@ -10,7 +10,7 @@
 
     <div class="row top">      
       <div class="large-5 medium-5 large-offset-1 medium-offset-1 columns">      
-        <fencer-modal edit=false fencer='{}' text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>     
+        <fencer-modal edit=false fencer='{}' fencers="fencers" text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>     
       </div>  
       <div class="large-5 medium-5 columns">
         <input ng-model="search"tabindex="1" id="autocomplete" type="search" placeholder="Name, Club etc" autocomplete="off"/>
@@ -24,28 +24,25 @@
 <div class="row">
   <div class="large-12 columns">
 
-
-
-
     <table style="width: 100%">
       <thead>
         <tr>
           <th>ID</th>
           <th>Name</th>
-          <th >Club</th>
-          <th >Gender</th>
-          <th >Edit</th>
-          <th >Delete</th>
+          <th>Club</th>
+          <th>Gender</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="fencer in getFencers() | filter : search ">
+        <tr ng-repeat="fencer in fencers | filter : search ">
           <td>{{fencer.id}}</td>
-          <td>{{fencer.firstname}} {{fencer.lastname}}</td>
+          <td>{{fencer.fullName()}}</td>
           <td>{{fencer.club}}</td>
           <td>{{fencer.gender}}</td>
-          <td><fencer-modal edit=true fencer='fencer' text="Edit" class="no-bottom-margin tiny radius"></fencer-modal></td>             
-          <td><a class="no-bottom-margin button tiny radius alert">Delete</a></td>
+          <td><fencer-modal edit=true fencer='fencer' fencers='fencers' text="Edit" class="no-bottom-margin tiny radius"></fencer-modal></td>             
+          <td><a class="no-bottom-margin button tiny radius alert" ng-click="deleteFencer(fencer)">Delete</a></td>
 
         </tr>    
       </tbody>

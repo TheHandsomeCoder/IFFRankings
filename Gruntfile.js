@@ -36,7 +36,7 @@ if (isLinux64)
   if (!isMac)
     nwExec = "cd cache/" + os + "/" + nwVer + " && nw ../../../src";
   else
-    nwExec = "/Applications/node-webkit.app/Contents/MacOS/node-webkit --enable-logging app"
+    nwExec = "/Applications/node-webkit.app/Contents/MacOS/node-webkit --enable-logging ./"
     //nwExec = "cd cache/" + os + "/" + nwVer + " && open -n -a node-webkit ../../../src";
 
 
@@ -279,7 +279,7 @@ if (isLinux64)
   ]);
 
   grunt.registerTask('dist-mac', [
-    'jshint',
+   // 'jshint',
     'clean:dist',
     'copy:webkit',
     'copy:appMacos',

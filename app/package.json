@@ -1,7 +1,7 @@
 {
   "name": "iffrankings",
   "main": "index.html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "single-instance": true,
   "window": {
     "title": "IFFRankings",
@@ -9,7 +9,9 @@
     "height": 650,
     "min_width": 1024,
     "min_height": 650,
-    "toolbar": true
+    "toolbar": true,
+    "position":"center"
   },
+  "node-remote": "<local>",
   "chromium-args": "--child-clean-exit"
 }

@@ -1,21 +1,21 @@
 {
-  "name": "iffrankings",
-  "version": "0.0.0",
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/TheHandsomeCoder/iffrankings",
-  "bugs": "https://github.com/TheHandsomeCoder/iffrankings/issues",
-  "author": {
-    "name": "Scott O'Malley",
-    "email": "",
-    "url": "https://github.com/TheHandsomeCoder"
+  "name": "Demo",
+  "description": "Demo app",
+  "version": "0.0.2",
+  "main": "index.html",
+  "window": {
+    "title": "IFFRankings",
+    "width": 1024,
+    "height": 650,
+    "min_width": 1024,
+    "min_height": 650,   
+    "position": "center",
+    "resizable": true
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/TheHandsomeCoder/iffrankings.git"
-  },
+  "node-remote": "<local>",
   "dependencies": {
-    "nedb": "^0.11.1"
+    "express": "3.x",
+    "nedb": "~0.8.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -29,8 +29,5 @@
     "time-grunt": "~0.3.1",
     "concat-files": "~0.1.0",
     "grunt-shell": "~0.7.0"
-  },
-  "engines": {
-    "node": ">=0.8.0"
   }
 }

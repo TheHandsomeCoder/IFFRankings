@@ -1,13 +1,20 @@
 'use strict';
 
 angular.module('RankingsApp')
-.controller('FencerCtrl', function ($scope, fencers, $modal) {
+.controller('FencerCtrl', function ($scope, Restangular, $modal) {
 
-	$scope.getFencers = function()
-	{
-		return fencers.getFencers();
-	}
+	Restangular.all('fencers').getList().then(function(fencers){
+		$scope.fencers = fencers;
+	});
 	
+	//TODO: Add in some sort of confimation dialog
+	$scope.deleteFencer = function(fencer)
+	{
+		fencer.remove().then(function(){
+			var index = $scope.fencers.indexOf(fencer);
+ 		 if (index > -1) $scope.fencers.splice(index, 1);
+		});
+	}
 });
 
 

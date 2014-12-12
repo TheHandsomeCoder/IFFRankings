@@ -1,8 +1,7 @@
 angular.module('RankingsApp')
-.controller('NavCtrl', function ($scope, competitions)
-{
-
-	$scope.competitions = competitions.getCompetitions();
-
-	
+.controller('NavCtrl', function ($scope, Restangular)
+{	
+	Restangular.all('competitions').getList().then(function(competitions){
+		$scope.competitions = competitions;
+	});
 });
