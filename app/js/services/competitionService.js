@@ -9,6 +9,10 @@ angular.module('RankingsApp')
             return true;
         }
 
+        Competition.prototype.init = function() {
+
+        }
+
         Competition.extend = Extender.for(Competition);
 
         return Competition;

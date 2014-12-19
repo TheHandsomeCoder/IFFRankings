@@ -1,17 +1,19 @@
 angular.module('RankingsApp')
-    .service('Extender', function() {
-        this.extendResult = function(result, constructor) {
+.service('Extender', function() {
+    this.extendResult = function(result, constructor) {
 
-            var callArgs = arguments;
-            var constructorArgs = Array.prototype.slice.call(callArgs, 2);
+        var callArgs = arguments;
+        var constructorArgs = Array.prototype.slice.call(callArgs, 2);
 
-             var Temp = function() {};
-             Temp.prototype = constructor.prototype;
-             var inst = new Temp;
+        var Temp = function() {};
+        Temp.prototype = constructor.prototype;
+        var inst = new Temp;
 
             // var model = constructor.apply(inst, constructorArgs);
 
             inst = angular.extend(inst, result);
+            inst.init();
+           
             return inst;
         }
 

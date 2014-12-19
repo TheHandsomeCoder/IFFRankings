@@ -13,6 +13,9 @@ angular.module('RankingsApp')
             return this.firstname + ' ' + this.lastname; 
         }
 
+        Fencer.prototype.init = function() {}
+
+
         Fencer.extend = Extender.for(Fencer);
 
         return Fencer;

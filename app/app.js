@@ -63,14 +63,21 @@ angular.module('RankingsApp', [
     .run(['Restangular', 'Competition', 'Fencer', 'Result', function(Restangular, Competition, Fencer, Result) {
 
         Restangular.extendModel('competitions', function(model) {
-            return Competition.extend(model);
+            var x = Competition.extend(model);
+            x.init();
+            return x;
+
         });
 
         Restangular.extendModel('fencers', function(model) {
-            return Fencer.extend(model);
+           var x = Fencer.extend(model);
+            x.init();
+            return x;
         });
 
         Restangular.extendModel('results', function(model) {
-            return Result.extend(model);
+            var x = Result.extend(model);
+            x.init();
+            return x;
         });
     }]);

@@ -1,59 +1,49 @@
 'use strict';
 
 angular.module('RankingsApp')
-.controller('CompetitionCtrl', function ($scope, Competition,Fencer,Result, $routeParams) {
+    .controller('CompetitionCtrl', function($scope, Restangular, $routeParams) {
 
-	$scope.competitionID = $routeParams.competitionID;
-	
+        Restangular.one('competitions', $routeParams.competitionID).get().then(function(competition) {
+            $scope.competition = competition;
+            $scope.competition.getList('results').then(function(results) {
+                $scope.results = results;
+            })
+        });
 
-	competitions.getCompetition($routeParams.competitionID).then(function(competition) 
-		{
-	    	$scope.competition = competition;
-	    	console.log($scope.competition);
-	    }, 
-	    function(error) 
-	    {	             
-	    	console.log("Nav Controller Error", error);
-	    });
+        Restangular.all('fencers').getList().then(function(fencers) {
+            $scope.fencers = fencers;
+        });
 
-	
-	$scope.fencers = fencers.getFencers();	
-	
-	
-	$scope.getNextPlacing = function()
-	{
-		return placings += 1;
-	}
+        
 
-	$scope.getFencerFromResult = function(result)
-	{
-		return fencers.getFencer(result.fencer);		
-	}
+        $scope.addResult = function() {
+            var result = Restangular.one('results');
+            result.fencer = $scope.selectedFencer.id;
+            result.competition = $routeParams.competitionID;
+            result.points = 100;
+            result.placing = 1;
 
-	$scope.getCompFromResult = function(result)
-	{
-		return competitions.getCompetition(result.competition);		
-	}	
 
-	$scope.getResultsForCompetition = function(competitionID)
-	{
-		return results.getResultsForCompetition($routeParams.competitionID);	
-	}
+            Restangular.all('results').post(result).then(function(response) {
+                $scope.results.push(response);
+            });
+        }
 
-	var placings = $scope.getResultsForCompetition($scope.competitionID).length; 
+        $scope.addNewResult = function() {
+            var result = {
+                "fencer": $scope.selectedFencer.id,
+                "competition": $routeParams.competitionID,
+                "placing": $scope.getNextPlacing(),
+                "points": 50
+            };
+            results.insertResult(result);
+            $scope.selectedFencer = null;
 
-	$scope.addNewResult = function()
-	{
-		var result = { "fencer": $scope.selectedFencer.id,  "competition":$routeParams.competitionID,  "placing": $scope.getNextPlacing(), "points":50 };
-		results.insertResult(result);		
-		$scope.selectedFencer = null;
-
-	}
-
-	
+        }
 
 
 
 
 
-});
+
+    });

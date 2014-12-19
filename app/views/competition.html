@@ -10,7 +10,7 @@
 
 		<div class="row top">      
 			<div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">      
-				<fencer-modal edit=false fencer='{}' text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>     
+				 <fencer-modal edit=false fencer='{}' fencers="fencers" text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>    
 			</div>  
 		</div>
 	</div> 
@@ -24,17 +24,16 @@
 				<tr>
 					<th>Placeing</th>
 					<th>Fencer</th>
-					<th>Comp</th>							
+									
 					<th>Points</th>							
 					<th>Change Fencer</th>							
 											
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat='result in getResultsForCompetition(competitionID)'>
+				<tr ng-repeat='result in results'>
 					<td>{{result.placing}}</td>
-					<td>{{getFencerFromResult(result).firstname}} {{getFencerFromResult(result).lastname}}</td>
-					<td>{{getFencerFromResult(result).club}}</td>
+					<td>{{result.Fencer().fullName()}}</td>
 					<td>{{result.points}}</td>												
 					<td><a class="no-bottom-margin button tiny radius">Edit Fencer</a></td>	
 											
@@ -42,7 +41,7 @@
 				<tr>
 					<td></td>
 					<td colspan=3>
-						<form ng-submit="addNewResult()">
+						<form ng-submit="addResult()">
 							<div class="row collapse">
 							<div class="small-6 columns">
 									<input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius">								
@@ -54,7 +53,7 @@
 						</form>		
 					</td>							
 
-					<td></td>							
+							
 				</tr> 						
 			</tbody>
 		</table>
