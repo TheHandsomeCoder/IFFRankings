@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('RankingsApp')
-.controller('FencerCtrl', function ($scope, Restangular, $modal) {
+.controller('FencerController', function ($scope, Restangular, $modal) {
 
 	Restangular.all('fencers').getList().then(function(fencers){
 		$scope.fencers = fencers;
@@ -14,7 +14,7 @@ angular.module('RankingsApp')
 			var index = $scope.fencers.indexOf(fencer);
  		 if (index > -1) $scope.fencers.splice(index, 1);
 		});
-	}
+	};
 });
 
 

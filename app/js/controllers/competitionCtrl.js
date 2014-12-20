@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('RankingsApp')
-    .controller('CompetitionCtrl', function($scope, Restangular, $routeParams) {
+    .controller('CompetitionController', function($scope, Restangular, $routeParams) {
 
         Restangular.one('competitions', $routeParams.competitionID).get().then(function(competition) {
             $scope.competition = competition;

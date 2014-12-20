@@ -1,5 +1,7 @@
+'use strict';
+
 angular.module('RankingsApp')
-    .controller('fencerModalCtrl', function($scope, $modalInstance,Restangular, edit, fencer, fencers) {
+    .controller('FencerModalController', function($scope, $modalInstance,Restangular, edit, fencer, fencers) {
 
 
 
@@ -13,7 +15,7 @@ angular.module('RankingsApp')
         } 
         else 
         {
-            $scope.fencer = Restangular.one('fencers')
+            $scope.fencer = Restangular.one('fencers');
         }
 
 
@@ -40,23 +42,23 @@ angular.module('RankingsApp')
                 }
 
             }
-        }
+        };
 
         $scope.firstNameIsNotValid = function() {
-            return ($scope.fencer.firstname == "" || angular.isUndefined($scope.fencer.firstname))
-        }
+            return ($scope.fencer.firstname === "" || angular.isUndefined($scope.fencer.firstname));
+        };
 
         $scope.lastNameIsNotValid = function() {
-            return ($scope.fencer.lastname == "" || angular.isUndefined($scope.fencer.lastname))
-        }
+            return ($scope.fencer.lastname === "" || angular.isUndefined($scope.fencer.lastname));
+        };
 
         $scope.clubIsNotValid = function() {
-            return ($scope.fencer.club == "" || angular.isUndefined($scope.fencer.club))
-        }
+            return ($scope.fencer.club === "" || angular.isUndefined($scope.fencer.club));
+        };
 
         $scope.genderIsNotValid = function() {
-            return ($scope.fencer.gender == "" || angular.isUndefined($scope.fencer.gender))
-        }
+            return ($scope.fencer.gender === "" || angular.isUndefined($scope.fencer.gender));
+        };
         $scope.cancel = function() {
             $modalInstance.dismiss('cancel');
         };

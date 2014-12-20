@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module('RankingsApp')
 .directive('fencerModal', function()
 {
@@ -20,7 +22,7 @@ angular.module('RankingsApp')
 
             var modalInstance = $modal.open({
                 templateUrl: 'js/directives/fencerModal/views/fencerModalView.html',
-                controller: 'fencerModalCtrl',
+                controller: 'FencerModalCtrl',
                 windowClass: 'small',
                 resolve: {
                     edit: function () {return $scope.edit},
@@ -28,7 +30,7 @@ angular.module('RankingsApp')
                     fencers: function(){return $scope.fencers}                  
                 }
             });     
-        }
+        };
     }
-}
+};
 });

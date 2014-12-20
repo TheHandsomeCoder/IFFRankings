@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 angular.module('RankingsApp', [
         'ngRoute',
@@ -7,11 +7,11 @@ angular.module('RankingsApp', [
         'ngResource',
         'restangular'
     ])
-    .config(['$routeProvider', 'RestangularProvider', 'CompetitionProvider', function($routeProvider, RestangularProvider, CompetitionProvider) {
+    .config(['$routeProvider', 'RestangularProvider',  function($routeProvider, RestangularProvider) {
         $routeProvider
             .when('/competition/:competitionID', {
                 templateUrl: 'views/competition.html',
-                controller: 'CompetitionCtrl'
+                controller: 'CompetitionController'
             })
             .when('/rankings', {
                 redirectTo: '/'
@@ -21,7 +21,7 @@ angular.module('RankingsApp', [
             })
             .when('/fencers', {
                 templateUrl: 'views/fencers.html',
-                controller: 'FencerCtrl'
+                controller: 'FencerController'
             })
             .otherwise({
                 redirectTo: '/'
@@ -39,7 +39,7 @@ angular.module('RankingsApp', [
                 // .. and handle the data and meta data
                 extractedData = data[what];
             } else if (operation === "get" || operation === "post" || operation === "put") {
-                  extractedData = data[what][0];
+                extractedData = data[what][0];
             } else {
                 extractedData = data;
             }
@@ -70,7 +70,7 @@ angular.module('RankingsApp', [
         });
 
         Restangular.extendModel('fencers', function(model) {
-           var x = Fencer.extend(model);
+            var x = Fencer.extend(model);
             x.init();
             return x;
         });

@@ -5,6 +5,7 @@
     <title>IFFRankings</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="js/vendor/font-awesome/css/font-awesome.min.css">
 
 
 
@@ -35,12 +36,17 @@
                         </li>
                        
                     </ul>
+                    <ul class="right">                        
+                        <li><a><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i></a></li>                       
+                    </ul>
 
 
                 </top-bar-section>
+
+                
             </top-bar>
 
-            <aside class="left-off-canvas-menu" ng-controller="NavCtrl">
+            <aside class="left-off-canvas-menu" ng-controller="NavigationBarController">
                 <ul class="off-canvas-list">
                     <li ng-repeat="comp in competitions"><a href="#/competition/{{comp.id}}">{{comp.name}}</a>
                     </li>
