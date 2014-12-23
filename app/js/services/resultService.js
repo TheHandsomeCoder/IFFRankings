@@ -26,11 +26,6 @@ angular.module('RankingsApp')
             return _fencer;
                      
         }
-        
-
-        
-
-
 
 
         Result.extend = Extender.for(Result);

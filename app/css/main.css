@@ -21,6 +21,7 @@ body{
 
 
 
+
 .sidebar
 {
 	background: #fafafa;
@@ -36,14 +37,14 @@ body{
 	 margin-bottom: 0px !important; 
 }
 
-.off-canvas-wrap, .inner-wrap {
+/*.off-canvas-wrap, .inner-wrap {
 	min-height: 100%;
 }
 
 .off-canvas-wrap{  
 	height: 100%;
 	overflow-y: auto;
-}
+}*/
 
 
 /* Default header styles */

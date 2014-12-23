@@ -6,17 +6,23 @@ angular.module('RankingsApp')
   return {
     restrict: 'E',
     scope: {
-       
+
     },
     replace: true,
+    transclude: true,
+    template: '<a ng-click="openModel()"><ng-transclude></ng-transclude></a>',
     controller: function($scope, $element, $modal)
     {
-        $scope.openFencerModel = function() {       
+
+        $scope.openModel = function() {       
 
             var modalInstance = $modal.open({
-                templateUrl: 'js/directives/settingsModal/views/settingModalView.html',
-                controller: 'FencerModalCtrl',
-                windowClass: 'small'                
+                templateUrl: 'js/directives/settingsModal/view/settingsModalView.html',
+                controller: 'SettingsModalController',
+                windowClass: 'medium',
+                resolve: {
+
+                }
             });     
         };
     }

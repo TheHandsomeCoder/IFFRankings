@@ -22,7 +22,7 @@ angular.module('RankingsApp')
 
             var modalInstance = $modal.open({
                 templateUrl: 'js/directives/fencerModal/views/fencerModalView.html',
-                controller: 'FencerModalCtrl',
+                controller: 'FencerModalController',
                 windowClass: 'small',
                 resolve: {
                     edit: function () {return $scope.edit},
