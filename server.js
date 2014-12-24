@@ -39,14 +39,13 @@ var rankingsAPI = fortune({
 })
 
 .resource('season', {
-    shortName: 'string',
-    competition: 'competition',
-    result: 'result'
+    startYear: Number,
+    endYear: Number   
 })
 
 .resource('weapon', {
-    name: "string",
-    shortName: "string",
+    name: String,
+    shortName: String
 });
 
 

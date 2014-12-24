@@ -11,6 +11,10 @@ angular.module('RankingsApp', [
         $routeProvider
             .when('/competition/:competitionID', {
                 templateUrl: 'views/competition.html',
+                controller: 'CompetitionSeasonController'
+            })
+            .when('/competition/:competitionID/season/:seasonID', {
+                templateUrl: 'views/competition-results.html',
                 controller: 'CompetitionController'
             })
             .when('/rankings', {

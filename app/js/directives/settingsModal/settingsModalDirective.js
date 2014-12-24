@@ -16,13 +16,12 @@ angular.module('RankingsApp')
 
         $scope.openModel = function() {       
 
-            var modalInstance = $modal.open({
+            $modal.open({
                 templateUrl: 'js/directives/settingsModal/view/settingsModalView.html',
                 controller: 'SettingsModalController',
-                windowClass: 'medium',
-                resolve: {
+                windowClass: 'medium settings-modal', 
+                backdrop: 'static'
 
-                }
             });     
         };
     }

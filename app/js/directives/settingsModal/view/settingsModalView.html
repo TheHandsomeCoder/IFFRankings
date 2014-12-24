@@ -1,11 +1,16 @@
 <div class="row">
- 
- 
-
-<h3>This form is only used for loading the sample data</br><small>It might do other things at some point</small></h3>
-
+    <tabset vertical="true" type="navType">
+        <tab heading="Load Sample Data">
+            <h3>Select text file</h3>
+            <input type="file" accept=".apl" on-read-file="processFile($fileContent)" />
+            <div ng-if="content">
+                <h2>File content is:</h2>
+                <pre>{{ content }}</pre>
+            </div>
+        </tab>
+        <tab heading="Export Database">This will contaib the ability to export the database</tab>
+    </tabset>
 </div>
- 
 
 
-</div>
+<a class="close-reveal-modal" ng-click="cancel()"><i class="fa fa-times"></i></a>

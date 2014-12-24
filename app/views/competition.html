@@ -3,8 +3,6 @@
 	<div class="large-7 medium-7 columns">
 		<h1 >{{competition.name}}</h1>
 	</div> 
-
-
 	
 	<div class="large-5 medium-5 columns top right">
 
@@ -22,39 +20,13 @@
 		<table style="width: 100%">
 			<thead>
 				<tr>
-					<th>Placeing</th>
-					<th>Fencer</th>
-									
-					<th>Points</th>							
-					<th>Change Fencer</th>							
-											
+					<th>Season</th>											
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat='result in results'>
-					<td>{{result.placing}}</td>
-					<td>{{result.Fencer().fullName()}}</td>
-					<td>{{result.points}}</td>												
-					<td><a class="no-bottom-margin button tiny radius">Edit Fencer</a></td>	
-											
-				</tr> 	
-				<tr>
-					<td></td>
-					<td colspan=3>
-						<form ng-submit="addResult()">
-							<div class="row collapse">
-							<div class="small-6 columns">
-									<input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius">								
-								</div>
-								<div class="small-3 columns end">
-									<input type="submit" id="submit" value="Submit" class="button postfix no-bottom-margin radius"/>
-								</div>
-							</div>
-						</form>		
-					</td>							
-
-							
-				</tr> 						
+				<tr ng-repeat='season in seasons'>
+					<td><a href="#/competition/{{comp.id}}/season/{{season.id}}">{{season.startDate}}/{{season.endDate}}</a></td>
+				</tr> 									
 			</tbody>
 		</table>
 	</div>
