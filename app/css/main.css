@@ -77,6 +77,14 @@ body{
 border-bottom: 1px #999999 solid;
 }
 
+.fa-plus{
+	padding-top: 12px;
+}
+
+.title-bar{
+	padding-top:11px;
+}
+
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {

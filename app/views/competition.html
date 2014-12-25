@@ -1,34 +1,88 @@
-<div class="row"> 
-
-	<div class="large-7 medium-7 columns">
-		<h1 >{{competition.name}}</h1>
-	</div> 
-	
-	<div class="large-5 medium-5 columns top right">
-
-		<div class="row top">      
-			<div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">      
-				 <fencer-modal edit=false fencer='{}' fencers="fencers" text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i></fencer-modal>    
-			</div>  
-		</div>
-	</div> 
-	<hr>
-</div>
-
 <div class="row">
-	<div class="large-12 medium-12 columns">	
-		<table style="width: 100%">
-			<thead>
-				<tr>
-					<th>Season</th>											
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat='season in seasons'>
-					<td><a href="#/competition/{{comp.id}}/season/{{season.id}}">{{season.startDate}}/{{season.endDate}}</a></td>
-				</tr> 									
-			</tbody>
-		</table>
-	</div>
+
+    <div class="large-7 medium-7 columns">
+        <h2 class="title-bar">{{competition.name}} {{selectedSeason.displayName()}}</h2>
+    </div>
+
+
+
+    <div class="large-5 medium-5 columns top right">
+
+        <div class="row top">
+            <div class="large-6 medium-6 columns">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="row collapse">
+                            <div class="small-9 columns">
+                                <select ng-options="season.displayName() for season in seasons | orderBy:'startYear'" ng-model="selectedSeason">
+                                    <option value="" ng-hide="true">Please Choose
+                                        <option>
+                                </select>
+                            </div>
+                            <div class="small-3 columns">
+                                <a class="button postfix has-tip" tooltip="See? Now click away..." tooltip-trigger="openTrigger" tooltip-placement="bottom"><i class="fa fa-plus fa-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="large-6 medium-6 columns">
+                <fencer-modal edit=false fencer='{}' fencers="fencers" text="Add New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
+                </fencer-modal>
+            </div>
+        </div>
+    </div>
+    <hr>
 </div>
+
+<div ng-show="selectedSeason" class="row">
+    <div class="large-12 medium-12 columns">
+        <table style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Placeing</th>
+                    <th>Fencer</th>
+
+                    <th>Points</th>
+                    <th>Change Fencer</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat='result in results'>
+                    <td>{{result.placing}}</td>
+                    <td>{{result.Fencer().fullName()}}</td>
+                    <td>{{result.points}}</td>
+                    <td><a class="no-bottom-margin button tiny radius">Edit Fencer</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan=3>
+                        <form ng-submit="addResult()">
+                            <div class="row collapse">
+                                <div class="small-6 columns">
+                                    <input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius">
+                                </div>
+                                <div class="small-3 columns end">
+                                    <input type="submit" id="submit" value="Submit" class="button postfix no-bottom-margin radius" />
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div ng-hide="selectedSeason" class="row">
+    <alert class="text-center" type="warning">You have no season selected, please choose a season to add results for or add a new season for this competition</alert>
+</div>
+
+
 </div>

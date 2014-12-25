@@ -40,7 +40,8 @@ var rankingsAPI = fortune({
 
 .resource('season', {
     startYear: Number,
-    endYear: Number   
+    endYear: Number,
+    competitions:['competition']  
 })
 
 .resource('weapon', {

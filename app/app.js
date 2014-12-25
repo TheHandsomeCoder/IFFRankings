@@ -11,10 +11,6 @@ angular.module('RankingsApp', [
         $routeProvider
             .when('/competition/:competitionID', {
                 templateUrl: 'views/competition.html',
-                controller: 'CompetitionSeasonController'
-            })
-            .when('/competition/:competitionID/season/:seasonID', {
-                templateUrl: 'views/competition-results.html',
                 controller: 'CompetitionController'
             })
             .when('/rankings', {
@@ -30,8 +26,6 @@ angular.module('RankingsApp', [
             .otherwise({
                 redirectTo: '/'
             });
-
-
 
         RestangularProvider.setBaseUrl('http://localhost:3000/');
 
@@ -64,7 +58,7 @@ angular.module('RankingsApp', [
         });
 
     }])
-    .run(['Restangular', 'Competition', 'Fencer', 'Result', function(Restangular, Competition, Fencer, Result) {
+    .run(['Restangular', 'Competition', 'Fencer', 'Result', 'Season', function(Restangular, Competition, Fencer, Result, Season) {
 
         Restangular.extendModel('competitions', function(model) {
             var x = Competition.extend(model);
@@ -82,6 +76,11 @@ angular.module('RankingsApp', [
         Restangular.extendModel('results', function(model) {
             var x = Result.extend(model);
             x.init();
+            return x;
+        });
+
+          Restangular.extendModel('seasons', function(model) {
+            var x = Season.extend(model);
             return x;
         });
     }]);

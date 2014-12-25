@@ -3,11 +3,15 @@
 angular.module('RankingsApp')
     .controller('CompetitionController', function($scope, Restangular, $routeParams) {
 
+               
         Restangular.one('competitions', $routeParams.competitionID).get().then(function(competition) {
             $scope.competition = competition;
             $scope.competition.getList('results').then(function(results) {
                 $scope.results = results;
-            })
+            });
+             $scope.competition.getList('seasons').then(function(seasons) {
+                $scope.seasons = seasons;
+            });
         });
 
         Restangular.all('fencers').getList().then(function(fencers) {
@@ -27,7 +31,7 @@ angular.module('RankingsApp')
             Restangular.all('results').post(result).then(function(response) {
                 $scope.results.push(response);
             });
-        }
+        };
 
         $scope.addNewResult = function() {
             var result = {
@@ -36,10 +40,10 @@ angular.module('RankingsApp')
                 "placing": $scope.getNextPlacing(),
                 "points": 50
             };
-            results.insertResult(result);
+            $scope.results.insertResult(result);
             $scope.selectedFencer = null;
 
-        }
+        };
 
 
 

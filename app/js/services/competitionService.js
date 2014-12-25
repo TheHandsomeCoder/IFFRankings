@@ -1,3 +1,5 @@
+"use strict"
+
 angular.module('RankingsApp')
     .factory('Competition', function(Extender, Restangular) {
 
@@ -7,11 +9,12 @@ angular.module('RankingsApp')
 
         Competition.prototype.extended = function() {
             return true;
-        }
+        };
 
-        Competition.prototype.init = function() {
+        Competition.prototype.init = function()
+        {
 
-        }
+        };
 
         Competition.extend = Extender.for(Competition);
 
