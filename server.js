@@ -26,13 +26,13 @@ var rankingsAPI = fortune({
     name: String,
     shortName: String,
     results: ['result'],
-    seasons: ['season']
+    instances: ['instance']
 })
 
 .resource('result', {
     placing: Number,
     points: Number,
-    competition: 'competition',
+    instance: 'instance',
     fencer: 'fencer',
     weapon: 'weapon',
     season: 'season'
@@ -40,8 +40,15 @@ var rankingsAPI = fortune({
 
 .resource('season', {
     startYear: Number,
-    endYear: Number,
-    competitions:['competition']  
+    endYear: Number    
+})
+
+.resource('instance',{
+    competition: 'competition',
+    weapon: 'weapon',
+    date: Date,
+    season: 'season',
+    results: ['results']
 })
 
 .resource('weapon', {
@@ -53,6 +60,6 @@ var rankingsAPI = fortune({
 container
     .use(rankingsAPI.router)
     .use(express.static(path.join(__dirname, 'app')))
-    .listen(port);
+    .listen(port, 'localhost');
 
 console.log('Server listening on port ' + port);
