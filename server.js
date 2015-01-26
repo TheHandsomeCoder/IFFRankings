@@ -48,14 +48,19 @@ var rankingsAPI = fortune({
     weapon: 'weapon',
     date: Date,
     season: 'season',
-    results: ['results']
+    results: ['results'],
+    tier: 'tier'
 })
 
 .resource('weapon', {
     name: String,
     shortName: String
-});
+})
 
+.resource('tier', {
+    name: String,
+    shortName: String
+});
 
 container
     .use(rankingsAPI.router)

@@ -6,60 +6,64 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="js/vendor/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="js/vendor/foundation-datepicker/stylesheets/foundation-datepicker.css">
 
 
 </head>
 
 <body class="white" ng-app="RankingsApp">
+    <div class="main-page">
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
 
-    <div class="off-canvas-wrap">
-        <div class="inner-wrap">
+                <top-bar is-hover="false">
 
-            <top-bar is-hover="false">
-
-                <ul class="title-area">
-                    <li class="name">
-                        <h1><a href="#">Rankings App</a></h1>
-                    </li>
-                    <li toggle-top-bar class="menu-icon"><a href="#">Menu</a>
-                    </li>
-                </ul>
-
-                <top-bar-section>
-                    <ul class="left">
-                        <li has-dropdown><a class="left-off-canvas-toggle"> Competitions</a>
+                    <ul class="title-area">
+                        <li class="name">
+                            <h1><a href="#">Rankings App</a></h1>
                         </li>
-                        <li><a href="#/rankings">Rankings</a>
+                        <li toggle-top-bar class="menu-icon"><a href="#">Menu</a>
                         </li>
-                        <li><a href="#/fencers">Fencers</a>
-                        </li>
-                       
-                    </ul>
-                    <ul class="right">                        
-                        <li><settings-modal><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i></settings-modal></li>                       
                     </ul>
 
+                    <top-bar-section>
+                        <ul class="left">
+                            <li has-dropdown><a class="left-off-canvas-toggle"> Competitions</a>
+                            </li>
+                            <li><a href="#/rankings">Rankings</a>
+                            </li>
+                            <li><a href="#/fencers">Fencers</a>
+                            </li> 
+                           
+                        </ul>
+                        <ul class="right">
+                            <li>
+                                <settings-modal><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i>
+                                </settings-modal>
+                            </li>
+                        </ul>
 
-                </top-bar-section>
 
-                
-            </top-bar>
-
-            <aside class="left-off-canvas-menu" ng-controller="NavigationBarController">
-                <ul class="off-canvas-list">
-                    <li ng-repeat="comp in competitions"><a href="#/competition/{{comp.id}}">{{comp.name}}</a>
-                    </li>
-                </ul>
-            </aside>
+                    </top-bar-section>
 
 
-            <div ng-view="">
+                </top-bar>
+
+                <aside class="left-off-canvas-menu" ng-controller="NavigationBarController">
+                    <ul class="off-canvas-list">
+                        <li ng-repeat="comp in competitions"><a href="#/competition/{{comp.id}}">{{comp.name}}</a>
+                        </li>
+                    </ul>
+                </aside>
+
+
+                <div class="white" ng-view="">
+                </div>
+
+
+
+                <a class="exit-off-canvas"></a>
             </div>
-
-
-
-            <a class="exit-off-canvas"></a>
         </div>
     </div>
 
@@ -79,7 +83,8 @@
     <script src="js/vendor/angular-foundation/mm-foundation-tpls.js"></script>
     <script src="js/vendor/restangular/dist/restangular.min.js"></script>
     <script src="js/vendor/tv4/tv4.js"></script>
-
+    <script src="js/vendor/jquery/dist/jquery.js"></script>
+    <script src="js/vendor/foundation-datepicker/js/foundation-datepicker.js"></script>
 
 
 
@@ -89,24 +94,29 @@
     <script src="js/services/competitionService.js"></script>
     <script src="js/services/resultService.js"></script>
     <script src="js/services/seasonService.js"></script>
-  
+    <script src="js/services/tierService.js"></script>
 
-    <script src="js/controllers/competitionCtrl.js"></script>   
+
+    <script src="js/controllers/competitionCtrl.js"></script>
     <script src="js/controllers/navCtrl.js"></script>
     <script src="js/controllers/fencerCtrl.js"></script>
-    
-   
+
+
 
     <script src="js/directives/fencerModal/fencerModalDirective.js"></script>
     <script src="js/directives/fencerModal/controllers/fencerModalCtrl.js"></script>
-   
+
     <script src="js/directives/settingsModal/settingsModalDirective.js"></script>
-    <script src="js/directives/settingsModal/controllers/settingsModalController.js"></script>   
+    <script src="js/directives/settingsModal/controllers/settingsModalController.js"></script>
 
     <script src="js/directives/instanceModal/InstanceModalDirective.js"></script>
     <script src="js/directives/instanceModal/controllers/instanceModalController.js"></script>
 
     <script src="js/directives/fileReader/fileReaderDirective.js"></script>
+
+    <script src="js/directives/datepickerDirective/datepickerDirective.js"></script>
+
+    
 
 </body>
 
