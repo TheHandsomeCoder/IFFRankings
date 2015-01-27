@@ -5,7 +5,7 @@ angular.module('RankingsApp')
 
         $scope.instance = {};
 
-        $scope.submitted = false;
+       
 
         Restangular.all('seasons').getList().then(function(seasons) {
             $scope.seasons = seasons;
@@ -15,26 +15,9 @@ angular.module('RankingsApp')
             $scope.tiers = tiers;
         });
 
-        $scope.tierIsNotValid = function() {
-            return ($scope.instance.tier === "" || angular.isUndefined($scope.instance.tier));
-        };
-
-        $scope.seasonIsNotValid = function() {
-            return ($scope.instance.season === "" || angular.isUndefined($scope.instance.season));
-        };
-
-        $scope.dateIsNotValid = function() {
-            //TODO: Put some kind of date formatting in here       
-            return ($scope.instance.date === "" || angular.isUndefined($scope.instance.date));
-        };
-
-        $scope.formIsValid = function() {
-            return ($scope.tierIsNotValid() && $scope.seasonIsNotValid() && $scope.dateIsNotValid())
-        }
-
-        $scope.ok = function() {
+       $scope.ok = function() {
             $scope.submitted = true;
-            if (!$scope.formIsValid()) 
+            if ($scope.form.$valid) 
             {
                console.log($scope.instance);
                 //$modalInstance.close();

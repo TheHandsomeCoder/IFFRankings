@@ -1,0 +1,11 @@
+<h3>Add a new season</h3>
+
+<a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+
+<div class="row" ng-model="fencer">
+    <form novalidate ng-submit="ok()">
+        <select ng-model="selectedSeason" ng-options="season.displayName() for season in seasons | orderBy:'startYear'">
+            <option value="" ng-hide="true">Please Choose<option>
+        </select>
+    </form>
+</div>
