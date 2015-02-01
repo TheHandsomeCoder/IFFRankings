@@ -1,11 +1,10 @@
 'use strict';
 
 angular.module('RankingsApp')
-    .controller('InstanceModalController', function($scope, $modalInstance, Restangular) {
+    .controller('InstanceModalController', function($scope, $modalInstance, Restangular, competition) {
 
         $scope.instance = {};
-
-       
+        $scope.instance.competition = competition;
 
         Restangular.all('seasons').getList().then(function(seasons) {
             $scope.seasons = seasons;
@@ -15,12 +14,14 @@ angular.module('RankingsApp')
             $scope.tiers = tiers;
         });
 
-       $scope.ok = function() {
+        $scope.ok = function(instanceForm) {
             $scope.submitted = true;
-            if ($scope.form.$valid) 
-            {
-               console.log($scope.instance);
-                //$modalInstance.close();
+            if (instanceForm.$valid) {
+                Restangular.service('instances').post($scope.instance).then(function(response) {
+                    $modalInstance.close(response);
+                });
+
+
             }
 
             return;

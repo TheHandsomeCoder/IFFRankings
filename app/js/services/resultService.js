@@ -3,9 +3,7 @@ angular.module('RankingsApp')
 
     	  var _fencer;
 
-        function Result() {
-
-          
+        function Result() {          
         }
 
         Result.prototype.extended = function() {

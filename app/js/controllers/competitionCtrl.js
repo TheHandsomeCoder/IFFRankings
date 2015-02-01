@@ -1,52 +1,58 @@
 'use strict';
 
 angular.module('RankingsApp')
-    .controller('CompetitionController', function($scope, Restangular, $routeParams) {
+    .controller('CompetitionController', function($scope, Restangular, $routeParams, $location) {
 
-               
+        $scope.results = [];
+        $scope.fencers = [];
+
         Restangular.one('competitions', $routeParams.competitionID).get().then(function(competition) {
             $scope.competition = competition;
-            $scope.competition.getList('results').then(function(results) {
-                $scope.results = results;
+
+            $scope.competition.getList('instances').then(function(instances) {
+                $scope.instances = instances;
+                if ($routeParams.instanceID) {
+                    $scope.selectedInstance = _.find($scope.instances, function(instance) {
+                        return instance.id === $routeParams.instanceID
+                    });
+
+                    Restangular.one('instances', $scope.selectedInstance.id).getList('results').then(function(results) {
+                        $scope.results = results;
+                    });
+                }
             });
-             $scope.competition.getList('seasons').then(function(seasons) {
-                $scope.seasons = seasons;
-            });
+
+
         });
 
         Restangular.all('fencers').getList().then(function(fencers) {
             $scope.fencers = fencers;
         });
 
-        
-
         $scope.addResult = function() {
             var result = Restangular.one('results');
             result.fencer = $scope.selectedFencer.id;
             result.competition = $routeParams.competitionID;
-            result.points = 100;
-            result.placing = 1;
+            result.instance = $routeParams.instanceID;
 
-
-            Restangular.all('results').post(result).then(function(response) {
+            Restangular.service('results').post(result).then(function(response) {
                 $scope.results.push(response);
             });
         };
 
-        $scope.addNewResult = function() {
-            var result = {
-                "fencer": $scope.selectedFencer.id,
-                "competition": $routeParams.competitionID,
-                "placing": $scope.getNextPlacing(),
-                "points": 50
-            };
-            $scope.results.insertResult(result);
-            $scope.selectedFencer = null;
-
-        };
+        $scope.$watch('selectedInstance', function() {
+            if ($scope.selectedInstance) {
+                $location.path('/competition/' + $scope.competition.id + '/instance/' + $scope.selectedInstance.id);
+            }
+        });
 
 
 
+        function updateResults() {
+            Restangular.all('instances').getList().then(function(fencers) {
+                $scope.fencers = fencers;
+            });
+        }
 
 
 

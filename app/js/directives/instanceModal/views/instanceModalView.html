@@ -3,30 +3,35 @@
 <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
 
 <div class="row" ng-model="instance">
-    <form name="form" ng-submit="ok()">
+    <form novalidate name="instanceForm" ng-submit="ok(instanceForm)">
 
-        <div class="large-12 columns" ng-class="{error: submitted == true && dateIsNotValid()}">
-            <label ng-class="{error: submitted == true && dateIsNotValid()}">Date</label>
+        <div class="large-12 columns" ng-class="{error: instanceForm.effectiveDate.$dirty && instanceForm.effectiveDate.$error.required}">
+
+            <label ng-class="{error: instanceForm.effectiveDate.$dirty && instanceForm.effectiveDate.$error.required}">Date</label>
             <input type="date" ng-model="instance.date" name="effectiveDate" required>
-            <small ng-show="form.effectiveDate.$error.required" class="error">This field is required</small>
-            <small class="error" ng-show="myForm.effectiveDate.$error.date">Not a valid date!</small>
-         
+
+            <small ng-show="instanceForm.effectiveDate.$dirty && instanceForm.effectiveDate.$error.required" class="error">This field is required</small>
+            <small class="error" ng-show="myinstanceForm.effectiveDate.$error.date">Not a valid date!</small>         
         </div>
 
-        <div class="large-12 columns" ng-class="{error: submitted == true && seasonIsNotValid()}">
-            <label>Season</label>
-            <select ng-options="season.id as season.displayName() for season in seasons | orderBy:'startYear'" ng-model="instance.season" name="season">
+        <div class="large-12 columns" ng-class="{error: instanceForm.$submitted && instanceForm.season.$invalid}">
+
+            <label ng-class="{error: instanceForm.$submitted && instanceForm.season.$invalid}">Season</label>
+            <select ng-options="season.id as season.displayName() for season in seasons | orderBy:'startYear'" ng-model="instance.season" name="season" required>
                 <option value="" ng-hide="true">Please Choose<option>
-            </select>         
-            <small ng-show="form.season.$error.required" class="error">This field is required</small>
+            </select>  
+
+            <small ng-show="instanceForm.$submitted && instanceForm.season.$invalid" class="error">This field is required</small>
         </div>
 
-        <div class="large-12 columns" ng-class="{error: submitted == true && tierIsNotValid()}">
-            <label>Tier</label>
-            <select ng-options="tier.id as tier.name for tier in tiers | orderBy: 'name'" ng-model="instance.tier" name="tier">
+        <div class="large-12 columns" ng-class="{error: instanceForm.$submitted  && instanceForm.tier.$invalid}">
+
+            <label ng-class="{error: instanceForm.$submitted && instanceForm.tier.$invalid}">Tier</label>
+            <select ng-options="tier.id as tier.name for tier in tiers | orderBy: 'name'" ng-model="instance.tier" name="tier" required>
                 <option value="" ng-hide="true">Please Choose<option>
             </select>
-            <small ng-show="form.tier.$error.required" class="error">This field is required</small>
+
+            <small ng-show="instanceForm.$submitted &&  instanceForm.tier.$invalid" class="error">This field is required</small>
         </div>
 
         <div class="large-12 columns">

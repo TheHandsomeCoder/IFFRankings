@@ -14,6 +14,10 @@ angular.module('RankingsApp', [
         templateUrl: 'views/competition.html',
         controller: 'CompetitionController'
     })
+    .when('/competition/:competitionID/instance/:instanceID', {
+        templateUrl: 'views/competition.html',
+        controller: 'CompetitionController'
+    })
     .when('/rankings', {
         redirectTo: '/'
     })
@@ -59,7 +63,7 @@ angular.module('RankingsApp', [
         });
 
 }])
-.run(['Restangular', 'Competition', 'Fencer', 'Result', 'Season', 'Tier',function(Restangular, Competition, Fencer, Result, Season, Tier) {
+.run(['Restangular', 'Competition', 'Fencer', 'Result', 'Season', 'Tier', 'Instance',function(Restangular, Competition, Fencer, Result, Season, Tier, Instance) {
 
     Restangular.extendModel('competitions', function(model) {
         var x = Competition.extend(model);
@@ -87,6 +91,12 @@ angular.module('RankingsApp', [
 
     Restangular.extendModel('tiers', function(model) {
         var x = Tier.extend(model);
+        return x;
+    });
+
+    Restangular.extendModel('instances', function(model) {
+        var x = Instance.extend(model);
+        x.init();
         return x;
     });
 }]);
