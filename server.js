@@ -31,11 +31,9 @@ var rankingsAPI = fortune({
 
 .resource('result', {
     placing: Number,
-    points: Number,
     instance: 'instance',
     fencer: 'fencer',
-    weapon: 'weapon',
-    season: 'season'
+    weapon: 'weapon'    
 })
 
 .resource('season', {
@@ -48,7 +46,7 @@ var rankingsAPI = fortune({
     weapon: 'weapon',
     date: Date,
     season: 'season',
-    results: ['results'],
+    results: ['result'],
     tier: 'tier'
 })
 
