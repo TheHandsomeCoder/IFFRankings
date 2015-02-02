@@ -20,69 +20,67 @@
                                         </select>
                                     </div>
                                     <div class="small-3 columns">
-                                        <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i></instance-modal>
-                                    </div>
+                                        <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i>
+                                    </instance-modal>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="large-6 medium-6 columns">
-                    <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
-                    </fencer-modal>
+
                 </div>
+                <div class="large-6 medium-6 columns">
+                    <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
+                </fencer-modal>
             </div>
         </div>
-        <hr>
     </div>
+    <hr>
+</div>
 
-    <div ng-show="selectedInstance" class="row">
-        <div class="large-12 medium-12 columns">
-            <table style="width: 100%">
-                <thead>
-                    <tr>
-                        <th>Placeing</th>
-                        <th>Fencer</th>
-
-                        <th>Points</th>
-                        <th>Change Fencer</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat='result in results'>
-                        <td>{{result.placing}}</td>
-                        <td>{{result.Fencer().fullName()}}</td>
-                        <td>{{result.points}}</td>
-                        <td><a class="no-bottom-margin button tiny radius">Edit Fencer</a>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colspan=3>
-                            <form novalidate ng-submit="addResult()">
-                                <div class="row collapse">
-                                    <div class="small-6 columns">
-                                        <input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius" required>
-                                    </div>
-                                    <div class="small-3 columns end">
-                                        <input type="submit" id="submit" value="Submit" class="button postfix no-bottom-margin radius" />
-                                    </div>
-                                </div>
-                            </form>
-                        </td>
+<div ng-show="selectedInstance" class="row">
+    <div class="large-12 medium-12 columns">
+        <table style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Placeing</th>
+                    <th>Fencer</th>
 
 
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+                    <th>Edit Result</th>
 
-    <div ng-hide="selectedInstance" class="row">
-        <alert class="text-center" type="warning">You have no season selected, please choose a season to add results for or add a new season for this competition</alert>
-    </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat='result in results'>
+                    <td>{{result.placing}}</td>
+                    <td>{{result.Fencer().fullName()}}</td>
+                    <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>{{getNextPlacing()}}</td>
+
+                    <td colspan=2> <form name="addNewResult" ng-submit="addResult(selectedFencer)">
+                        <input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius" >
+                        
+
+                        <input type="submit"  value="Submit" class="button tiny no-bottom-margin radius" />
+                    </form>
+                </td>
+
+
+            </tr>
+        </form>
+    </tbody>
+</table>
+</div>
+</div>
+
+<div ng-hide="selectedInstance" class="row">
+    <alert class="text-center" type="warning">You have no season selected, please choose a season to add results for or add a new season for this competition</alert>
+</div>
 
 
 </div>

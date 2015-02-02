@@ -1,32 +1,30 @@
 angular.module('RankingsApp')
-    .factory('Result', function(Extender, Restangular) {
+    .factory('Result', function(Extender, Restangular, $rootScope) {
 
-    	  var _fencer;
 
-        function Result() {          
-        }
 
-        Result.prototype.extended = function() {
+
+        function Result(model) {
+            
+            angular.extend(this, model);
+             Restangular.one('fencers', this.links.fencer).get().then(function(response) {
+                this.fencer = response;
+            });
+        };
+
+        Result.prototype.Extended = function() {
             return true;
-        }
+        };
+
+        Result.prototype.Fencer = function() {
+            return this.fencer;
+        };
 
 
-        Result.prototype.init = function() {
-          
-          Restangular.one('fencers', this.fencer).get().then(function(response){
-            _fencer = response;
-          })
-        }
-
-        Result.prototype.Fencer = function() 
-        {
-          
-            return _fencer;
-                     
-        }
 
 
-        Result.extend = Extender.for(Result);
+
+        //Result.extend = Extender.for(Result);
 
         return Result;
     });

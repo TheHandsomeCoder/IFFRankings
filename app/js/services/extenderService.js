@@ -12,8 +12,6 @@ angular.module('RankingsApp')
             // var model = constructor.apply(inst, constructorArgs);
 
             inst = angular.extend(inst, result);
-            inst.init();
-
             return inst;
         }
 

@@ -25,18 +25,19 @@ angular.module('RankingsApp')
 
         });
 
-        Restangular.all('fencers').getList().then(function(fencers) {
-            $scope.fencers = fencers;
-        });
+        // Restangular.all('fencers').getList().then(function(fencers) {
+        //     $scope.fencers = fencers;
+        // });
 
-        $scope.addResult = function() {
+        $scope.addResult = function(selectedFencer) {
             var result = Restangular.one('results');
-            result.fencer = $scope.selectedFencer.id;
+            result.fencer = selectedFencer.id;
             result.competition = $routeParams.competitionID;
             result.instance = $routeParams.instanceID;
-
+            result.placing = $scope.getNextPlacing();
             Restangular.service('results').post(result).then(function(response) {
                 $scope.results.push(response);
+                $scope.selectedFencer = "";
             });
         };
 
@@ -46,12 +47,18 @@ angular.module('RankingsApp')
             }
         });
 
+        $scope.getNextPlacing = function() {
 
+            var x = $scope.results.length;
 
-        function updateResults() {
-            Restangular.all('instances').getList().then(function(fencers) {
-                $scope.fencers = fencers;
-            });
+            if (x === 3) {
+                return 3;
+            } else {
+                return x + 1;
+            }
+        }
+        $scope.log = function(result) {
+            console.log(result)
         }
 
 
