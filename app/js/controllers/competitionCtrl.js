@@ -16,7 +16,7 @@ angular.module('RankingsApp')
                         return instance.id === $routeParams.instanceID
                     });
 
-                    Restangular.one('instances', $scope.selectedInstance.id).getList('results').then(function(results) {
+                    $scope.selectedInstance.getList('results').then(function(results) {
                         $scope.results = results;
                     });
                 }
@@ -25,9 +25,9 @@ angular.module('RankingsApp')
 
         });
 
-        // Restangular.all('fencers').getList().then(function(fencers) {
-        //     $scope.fencers = fencers;
-        // });
+        Restangular.all('fencers').getList().then(function(fencers) {
+            $scope.fencers = fencers;
+        });
 
         $scope.addResult = function(selectedFencer) {
             var result = Restangular.one('results');
