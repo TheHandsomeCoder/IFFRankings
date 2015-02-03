@@ -33,6 +33,7 @@ angular.module('RankingsApp', [
             });
 
         RestangularProvider.setBaseUrl('http://localhost:3000/');
+        RestangularProvider.setParentless(true);
 
 
         RestangularProvider.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
@@ -80,7 +81,6 @@ angular.module('RankingsApp', [
 
         Restangular.extendModel('results', function(model) {
             var result = new Result(model);
-            result.init();
             return result;
         });
 
@@ -95,10 +95,7 @@ angular.module('RankingsApp', [
         });
 
         Restangular.extendModel('instances', function(model) {
-            var x = Instance.extend(model);
-            if (x.fromServer) {
-                x.init();
-            }
+            var x = new Instance(model);
             return x;
         });
     }]);
