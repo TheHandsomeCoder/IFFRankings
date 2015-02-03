@@ -5,26 +5,27 @@ angular.module('RankingsApp')
 
 
         function Result(model) {
-            
+
             angular.extend(this, model);
-             Restangular.one('fencers', this.links.fencer).get().then(function(response) {
-                this.fencer = response;
+            var self = this;
+            Restangular.one('fencers', self.links.fencer).get().then(function(response) {
+                self.Fencer(response);
             });
         };
 
-        Result.prototype.Extended = function() {
-            return true;
+        Result.prototype = {
+            Extended: function() {
+                return true;
+            },
+            Fencer: function(fencer) {
+                if (fencer) {
+                    angular.extend(this, {
+                        'fencer': fencer
+                    });
+                }
+                return this.fencer;
+            }
         };
-
-        Result.prototype.Fencer = function() {
-            return this.fencer;
-        };
-
-
-
-
-
-        //Result.extend = Extender.for(Result);
 
         return Result;
     });
