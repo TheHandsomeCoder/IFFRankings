@@ -1,24 +1,31 @@
 "use strict"
 
 angular.module('RankingsApp')
-    .factory('Fencer', function(Extender, Restangular) {
+.factory('Fencer', function(Extender, Restangular) {
 
-        function Fencer() {
+ function Fencer(model) {
 
+    angular.extend(this, model);
+    var self = this;
+    
+};
+
+Fencer.prototype = {
+    Extended: function() {
+        return true;
+    },
+    Results: function(results) {
+        if (results) {
+            angular.extend(this, {
+                'results': results
+            });
         }
+        return this.results;
+    },
+    fullName: function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
 
-        Fencer.prototype.extended = function() {
-            return true;
-        };
-
-        Fencer.prototype.fullName = function(){
-            return this.firstname + ' ' + this.lastname; 
-        };
-
-        Fencer.prototype.init = function() {};
-
-
-        Fencer.extend = Extender.for(Fencer);
-
-        return Fencer;
-    });
+return Fencer;
+});

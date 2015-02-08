@@ -14,6 +14,16 @@
             <small class="error" ng-show="myinstanceForm.effectiveDate.$error.date">Not a valid date!</small>         
         </div>
 
+        <div class="large-12 columns" ng-class="{error: instanceForm.$submitted && instanceForm.numberOfCompetitors.$invalid}">
+
+            <label ng-class="{error: instanceForm.$submitted && instanceForm.numberOfCompetitors.$invalid}">Number of Competitors</label>
+            <select ng-options="cat.code as cat.displayName for cat in catagories" ng-model="instance.numberOfCompetitors" name="numCompetitors" required>
+                <option value="" ng-hide="true">Please Choose<option>
+            </select>  
+
+            <small ng-show="instanceForm.$submitted && instanceForm.season.$invalid" class="error">This field is required</small>
+        </div>
+
         <div class="large-12 columns" ng-class="{error: instanceForm.$submitted && instanceForm.season.$invalid}">
 
             <label ng-class="{error: instanceForm.$submitted && instanceForm.season.$invalid}">Season</label>
@@ -27,7 +37,7 @@
         <div class="large-12 columns" ng-class="{error: instanceForm.$submitted  && instanceForm.tier.$invalid}">
 
             <label ng-class="{error: instanceForm.$submitted && instanceForm.tier.$invalid}">Tier</label>
-            <select ng-options="tier.id as tier.name for tier in tiers | orderBy: 'name'" ng-model="instance.tier" name="tier" required>
+            <select ng-options="tier.code as tier.displayName for tier in tiers | orderBy: 'displayName'" ng-model="instance.tier" name="tier" required>
                 <option value="" ng-hide="true">Please Choose<option>
             </select>
 

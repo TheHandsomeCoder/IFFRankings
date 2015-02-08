@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('RankingsApp')
-    .controller('CompetitionController', function($scope, Restangular, $routeParams, $location) {
+    .controller('CompetitionController', function($scope, Restangular, $routeParams, $location, ResultsCalculator, CategoriesService) {
 
         $scope.results = [];
         $scope.fencers = [];
@@ -29,15 +29,18 @@ angular.module('RankingsApp')
             $scope.fencers = fencers;
         });
 
+
+
         $scope.addResult = function(selectedFencer) {
             var result = Restangular.one('results');
             result.fencer = selectedFencer.id;
             result.competition = $routeParams.competitionID;
             result.instance = $routeParams.instanceID;
             result.placing = $scope.getNextPlacing();
+            result.points = $scope.getPointsForPlacing(result.placing);
             Restangular.service('results').post(result).then(function(response) {
                 $scope.results.push(response);
-                $scope.selectedFencer = "";
+                $scope.selectedFencer = null;
             });
         };
 
@@ -56,7 +59,30 @@ angular.module('RankingsApp')
             } else {
                 return x + 1;
             }
+        };
+
+        $scope.maximumNumberOfResultsReached = function() {
+            if ($scope.selectedInstance) {
+                var competitorCategories = CategoriesService.numberOfCompetitorsCategories();
+
+                var category = _.find(competitorCategories, function(x) {
+                    return x.code === $scope.selectedInstance.numberOfCompetitors;
+                });
+
+
+                if ($scope.results.length < category.max) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+            return false;
         }
+
+        $scope.getPointsForPlacing = function(placing) {
+            return ResultsCalculator.calculatePoints(placing, $scope.selectedInstance);
+        }
+
         $scope.log = function(result) {
             console.log(result)
         }

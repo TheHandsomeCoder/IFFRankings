@@ -15,8 +15,8 @@ var rankingsAPI = fortune({
 })
 
 .resource('fencer', {
-    firstname: String,
-    lastname: String,
+    firstName: String,
+    lastName: String,
     gender: String,
     club: String,
     results: ['result']
@@ -33,7 +33,8 @@ var rankingsAPI = fortune({
     placing: Number,
     instance: 'instance',
     fencer: 'fencer',
-    weapon: 'weapon'    
+    weapon: 'weapon', 
+    points: Number   
 })
 
 .resource('season', {
@@ -47,18 +48,11 @@ var rankingsAPI = fortune({
     date: Date,
     season: 'season',
     results: ['result'],
-    tier: 'tier'
-})
-
-.resource('weapon', {
-    name: String,
-    shortName: String
-})
-
-.resource('tier', {
-    name: String,
-    shortName: String
+    tier: String,
+    numberOfCompetitors:String
 });
+
+
 
 container
     .use(rankingsAPI.router)

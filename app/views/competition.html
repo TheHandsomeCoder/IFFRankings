@@ -1,7 +1,7 @@
 <div class="row">
 
     <div class="large-7 medium-7 columns">
-        <h2 class="title-bar">{{competition.name}} {{selectedInstance.date | date :'yyyy'}}</h2>
+        <h2 class="title-bar">{{competition.name}} {{selectedInstance.date | date :'yyyy'}} {{selectedInstance.NumberOfResults()}}</h2>
     </div>
 
 
@@ -17,19 +17,19 @@
                                 <select ng-options="instance.Season().displayName() for instance in instances" ng-model="selectedInstance">
                                     <option value="" ng-hide="true">Please Choose
                                         <option>
-                                        </select>
-                                    </div>
-                                    <div class="small-3 columns">
-                                        <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i>
-                                    </instance-modal>
-                                </div>
+                                </select>
+                            </div>
+                            <div class="small-3 columns">
+                                <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i>
+                                </instance-modal>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="large-6 medium-6 columns">
-                    <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
+
+            </div>
+            <div class="large-6 medium-6 columns">
+                <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
                 </fencer-modal>
             </div>
         </div>
@@ -42,7 +42,8 @@
         <table style="width: 100%">
             <thead>
                 <tr>
-                    <th>Placeing</th>
+                    <th>Placing</th>
+                    <th>Points</th>
                     <th>Fencer</th>
 
 
@@ -53,29 +54,38 @@
             <tbody>
                 <tr ng-repeat='result in results'>
                     <td>{{result.placing}}</td>
+                    <td>{{result.points}}</td>
                     <td>{{result.Fencer().fullName()}}</td>
                     <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a>
                     </td>
 
                 </tr>
-                
-                <tr>
+
+                <tr ng-if="!maximumNumberOfResultsReached()">
                     <td>{{getNextPlacing()}}</td>
+                    <td>{{getPointsForPlacing(getNextPlacing())}}</td>
 
-                    <td colspan=2> <form name="addNewResult" ng-submit="addResult(selectedFencer)">
-                        <input type="search" ng-model="selectedFencer" placeholder="Type the fencers name" typeahead="fencer as fencer.firstname + ' ' +fencer.lastname + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius" >
-                        
+                    <td>
 
-                        <input type="submit"  value="Submit" class="button tiny no-bottom-margin radius" />
-                    </form>
-                </td>
+                        <input form="addNewResult" type="search" ng-model="selectedFencer" name="addNewResultInput" placeholder="Type the fencers name" typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius">
 
 
-            </tr>
-        </form>
-    </tbody>
-</table>
-</div>
+
+                    </td>
+                    <td>
+                        <form id="addNewResult" name="addNewResultForm" ng-submit="addResult(selectedFencer)"> </form>
+
+                        <input form="addNewResult" type="submit" value="Submit" class="button tiny no-bottom-margin radius" />
+
+                    </td>
+
+
+
+                </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <div ng-hide="selectedInstance" class="row">

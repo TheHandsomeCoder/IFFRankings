@@ -6,12 +6,12 @@
 	<form novalidate ng-submit="ok()">
 	<div class="large-12 columns" ng-class="{error: submitted == true && firstNameIsNotValid()}">
 		<label>First Name</label>
-		<input type="text" placeholder="First Name"  ng-model="fencer.firstname" required>
+		<input type="text" placeholder="First Name"  ng-model="fencer.firstName" required>
 		<small ng-show="submitted == true && firstNameIsNotValid()" class="error">Required</small>
 	</div>
 	<div class="large-12 columns" ng-class="{error: submitted == true && lastNameIsNotValid()}">
 		<label>Last Name</label>
-		<input type="text" placeholder="Last Name" ng-model="fencer.lastname" required>
+		<input type="text" placeholder="Last Name" ng-model="fencer.lastName" required>
 		<small ng-show="submitted == true && lastNameIsNotValid()" class="error">Required</small>
 	</div>
 

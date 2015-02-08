@@ -22,7 +22,8 @@ angular.module('RankingsApp', [
                 redirectTo: '/'
             })
             .when('/', {
-                templateUrl: 'views/rankings.html'
+                templateUrl: 'views/rankings.html',
+                 controller: 'RankingController'
             })
             .when('/fencers', {
                 templateUrl: 'views/fencers.html',
@@ -67,15 +68,13 @@ angular.module('RankingsApp', [
     .run(['Restangular', 'Competition', 'Fencer', 'Result', 'Season', 'Tier', 'Instance', function(Restangular, Competition, Fencer, Result, Season, Tier, Instance) {
 
         Restangular.extendModel('competitions', function(model) {
-            var x = Competition.extend(model);
-            x.init();
+            var x = new Competition(model);
             return x;
 
         });
 
         Restangular.extendModel('fencers', function(model) {
-            var x = Fencer.extend(model);
-            x.init();
+            var x = new Fencer(model);
             return x;
         });
 

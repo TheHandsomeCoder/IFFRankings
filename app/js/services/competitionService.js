@@ -3,20 +3,17 @@
 angular.module('RankingsApp')
     .factory('Competition', function(Extender, Restangular) {
 
-        function Competition() {
+        function Competition(model) {
 
-        }
-
-        Competition.prototype.extended = function() {
-            return true;
+            angular.extend(this, model);
+            
         };
 
-        Competition.prototype.init = function()
-        {
-
+        Competition.prototype = {
+            Extended: function() {
+                return true;
+            }
         };
-
-        Competition.extend = Extender.for(Competition);
 
         return Competition;
     });

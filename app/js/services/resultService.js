@@ -8,9 +8,11 @@ angular.module('RankingsApp')
 
             angular.extend(this, model);
             var self = this;
-            Restangular.one('fencers', self.links.fencer).get().then(function(response) {
-                self.Fencer(response);
-            });
+            if (self.fromServer) {
+                Restangular.one('fencers', self.links.fencer).get().then(function(response) {
+                    self.Fencer(response);
+                });
+            }
         };
 
         Result.prototype = {
@@ -24,7 +26,16 @@ angular.module('RankingsApp')
                     });
                 }
                 return this.fencer;
+            },
+            Points: function(points) {
+                if (points) {
+                    angular.extend(this, {
+                        'points': points
+                    });
+                }
+                return this.points;
             }
+
         };
 
         return Result;

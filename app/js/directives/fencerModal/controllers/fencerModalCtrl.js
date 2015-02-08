@@ -45,11 +45,11 @@ angular.module('RankingsApp')
         };
 
         $scope.firstNameIsNotValid = function() {
-            return ($scope.fencer.firstname === "" || angular.isUndefined($scope.fencer.firstname));
+            return ($scope.fencer.firstName === "" || angular.isUndefined($scope.fencer.firstName));
         };
 
         $scope.lastNameIsNotValid = function() {
-            return ($scope.fencer.lastname === "" || angular.isUndefined($scope.fencer.lastname));
+            return ($scope.fencer.lastName === "" || angular.isUndefined($scope.fencer.lastName));
         };
 
         $scope.clubIsNotValid = function() {
