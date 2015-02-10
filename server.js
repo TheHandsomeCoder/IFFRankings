@@ -34,7 +34,8 @@ var rankingsAPI = fortune({
     instance: 'instance',
     fencer: 'fencer',
     weapon: 'weapon', 
-    points: Number   
+    points: Number,
+    excludedFromRankings: Boolean
 })
 
 .resource('season', {
