@@ -40,8 +40,11 @@ angular.module('RankingsApp')
             result.points = $scope.getPointsForPlacing(result.placing);
             Restangular.service('results').post(result).then(function(response) {
                 $scope.results.push(response);
-                $scope.selectedFencer = null;
+               
+                
+
             });
+            $scope.selectedFencer = "";
         };
 
         $scope.$watch('selectedInstance', function() {
