@@ -67,13 +67,21 @@
 
                     <td>
 
-                        <input form="addNewResult" type="search" ng-model="selectedFencer" name="addNewResultInput" placeholder="Type the fencers name" typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8" class="form-control no-bottom-margin radius">
+                        <input form="addNewResult"
+                               type="search"
+                               ng-model="form.selectedFencer"
+                               name="addNewResultInput"
+                               placeholder="Type the fencers name"
+                               typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
+                               class="form-control no-bottom-margin radius"
+
+                                >
 
 
 
                     </td>
                     <td>
-                        <form id="addNewResult" name="addNewResultForm" ng-submit="addResult(selectedFencer)"> </form>
+                        <form id="addNewResult" name="addNewResultForm" ng-submit="addResult(form)"> </form>
 
                         <input form="addNewResult" type="submit" value="Submit" class="button tiny no-bottom-margin radius" />
 

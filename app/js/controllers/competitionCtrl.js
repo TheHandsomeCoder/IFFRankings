@@ -1,22 +1,23 @@
 'use strict';
 
 angular.module('RankingsApp')
-    .controller('CompetitionController', function($scope, Restangular, $routeParams, $location, ResultsCalculator, CategoriesService) {
+    .controller('CompetitionController', function ($scope, Restangular, $routeParams, $location, ResultsCalculator, CategoriesService) {
 
+        $scope.form = {};
         $scope.results = [];
         $scope.fencers = [];
 
-        Restangular.one('competitions', $routeParams.competitionID).get().then(function(competition) {
+        Restangular.one('competitions', $routeParams.competitionID).get().then(function (competition) {
             $scope.competition = competition;
 
-            $scope.competition.getList('instances').then(function(instances) {
+            $scope.competition.getList('instances').then(function (instances) {
                 $scope.instances = instances;
                 if ($routeParams.instanceID) {
-                    $scope.selectedInstance = _.find($scope.instances, function(instance) {
+                    $scope.selectedInstance = _.find($scope.instances, function (instance) {
                         return instance.id === $routeParams.instanceID
                     });
 
-                    $scope.selectedInstance.getList('results').then(function(results) {
+                    $scope.selectedInstance.getList('results').then(function (results) {
                         $scope.results = results;
                     });
                 }
@@ -25,35 +26,33 @@ angular.module('RankingsApp')
 
         });
 
-        Restangular.all('fencers').getList().then(function(fencers) {
+        Restangular.all('fencers').getList().then(function (fencers) {
             $scope.fencers = fencers;
         });
 
 
-
-        $scope.addResult = function(selectedFencer) {
+        $scope.addResult = function (form) {
             var result = Restangular.one('results');
-            result.fencer = selectedFencer.id;
+            result.fencer = form.selectedFencer.id;
             result.competition = $routeParams.competitionID;
             result.instance = $routeParams.instanceID;
             result.placing = $scope.getNextPlacing();
             result.points = $scope.getPointsForPlacing(result.placing);
-            Restangular.service('results').post(result).then(function(response) {
+            Restangular.service('results').post(result).then(function (response) {
                 $scope.results.push(response);
-               
-                
-
             });
-            $scope.selectedFencer = "";
+
+            $scope.form = {};
+
         };
 
-        $scope.$watch('selectedInstance', function() {
+        $scope.$watch('selectedInstance', function () {
             if ($scope.selectedInstance) {
                 $location.path('/competition/' + $scope.competition.id + '/instance/' + $scope.selectedInstance.id);
             }
         });
 
-        $scope.getNextPlacing = function() {
+        $scope.getNextPlacing = function () {
 
             var x = $scope.results.length;
 
@@ -64,11 +63,11 @@ angular.module('RankingsApp')
             }
         };
 
-        $scope.maximumNumberOfResultsReached = function() {
+        $scope.maximumNumberOfResultsReached = function () {
             if ($scope.selectedInstance) {
                 var competitorCategories = CategoriesService.numberOfCompetitorsCategories();
 
-                var category = _.find(competitorCategories, function(x) {
+                var category = _.find(competitorCategories, function (x) {
                     return x.code === $scope.selectedInstance.numberOfCompetitors;
                 });
 
@@ -82,14 +81,13 @@ angular.module('RankingsApp')
             return false;
         }
 
-        $scope.getPointsForPlacing = function(placing) {
+        $scope.getPointsForPlacing = function (placing) {
             return ResultsCalculator.calculatePoints(placing, $scope.selectedInstance);
         }
 
-        $scope.log = function(result) {
+        $scope.log = function (result) {
             console.log(result)
         }
-
 
 
     });
