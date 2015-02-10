@@ -45,9 +45,8 @@
                     <th>Placing</th>
                     <th>Points</th>
                     <th>Fencer</th>
-
-
                     <th>Edit Result</th>
+                    <th>Excluded</th>
 
                 </tr>
             </thead>
@@ -56,9 +55,8 @@
                     <td>{{result.placing}}</td>
                     <td>{{result.points}}</td>
                     <td>{{result.Fencer().fullName()}}</td>
-                    <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a>
-                    </td>
-
+                    <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a></td>
+                    <td>{{result.excludedFromRanking}}</td>
                 </tr>
 
                 <tr ng-if="!maximumNumberOfResultsReached()">
