@@ -17,19 +17,19 @@
                                 <select ng-options="instance.Season().displayName() for instance in instances" ng-model="selectedInstance">
                                     <option value="" ng-hide="true">Please Choose
                                         <option>
-                                </select>
-                            </div>
-                            <div class="small-3 columns">
-                                <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i>
-                                </instance-modal>
+                                        </select>
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <instance-modal instances="instances" competition="competition.id" class="button postfix"><i class="fa fa-plus fa-inverse"></i>
+                                    </instance-modal>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-            <div class="large-6 medium-6 columns">
-                <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
+                </div>
+                <div class="large-6 medium-6 columns">
+                    <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer" class="prefix fencer-modal-button"><i class="fi-plus"></i>
                 </fencer-modal>
             </div>
         </div>
@@ -44,9 +44,9 @@
                 <tr>
                     <th>Placing</th>
                     <th>Points</th>
-                    <th>Fencer</th>
-                    <th>Edit Result</th>
+                    <th>Fencer</th>                   
                     <th>Excluded</th>
+                    <th>Edit Result</th>
 
                 </tr>
             </thead>
@@ -55,43 +55,56 @@
                     <td>{{result.placing}}</td>
                     <td>{{result.points}}</td>
                     <td>{{result.Fencer().fullName()}}</td>
-                    <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a></td>
                     <td>{{result.excludedFromRanking}}</td>
+                    <td><a class="no-bottom-margin button tiny radius" ng-click="log(result)">Edit Result</a></td>
+                    
                 </tr>
 
                 <tr ng-if="!maximumNumberOfResultsReached()">
-                    <td>{{getNextPlacing()}}</td>
-                    <td>{{getPointsForPlacing(getNextPlacing())}}</td>
-
                     <td>
+                      <input form="addNewResult"
+                      type="number"
+                      ng-model="form.placing"                   
 
-                        <input form="addNewResult"
-                               type="search"
-                               ng-model="form.selectedFencer"
-                               name="addNewResultInput"
-                               placeholder="Type the fencers name"
-                               typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
-                               class="form-control no-bottom-margin radius"
+                      class="form-control no-bottom-margin radius"    
+                      focus="{{isFocused}}"   
+                      ng-blur="onBlur()"  
+                      min="1">
+                  </td>
+                  <td>{{getPointsForPlacing(form.placing)}}</td>
 
-                                >
+                  <td>
 
+                    <input form="addNewResult"
+                    type="search"
+                    ng-model="form.selectedFencer"
+                    name="addNewResultInput"
+                    placeholder="Type the fencers name"
+                    typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
+                    class="form-control no-bottom-margin radius"
 
-
-                    </td>
-                    <td>
-                        <form id="addNewResult" name="addNewResultForm" ng-submit="addResult(form)"> </form>
-
-                        <input form="addNewResult" type="submit" value="Submit" class="button tiny no-bottom-margin radius" />
-
-                    </td>
-
+                    >
 
 
-                </tr>
-                </form>
-            </tbody>
-        </table>
-    </div>
+
+                </td>
+                <td>
+                    <input form="addNewResult" id="excludeCheckbox" type="checkbox" ng-model="form.excludedFromRankings" class="no-bottom-margin"/><label for="excludeCheckbox">Exclude</label>
+                </td>
+                <td>
+                <form id="addNewResult" novalidate name="instanceForm" ng-submit="addResult(instanceForm)"> </form>
+
+                    <input form="addNewResult" type="submit" value="Submit" class="button tiny no-bottom-margin radius" />
+
+                </td>
+
+
+
+            </tr>
+        </form>
+    </tbody>
+</table>
+</div>
 </div>
 
 <div ng-hide="selectedInstance" class="row">
