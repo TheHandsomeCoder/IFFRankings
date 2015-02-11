@@ -6,10 +6,19 @@ angular.module('RankingsApp')
         $scope.results = [];
         $scope.fencers = [];
         $scope.isFocused = false;
+        $scope.tableInEditState = false;
+
+        $scope.updateForm = {
+
+            excludedFromRankings : "lol",
+            fencer : "lol",
+            placing : 555
+
+        };
 
         $scope.onBlur = function(){
             $scope.isFocused = false;
-        }
+        };
 
         $scope.getNextPlacing = function() {
 
@@ -40,6 +49,8 @@ angular.module('RankingsApp')
                         $scope.form = {
                             placing: $scope.getNextPlacing()
                         };
+
+
                     });
                 }
             });
@@ -57,9 +68,28 @@ angular.module('RankingsApp')
             //TODO: some kind of form validation
 
             var result = Restangular.one('results');
-            result.fencer = form.selectedFencer.id;
+            result.fencer = $scope.form.selectedFencer.id;
             result.competition = $routeParams.competitionID;
             result.instance = $routeParams.instanceID;
+            result.placing = $scope.form.placing;
+            result.points = $scope.getPointsForPlacing(result.placing);
+            result.excludedFromRankings = form.excludedFromRankings;
+
+            Restangular.service('results').post(result).then(function(response) {
+                $scope.results.push(response);
+                $scope.form = {
+                    placing: $scope.getNextPlacing()
+                };
+
+                $scope.isFocused = true;
+            });
+        };
+
+        $scope.updateResult = function(form, result) {
+
+            //TODO: some kind of form validation
+
+            result.fencer = form.selectedFencer.id;
             result.placing = $scope.getNextPlacing();
             result.points = $scope.getPointsForPlacing(result.placing);
             result.excludedFromRankings = form.excludedFromRankings;
@@ -74,6 +104,7 @@ angular.module('RankingsApp')
             });
         };
 
+
         $scope.$watch('selectedInstance', function() {
             if ($scope.selectedInstance) {
                 $location.path('/competition/' + $scope.competition.id + '/instance/' + $scope.selectedInstance.id);
@@ -81,6 +112,23 @@ angular.module('RankingsApp')
         });
 
 
+        $scope.setEditable = function(result)
+        {
+            $scope.updateForm.excludedFromRankings = result.excludedFromRankings;
+            $scope.updateForm.fencer = result.fencer;
+            $scope.updateForm.placing = result.placing;
+            $scope.tableInEditState = true;
+            result.editable = true;
+        };
+
+        $scope.cancelEditable = function(result)
+        {
+            result.editable = false;
+            $scope.tableInEditState = false;
+            $scope.updateForm = {
+
+            };
+        };
 
         $scope.maximumNumberOfResultsReached = function() {
             if ($scope.selectedInstance) {
@@ -98,11 +146,11 @@ angular.module('RankingsApp')
                 }
             }
             return false;
-        }
+        };
 
         $scope.getPointsForPlacing = function(placing) {
             return ResultsCalculator.calculatePoints(placing, $scope.selectedInstance);
-        }
+        };
 
         $scope.log = function(result) {
             console.log(result)
