@@ -15,7 +15,6 @@ angular.module('RankingsApp')
 
                 return getPointsFromPointsArray(pointsForCompetitionTierAndNumberOfCompetitors, placing);
             }
-
         };
 
         function getPointsFromPointsArray(pointsArray, placing)
