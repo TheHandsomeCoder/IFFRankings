@@ -1,6 +1,12 @@
 angular.module('RankingsApp')
     .service('CategoriesService', function () {
 
+
+        this.selectedWeapon = "ME";
+
+
+
+
         this.numberOfCompetitorsCategories = function () {
             return [
                 {

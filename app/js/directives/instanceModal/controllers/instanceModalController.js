@@ -18,6 +18,7 @@ angular.module('RankingsApp')
         $scope.ok = function(instanceForm) {
             $scope.submitted = true;
             if (instanceForm.$valid) {
+                $scope.instance.weapon = CategoriesService.selectedWeapon;
                 Restangular.service('instances').post($scope.instance).then(function(response) {
                     $modalInstance.close(response);
                 });

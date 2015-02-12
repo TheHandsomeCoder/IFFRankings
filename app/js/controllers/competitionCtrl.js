@@ -36,7 +36,7 @@ angular.module('RankingsApp')
             $scope.competition = competition;
 
             $scope.competition.getList('instances').then(function(instances) {
-                $scope.instances = instances;
+                $scope.instances = _.where(instances, {'weapon': CategoriesService.selectedWeapon});
                 if ($routeParams.instanceID) {
                     $scope.selectedInstance = _.find($scope.instances, function(instance) {
                         return instance.id === $routeParams.instanceID
@@ -73,6 +73,7 @@ angular.module('RankingsApp')
             result.placing = $scope.form.placing;
             result.points = $scope.getPointsForPlacing(result.placing);
             result.excludedFromRankings = form.excludedFromRankings;
+            result.weapon = CategoriesService.selectedWeapon;
 
             Restangular.service('results').post(result).then(function(response) {
                 $scope.results.push(response);
