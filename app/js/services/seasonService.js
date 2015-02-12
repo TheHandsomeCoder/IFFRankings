@@ -21,6 +21,11 @@ angular.module('RankingsApp')
             return this.startYear + '/' + this.endYear; 
         };
 
+        Season.prototype.Code = function()
+        {
+            return this.startYear + '/' + this.endYear;
+        };
+
         Season.extend = Extender.for(Season);
 
         return Season;

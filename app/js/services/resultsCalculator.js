@@ -6,7 +6,8 @@ angular.module('RankingsApp')
             if (!placing || !instance) {
                 return;
             } else {
-                var pointsCategories = CategoriesService.pointsCategories();
+
+                var pointsCategories = CategoriesService.pointsCategories(instance.Season().Code());
 
                 var pointsForCompetitionTier = pointsCategories[instance.tier];
                 
