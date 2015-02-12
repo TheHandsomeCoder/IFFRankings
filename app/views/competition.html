@@ -1,137 +1,141 @@
 <div class="row">
-    <div class="large-7 medium-7 columns">
-        <h2 class="title-bar">{{competition.name}} {{selectedInstance.date | date :'yyyy'}}
-            {{selectedInstance.NumberOfResults()}}
-        </h2>
-    </div>
-    <div class="large-5 medium-5 columns top right">
-        <div class="row top">
-            <div class="large-6 medium-6 columns">
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="row collapse">
-                            <div class="small-9 columns">
-                                <select ng-options="instance.Season().displayName() for instance in instances"
-                                        ng-model="selectedInstance">
-                                    <option value="" ng-hide="true">Please Choose
-                                    <option>
-                                </select>
-                            </div>
-                            <div class="small-3 columns">
-                                <instance-modal instances="instances" competition="competition.id"
-                                                class="button postfix"><i class="fa fa-plus fa-inverse"></i>
-                                </instance-modal>
-                            </div>
-                        </div>
-                    </div>
+  <div class="large-7 medium-7 columns">
+    <h2 class="title-bar">{{competition.name}} {{selectedInstance.date | date :'yyyy'}}
+      {{selectedInstance.NumberOfResults()}}
+    </h2>
+  </div>
+  <div class="large-5 medium-5 columns top right">
+    <div class="row top">
+      <div class="large-6 medium-6 columns">
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row collapse">
+              <div class="small-9 columns">
+                <select ng-options="instance.Season().displayName() for instance in instances"
+                ng-model="selectedInstance">
+                <option value="" ng-hide="true">Please Choose
+                  <option>
+                  </select>
                 </div>
+                <div class="small-3 columns">
+                  <instance-modal instances="instances" competition="competition.id"
+                  class="button postfix"><i class="fa fa-plus fa-inverse"></i>
+                </instance-modal>
+              </div>
             </div>
-            <div class="large-6 medium-6 columns">
-                <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer"
-                              class="prefix fencer-modal-button"><i class="fi-plus"></i>
-                </fencer-modal>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <fencer-modal edit=false fencer='{}' fencers="fencers" text="Create New Fencer"
+        class="prefix fencer-modal-button"><i class="fi-plus"></i>
+      </fencer-modal>
     </div>
-    <hr>
+  </div>
+</div>
+<hr>
 </div>
 <div ng-show="selectedInstance" class="row">
-    <div class="large-12 medium-12 columns">
-        <table style="width: 100%">
-            <thead>
-            <tr>
-                <th style="width: 15%">Placing</th>
-                <th style="width: 10%">Points</th>
-                <th style="width: 30%">Fencer</th>
-                <th style="width: 15%">Excluded</th>
-                <th>Edit Result</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat='result in results'>
-                <td>
-                    <p class="no-bottom-margin" ng-hide="result.editable">{{result.placing}}</p>
-                    <input ng-if="result.editable" form="editResultForm"
-                           type="number"
-                           ng-model="updateForm.placing"
-                           class="form-control no-bottom-margin radius"
-                           focus="{{isFocused}}"
-                           ng-blur="onBlur()"
-                           min="1">
-                </td>
-                <td>
-                    <p class="no-bottom-margin" ng-hide="result.editable">{{result.points}}</p>
-                    <p class="no-bottom-margin" ng-if="result.editable">
-                        {{getPointsForPlacing(updateForm.placing)}}
-                    </p>
-                </td>
-                <td>
-                    <p class="no-bottom-margin" ng-hide="result.editable">{{result.Fencer().fullName()}}</p>
-                    <input ng-if="result.editable" form="editResultForm"
-                           type="search"
-                           ng-model="updateForm.selectedFencer"
-                           name="addNewResultInput"
-                           placeholder="Type the fencers name"
-                           typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
-                           class="form-control no-bottom-margin radius">
-                </td>
-                <td>
-                    <p class="no-bottom-margin" ng-hide="result.editable">{{result.excludedFromRanking}}</p>
-                    <input ng-if="result.editable" form="editResultForm" id="updateExcludeCheckbox" type="checkbox"
-                           ng-model="updateForm.excludedFromRankings" class="no-bottom-margin"/><label
-                        ng-show="result.editable"
-                        for="updateExcludeCheckbox">Exclude</label>
-                </td>
-                <td>
-                    <button ng-hide="result.editable" class="no-bottom-margin button tiny radius"
-                       ng-click="setEditable(result)" ng-disabled="tableInEditState">Edit Result</button>
-                    <form ng-if="result.editable" id="editResultForm" novalidate name="updateForm"
-                          ng-submit="updateResult(updateForm, result)"></form>
-                    <input ng-if="result.editable" form="editResultForm" type="submit" value="Save"
-                           class="button tiny no-bottom-margin radius"/>
-                    <button ng-if="result.editable" class="button alert tiny no-bottom-margin radius"
-                            ng-click="cancelEditable(result)">Cancel
-                    </button>
-                </td>
-            </tr>
-            <tr ng-if="!maximumNumberOfResultsReached() && !tableInEditState">
-                <td>
-                    <input form="addNewResult"
-                           type="number"
-                           ng-model="form.placing"
-                           class="form-control no-bottom-margin radius"
-                           focus="{{isFocused}}"
-                           ng-blur="onBlur()"
-                           min="1">
-                </td>
-                <td>{{getPointsForPlacing(form.placing)}}</td>
-                <td>
-                    <input form="addNewResult"
-                           type="search"
-                           ng-model="form.selectedFencer"
-                           name="addNewResultInput"
-                           placeholder="Type the fencers name"
-                           typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
-                           class="form-control no-bottom-margin radius"
-                            >
-                </td>
-                <td>
-                    <input form="addNewResult" id="excludeCheckbox" type="checkbox" ng-model="form.excludedFromRankings"
-                           class="no-bottom-margin"/><label for="excludeCheckbox">Exclude</label>
-                </td>
-                <td>
-                    <form id="addNewResult" novalidate name="instanceForm" ng-submit="addResult(instanceForm)"></form>
-                    <input form="addNewResult" type="submit" value="Submit"
-                           class="button tiny no-bottom-margin radius"/>
-                </td>
-            </tr>
-            </form>
-            </tbody>
-        </table>
-    </div>
+  <div class="large-12 medium-12 columns">
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th style="width: 15%">Placing</th>
+          <th style="width: 10%">Points</th>
+          <th style="width: 30%">Fencer</th>
+          <th style="width: 15%">Excluded</th>
+          <th>Edit Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='result in results | orderBy: "placing" '>
+          <td>
+            <p class="no-bottom-margin" ng-hide="result.editable">{{result.placing}}</p>
+            <input ng-if="result.editable" form="editResultForm"
+            type="number"
+            ng-model="updateForm.placing"
+            class="form-control no-bottom-margin radius"
+            focus="{{updateIsFocused}}"
+            ng-blur="updateOnBlur()"
+            min="1">
+          </td>
+          <td>
+            <p class="no-bottom-margin" ng-hide="result.editable">{{result.points}}</p>
+            <p class="no-bottom-margin" ng-if="result.editable">
+              {{getPointsForPlacing(updateForm.placing)}}
+            </p>
+          </td>
+          <td>
+            <p class="no-bottom-margin" ng-hide="result.editable">{{result.Fencer().fullName()}}</p>
+            <input ng-if="result.editable" form="editResultForm"
+            type="search"
+            ng-model="updateForm.selectedFencer"
+            name="addNewResultInput"
+            placeholder="Type the fencers name"
+            typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
+            class="form-control no-bottom-margin radius"
+
+            >
+          </td>
+          <td>
+            <p class="no-bottom-margin" ng-hide="result.editable">
+              <span class="no-bottom-margin" ng-show="result.excludedFromRankings">Excluded</span>
+              </p>
+            <input ng-if="result.editable" form="editResultForm" id="updateExcludeCheckbox" type="checkbox"
+            ng-model="updateForm.excludedFromRankings" class="no-bottom-margin"/><label
+            ng-show="result.editable"
+            for="updateExcludeCheckbox">Exclude</label>
+          </td>
+          <td>
+            <button ng-hide="result.editable" class="no-bottom-margin button tiny radius"
+            ng-click="setEditable(result)" ng-disabled="tableInEditState">Edit Result</button>
+            <form ng-if="result.editable" id="editResultForm" novalidate name="editResultForm"
+            ng-submit="updateResult(updateForm, result)"></form>
+            <input ng-if="result.editable" form="editResultForm" type="submit" value="Save"
+            class="button tiny no-bottom-margin radius"/>
+            <button ng-if="result.editable" class="button alert tiny no-bottom-margin radius"
+            ng-click="cancelEditable(result)">Cancel
+          </button>
+        </td>
+      </tr>
+      <tr ng-if="!maximumNumberOfResultsReached() && !tableInEditState">
+        <td>
+          <input form="addNewResult"
+          type="number"
+          ng-model="form.placing"
+          class="form-control no-bottom-margin radius"
+          focus="{{isFocused}}"
+          ng-blur="onBlur()"
+          min="1">
+        </td>
+        <td>{{getPointsForPlacing(form.placing)}}</td>
+        <td>
+          <input form="addNewResult"
+          type="search"
+          ng-model="form.selectedFencer"
+          name="addNewResultInput"
+          placeholder="Type the fencers name"
+          typeahead="fencer as fencer.fullName() + ' ('+fencer.club +')' for fencer in fencers | filter:$viewValue | limitTo:8"
+          class="form-control no-bottom-margin radius"
+          >
+        </td>
+        <td>
+          <input form="addNewResult" id="excludeCheckbox" type="checkbox" ng-model="form.excludedFromRankings"
+          class="no-bottom-margin"/><label for="excludeCheckbox">Exclude</label>
+        </td>
+        <td>
+          <form id="addNewResult" novalidate name="instanceForm" ng-submit="addResult(instanceForm)"></form>
+          <input form="addNewResult" type="submit" value="Submit"
+          class="button tiny no-bottom-margin radius"/>
+        </td>
+      </tr>
+    </form>
+  </tbody>
+</table>
+</div>
 </div>
 <div ng-hide="selectedInstance" class="row">
-    <alert class="text-center" type="warning">You have no season selected, please choose a season to add results for or
-        add a new season for this competition
-    </alert>
+  <alert class="text-center" type="warning">You have no season selected, please choose a season to add results for or
+    add a new season for this competition
+  </alert>
 </div>

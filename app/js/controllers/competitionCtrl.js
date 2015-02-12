@@ -6,18 +6,17 @@ angular.module('RankingsApp')
         $scope.results = [];
         $scope.fencers = [];
         $scope.isFocused = false;
+        $scope.updateIsFocused = false;
         $scope.tableInEditState = false;
 
-        $scope.updateForm = {
-
-            excludedFromRankings : "lol",
-            fencer : "lol",
-            placing : 555
-
-        };
+        $scope.updateForm = {};
 
         $scope.onBlur = function(){
             $scope.isFocused = false;
+        }; 
+
+        $scope.updateOnBlur = function(){
+            $scope.updateIsFocused = false;
         };
 
         $scope.getNextPlacing = function() {
@@ -89,19 +88,20 @@ angular.module('RankingsApp')
 
             //TODO: some kind of form validation
 
-            result.fencer = form.selectedFencer.id;
-            result.placing = $scope.getNextPlacing();
+            result.links.fencer = form.selectedFencer.id;
+            result.placing = form.placing;
             result.points = $scope.getPointsForPlacing(result.placing);
             result.excludedFromRankings = form.excludedFromRankings;
-
-            Restangular.service('results').post(result).then(function(response) {
-                $scope.results.push(response);
-                $scope.form = {
-                    placing: $scope.getNextPlacing()
-                };
-
-                $scope.isFocused = true;
+            Restangular.copy(result).save().then(function(response)
+            {
+                result.Fencer(_.find($scope.fencers, function(x)
+                {
+                     return x.id === form.selectedFencer.id;
+                }));
+                $scope.cancelEditable(result);
             });
+
+
         };
 
 
@@ -115,10 +115,12 @@ angular.module('RankingsApp')
         $scope.setEditable = function(result)
         {
             $scope.updateForm.excludedFromRankings = result.excludedFromRankings;
-            $scope.updateForm.fencer = result.fencer;
+            $scope.updateForm.selectedFencer = result.fencer;
             $scope.updateForm.placing = result.placing;
-            $scope.tableInEditState = true;
+            $scope.tableInEditState = true;            
             result.editable = true;
+            $scope.updateIsFocused = true;
+
         };
 
         $scope.cancelEditable = function(result)
