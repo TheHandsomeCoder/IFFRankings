@@ -5,6 +5,7 @@ angular.module('RankingsApp')
 
         this.selectedWeapon = "WE";
 
+        
 
 
         this.numberOfCompetitorsCategories = function () {
