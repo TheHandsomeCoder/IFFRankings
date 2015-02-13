@@ -1,13 +1,13 @@
 <div class="row">
     <h2 class="title-bar">Rankings</h2>
 
-    <table ng-hide="rankingsComplete">
+    <table ng-show="rankingsComplete">
         <thead>
             <tr>
                 <td>Rank</td>
                 <td>Fencer</td>
                 <td>Points</td>
-                <td ng-repeat="comp in competitions">{{comp.shortName}}</td>
+                <td ng-repeat="comp in competitions | orderBy: 'Instance().date'">{{comp.shortName}}</td>
             </tr>
         </thead>
         <tbody>
@@ -15,7 +15,7 @@
                 <td>x</td>
                 <td>{{ranking.fencer}}</td>
                 <td>{{ranking.points}}</td>
-                <td ng-repeat="comp in competitions">
+                <td ng-repeat="comp in competitions | orderBy: 'Instance().date'">
                  <span>{{ranking[comp.Instance().id]}}</span>
                  <span ng-show="!ranking[comp.Instance().id]">-</span>
 

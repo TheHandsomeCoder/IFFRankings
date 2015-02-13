@@ -59,9 +59,6 @@ angular.module('RankingsApp')
                             return instances[result.links.instance];
                         });
 
-                       
-
-
                         var ranking = {
                             fencer: fencer.fullName(),
                             points: calculatePoints(results)
