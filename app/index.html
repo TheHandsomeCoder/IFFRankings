@@ -35,9 +35,9 @@
                 </ul>
                 <ul class="right">
                   <li>
-                  <select style='margin: 4px 0' ng-model="selectedWeapon" ng-options="weapon.code as weapon.displayName for weapon in weaponCatagories" ng-change="changedValue(selectedWeapon)"></select>
-                 </li>
-                 <li>
+                      <select style='margin: 4px 0' ng-model="selectedWeapon" ng-options="weapon.code as weapon.displayName for weapon in weaponCatagories" ng-change="changedValue(selectedWeapon)"></select>
+                  </li>
+                  <li>
                     <settings-modal><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i>
                 </settings-modal>
             </li> 
@@ -52,7 +52,7 @@
 
 <aside class="left-off-canvas-menu" >
     <ul class="off-canvas-list">
-        <li ng-repeat="comp in competitions"><a href="#/competition/{{comp.id}}">{{comp.name}}</a>
+        <li ng-repeat="comp in competitions | orderBy: 'name'"><a href="#/competition/{{comp.id}}">{{comp.name}}</a>
         </li>
     </ul>
 </aside>

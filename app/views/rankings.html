@@ -1,4 +1,25 @@
-<div class="row">    
-      <h2 class="title-bar">Rankings</h2>
-     <hr>
+<div class="row">
+    <h2 class="title-bar">Rankings</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Rank</td>
+                <td>Fencer</td>
+                <td>Points</td>
+                <td ng-repeat="comp in competitions">{{comp.shortName}}</td>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr ng-repeat="fencer in fencers | orderBy: 'points' : 'desc'">
+                <td>x</td>
+                <td>{{fencer.fullName()}}</td>
+                <td>{{fencer.Points()}}</td>
+                <td ng-repeat="comp in competitions">
+                 {{ getPointsFromResultAtCompetition(fencer, comp) }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
 </div>

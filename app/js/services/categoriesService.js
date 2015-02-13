@@ -78,7 +78,7 @@ angular.module('RankingsApp')
 
         this.pointsCategories = function (seasonCode) {
 
-            if (seasonCode === "2014/2015") {
+            if (seasonCode === "2013/2014") {
                 return{
                     "C": {
                         '33-64': [46, 36, 23, 17, 10, 7, 3],
