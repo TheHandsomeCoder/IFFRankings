@@ -2,8 +2,8 @@ angular.module('RankingsApp')
     .service('CategoriesService', function () {
 
 
-        this.selectedWeapon = "WS";
 
+        this.selectedWeapon = "ME";
 
 
 
