@@ -3,7 +3,7 @@ angular.module('RankingsApp')
 
 
 
-        this.selectedWeapon = "ME";
+        this.selectedWeapon = "WS";
 
 
 
