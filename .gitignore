@@ -7,5 +7,4 @@ tmp/
 resources/
 .jshintrc
 .DS_Store
-data
 npm-debug.log
