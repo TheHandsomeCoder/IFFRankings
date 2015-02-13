@@ -8,7 +8,8 @@ angular.module('RankingsApp')
         var defer = $q.defer();
         var promises = [];
 
-        var rankings = [];
+        $scope.rankings = [];
+        $scope.rankingsComplete = false;
 
         function calculatePoints(results) {
             var sorted = _.sortBy(results, function(result) {
@@ -28,6 +29,8 @@ angular.module('RankingsApp')
         }
 
         function getLatestInstance(promiseResults) {
+
+
             var instances = [];
 
             _.each(promiseResults, function(x) {
@@ -50,22 +53,30 @@ angular.module('RankingsApp')
                 _.each($scope.fencers, function(fencer) {
                     fencer.getList('results').then(function(response) {
 
+
+
                         var results = _.filter(response, function(result) {
                             return instances[result.links.instance];
                         });
 
-                        var indexedResults = [];
+                       
+
+
+                        var ranking = {
+                            fencer: fencer.fullName(),
+                            points: calculatePoints(results)
+                        };
+
                         _.each(results, function(i){
-                            indexedResults[i.links.instance] = i;
+                            ranking[i.links.instance] = i.points;
                         });
 
-                        fencer.Results(indexedResults);
-
-                        fencer.Points(calculatePoints(results));
-
+                        $scope.rankings.push(ranking);
 
                     })
                 });
+
+                $scope.rankingsComplete = true;
             });
         };
 

@@ -20,6 +20,7 @@
 {"placing":2,"instance":"7RLYu71L5Xp7kRC8","fencer":"STZQuBi8l9GyPrCZ","weapon":"WF","points":28,"_id":"9FhX4C2lsWfBuVeP"}
 {"placing":1,"instance":"m9BL3QtVGfXqf4LP","fencer":"7pGrWKOIE0YiK9me","weapon":"WF","points":68,"_id":"9gLRUig80jTFHv3K"}
 {"placing":3,"instance":"sVudqkA49mld7GqC","fencer":"gbUT1kZ4dXHg9FzL","weapon":"WF","points":25,"_id":"9hHHPUEjOkT2csQg"}
+{"placing":1,"instance":"I2xbEaXboLImIgnP","fencer":"EegSxSnCAAenPOL7","weapon":"WF","points":26,"_id":"9usjD4Y9a5hebHOC"}
 {"placing":10,"instance":"494XiLmPxVilawUg","fencer":"ukgCCpDr458MtLq2","weapon":"WF","points":8,"_id":"A2wQyj8zMaIC85pd"}
 {"placing":3,"instance":"494XiLmPxVilawUg","fencer":"JAvC1HmlCdZCxSrG","weapon":"WF","points":30,"_id":"AJ7elmSv1xv3Accc"}
 {"placing":11,"instance":"7TUvobYIuKdbTllr","fencer":"YJ0hLw3Z06Dmfafk","weapon":"WF","points":3,"_id":"AhwKSoh0T7KBnCwo"}
@@ -27,6 +28,7 @@
 {"placing":3,"instance":"7TUvobYIuKdbTllr","fencer":"tltB1Fhq5pbu80TO","weapon":"WF","points":11,"_id":"BiB7HyCs1JNO4Lsy"}
 {"placing":6,"instance":"oSV8EFE1070eeeuM","fencer":"nwmc9XO3IXTyRSMO","weapon":"WF","points":7,"_id":"Bij1zmXyJdgVfwjm"}
 {"placing":9,"instance":"sVudqkA49mld7GqC","fencer":"pDlnCngD7ygsUz6w","weapon":"WF","points":10,"_id":"CBdsWemmQWxUb79f"}
+{"placing":6,"instance":"I2xbEaXboLImIgnP","fencer":"nZSdYtdxS4q8Wr1s","weapon":"WF","points":3,"_id":"CZyU22TZqFQbElgZ"}
 {"placing":2,"instance":"2uTiJiFlkyN7IMqU","fencer":"STZQuBi8l9GyPrCZ","weapon":"WF","points":46,"_id":"CjpQYB9naYmcT7Zo"}
 {"placing":17,"instance":"arnOpCgFFTGHhhVd","fencer":"uMCKtodBIvHpgpeR","weapon":"WF","points":19,"_id":"ClTqysOtPvfBKjIq"}
 {"placing":8,"instance":"m9BL3QtVGfXqf4LP","fencer":"I9JOuqNeORgoT6Z0","weapon":"WF","points":15,"_id":"CvKmdPqHNHAvmjYB"}
@@ -64,7 +66,9 @@
 {"placing":17,"instance":"sVudqkA49mld7GqC","fencer":"Wp9shKvB66aQ7Mdu","weapon":"WF","points":5,"_id":"Sd4qgELv4hQkDPwq"}
 {"placing":10,"instance":"7TUvobYIuKdbTllr","fencer":"Wp9shKvB66aQ7Mdu","weapon":"WF","points":3,"_id":"TZYlxW8mRk2uBvOv"}
 {"placing":12,"instance":"7TUvobYIuKdbTllr","fencer":"mFwKMsxErbhGsVKC","weapon":"WF","points":3,"_id":"V7W77Aqyqm5z1hFB"}
+{"placing":2,"instance":"I2xbEaXboLImIgnP","fencer":"gbUT1kZ4dXHg9FzL","weapon":"WF","points":13,"_id":"VmcURhLFqg0ksXLG"}
 {"placing":7,"instance":"peqOKQZn8CWyWTGq","fencer":"nwmc9XO3IXTyRSMO","weapon":"WF","points":9,"_id":"W40P130mdorfZL91"}
+{"placing":3,"instance":"I2xbEaXboLImIgnP","fencer":"5n8EivN1wXRajibe","weapon":"WF","points":7,"_id":"Wg6T9msvc1MBfSAX"}
 {"placing":3,"instance":"m9BL3QtVGfXqf4LP","fencer":"AKX2rbyb7c9v9R3w","weapon":"WF","points":28,"_id":"WiIE3akrH7b6Pzu1"}
 {"placing":12,"instance":"oB1Rt1ks6yd3Usr2","fencer":"mFwKMsxErbhGsVKC","weapon":"WF","points":5,"_id":"WnB8oQRnkjbCeAIu"}
 {"placing":3,"instance":"494XiLmPxVilawUg","fencer":"O2FtYVn6D6zwmjyZ","weapon":"WF","points":30,"_id":"XI1O1dKGMfvlXoaf"}
@@ -83,6 +87,7 @@
 {"placing":24,"instance":"8G8U1HyV8t0mFwME","fencer":"SBEWKT9rZXa1Wb6H","weapon":"WF","points":10,"_id":"dYNrSWtrF7QnKJIW"}
 {"placing":2,"instance":"uY8ah5zePwMkybdn","fencer":"JAvC1HmlCdZCxSrG","weapon":"WF","points":23,"_id":"eEcTlwO7Ihyc19uE"}
 {"placing":7,"instance":"2uTiJiFlkyN7IMqU","fencer":"nwmc9XO3IXTyRSMO","weapon":"WF","points":15,"_id":"eclsgE5gKB8Nrn6W"}
+{"placing":3,"instance":"I2xbEaXboLImIgnP","fencer":"i67orkFMaeNqNIUT","weapon":"WF","points":7,"_id":"f2nFFf3ZFBMvNQCZ"}
 {"placing":5,"instance":"oB1Rt1ks6yd3Usr2","fencer":"kMZwRc9ASpBO3aLK","weapon":"WF","points":9,"_id":"faUTfxHIGbIM1v1Q"}
 {"placing":1,"instance":"uY8ah5zePwMkybdn","fencer":"AYdZNVBmiawr7uXO","weapon":"WF","points":36,"_id":"g8MYB3GU0AQikTiA"}
 {"placing":6,"instance":"494XiLmPxVilawUg","fencer":"EegSxSnCAAenPOL7","weapon":"WF","points":15,"_id":"gTnrUphIwZuiJOXY"}
@@ -94,6 +99,7 @@
 {"placing":11,"instance":"494XiLmPxVilawUg","fencer":"7EFRBYUakcjAQ2DY","weapon":"WF","points":8,"_id":"iIhbOillj288UhEc"}
 {"placing":5,"instance":"oSV8EFE1070eeeuM","fencer":"Cov432jGi8X1FF38","weapon":"WF","points":7,"_id":"iXr55CREVDOnAj3V"}
 {"placing":8,"instance":"7RLYu71L5Xp7kRC8","fencer":"YJ0hLw3Z06Dmfafk","weapon":"WF","points":9,"_id":"icUaHvT5qg4bkxji"}
+{"placing":7,"instance":"I2xbEaXboLImIgnP","fencer":"YLFAi3cDkEAjHOdI","weapon":"WF","points":3,"_id":"jxC2oruSuM27j3eg"}
 {"placing":10,"instance":"oB1Rt1ks6yd3Usr2","weapon":"WF","points":5,"_id":"kDIrQoFaAnoFUqZB","fencer":"FYQLIAt1Gpurn7nU"}
 {"placing":14,"instance":"7TUvobYIuKdbTllr","fencer":"YLFAi3cDkEAjHOdI","weapon":"WF","points":3,"_id":"kdXYpFXUdilWCIno"}
 {"placing":5,"instance":"m9BL3QtVGfXqf4LP","fencer":"EegSxSnCAAenPOL7","weapon":"WF","points":15,"_id":"lUcPMl9n4DeLmvon"}
@@ -131,14 +137,8 @@
 {"placing":14,"instance":"2uTiJiFlkyN7IMqU","fencer":"dymVUGMai2jR7x3C","weapon":"WF","points":8,"_id":"voUkiXbbYgW3eo3q"}
 {"placing":2,"instance":"oSV8EFE1070eeeuM","fencer":"uMCKtodBIvHpgpeR","weapon":"WF","points":23,"_id":"wS6PVbHTrudWuF3C"}
 {"placing":19,"instance":"sVudqkA49mld7GqC","fencer":"YLFAi3cDkEAjHOdI","weapon":"WF","points":5,"_id":"wpSmQj0v93Rra33I"}
+{"placing":5,"instance":"I2xbEaXboLImIgnP","fencer":"t5S4DnkalOBI0xNs","weapon":"WF","points":3,"_id":"xbBrfC5cQhgNLbRe"}
 {"placing":3,"instance":"2uTiJiFlkyN7IMqU","fencer":"AKX2rbyb7c9v9R3w","weapon":"WF","points":28,"_id":"yDq9duvtPFWKi9G2"}
 {"placing":14,"instance":"oB1Rt1ks6yd3Usr2","fencer":"JsJjFJkouQaXt0Eg","weapon":"WF","points":5,"_id":"yKCvKy6ezv3sehAZ"}
 {"placing":1,"instance":"2uTiJiFlkyN7IMqU","fencer":"NLgfVEBXhaKIyOmn","weapon":"WF","points":68,"_id":"zknnt5Mp5n58FzGE"}
 {"placing":1,"instance":"oB1Rt1ks6yd3Usr2","fencer":"uMCKtodBIvHpgpeR","weapon":"WF","points":41,"_id":"zsR6nOICNKjRYmGd"}
-{"placing":1,"instance":"I2xbEaXboLImIgnP","fencer":"EegSxSnCAAenPOL7","weapon":"WF","points":26,"_id":"9usjD4Y9a5hebHOC"}
-{"placing":2,"instance":"I2xbEaXboLImIgnP","fencer":"gbUT1kZ4dXHg9FzL","weapon":"WF","points":13,"_id":"VmcURhLFqg0ksXLG"}
-{"placing":3,"instance":"I2xbEaXboLImIgnP","fencer":"5n8EivN1wXRajibe","weapon":"WF","points":7,"_id":"Wg6T9msvc1MBfSAX"}
-{"placing":3,"instance":"I2xbEaXboLImIgnP","fencer":"i67orkFMaeNqNIUT","weapon":"WF","points":7,"_id":"f2nFFf3ZFBMvNQCZ"}
-{"placing":5,"instance":"I2xbEaXboLImIgnP","fencer":"t5S4DnkalOBI0xNs","weapon":"WF","points":3,"_id":"xbBrfC5cQhgNLbRe"}
-{"placing":6,"instance":"I2xbEaXboLImIgnP","fencer":"nZSdYtdxS4q8Wr1s","weapon":"WF","points":3,"_id":"CZyU22TZqFQbElgZ"}
-{"placing":7,"instance":"I2xbEaXboLImIgnP","fencer":"YLFAi3cDkEAjHOdI","weapon":"WF","points":3,"_id":"jxC2oruSuM27j3eg"}
