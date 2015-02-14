@@ -13,7 +13,7 @@ angular.module('RankingsApp')
 
         function calculatePoints(results) {
             var sorted = _.sortBy(results, function(result) {
-                result.points
+                return result.points
             }).reverse();
 
             var points = 0;
