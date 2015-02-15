@@ -33,29 +33,33 @@ angular.module('RankingsApp')
                 return instances[result.links.instance];
             });
 
-            var ranking = {
-                fencer: fencer.fullName(),
-                points: calculatePoints(results)
-            };
+            if (results.length > 0) {
+                var ranking = {
+                    fencer: fencer.fullName(),
+                    points: calculatePoints(results)
+                };
 
-            _.each(results, function(i) {
-                ranking[i.links.instance] = i.points;
-            });
+                _.each(results, function(i) {
+                    ranking[i.links.instance] = i.points;
+                });
 
-            return ranking;
+                return ranking;
+            }
+            else{
+                return null;
+            }    
+
+
         }
 
 
 
-        function calculateRanking(fencer, previousFencer, numSamePoints) 
-        {
+        function calculateRanking(fencer, previousFencer, numSamePoints) {
 
             if (fencer.points == previousFencer.points) {
                 fencer.rank = previousFencer.rank;
                 numSamePoints++;
-            } 
-            else 
-            {
+            } else {
                 fencer.rank = previousFencer.rank + numSamePoints;
                 numSamePoints = 1;
             }
@@ -68,7 +72,12 @@ angular.module('RankingsApp')
             var rankings = []
 
             for (var i = 0; i < fencers.length; i++) {
-                rankings.push(createRanking(fencers[i], resultsList[i], instances));
+
+                var newRanking = createRanking(fencers[i], resultsList[i], instances);
+                if (newRanking) {
+                    rankings.push(newRanking);
+                }
+
             }
 
             rankings = _.sortBy(rankings, function(rank) {
@@ -95,7 +104,7 @@ angular.module('RankingsApp')
             _.each(promiseResults, function(x) {
                 var latestInstance = _.first(_.sortBy(x, function(instance) {
                     instance.date
-                }));
+                }).reverse());
 
                 var comp = _.find($scope.competitions, function(x) {
                     return x.id === latestInstance.links.competition;
@@ -120,7 +129,6 @@ angular.module('RankingsApp')
                     $scope.rankings = createRankingsFromResults(instances, fencers, response)
                     $scope.rankingsComplete = true;
                 });
-
             });
         };
 
