@@ -16,3 +16,16 @@
 {"name":"South of Ireland Open","shortName":"SOI","_id":"qiZX23JLXw9UJ4yD","instances":["gvNTKxNQHBgKb95j"]}
 {"name":"West of Ireland Open","shortName":"WOI","_id":"xNIOeFpfQxsMp3a8","instances":["KGfddhDcgN3NF3Hb"]}
 {"name":"Irish Open","shortName":"IO","_id":"xaB1xG21eH01ikUw","instances":["6wE3DZbjk8YBgBAr"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy","HV1eYVUOtYDbKZDL"]}
+{"name":"Reykjavik","shortName":"REY","_id":"kwLlFtruedeYUXTg"}
+{"name":"Compenhagen","shortName":"COP","_id":"YwHAmJkjhCBdQN1Y"}
+{"name":"Amsterdam","shortName":"AMS","_id":"vghVX4IchdNBBImQ"}
+{"name":"Gand","shortName":"GAN","_id":"2gixh9CDbvkFsB5i"}
+{"name":"Reykjavik","shortName":"REY","_id":"kwLlFtruedeYUXTg","instances":["Y7N5DNA0w0svdL8n"]}
+{"name":"Compenhagen","shortName":"COP","_id":"YwHAmJkjhCBdQN1Y","instances":["12Pukpgb7n5rt3qm"]}
+{"name":"Amsterdam","shortName":"AMS","_id":"vghVX4IchdNBBImQ","instances":["x1BLIJ3rtDKmi4Ec"]}
+{"name":"Gand","shortName":"GAN","_id":"2gixh9CDbvkFsB5i","instances":["b4ABmVlrRglRU83N"]}
+{"name":"Bursa","shortName":"BUR","_id":"iNpxGGsgkUZU1cU7"}
+{"name":"Istanbul","shortName":"IST","_id":"z0tZHzSIsEjxLcLf"}
+{"name":"Istanbul","shortName":"IST","_id":"z0tZHzSIsEjxLcLf","instances":["LdsuUW5lQD7cLkV8"]}
+{"name":"Bursa","shortName":"BUR","_id":"iNpxGGsgkUZU1cU7","instances":["UhPWBsjyOLKG8qKk"]}
