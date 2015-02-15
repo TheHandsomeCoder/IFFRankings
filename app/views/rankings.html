@@ -11,8 +11,8 @@
             </tr>
         </thead>
         <tbody>
-        	<tr ng-repeat="ranking in rankings | orderBy: 'points' : 'desc'">
-                <td>x</td>
+        	<tr ng-repeat="ranking in rankings">
+                <td>{{ranking.rank}}</td>
                 <td>{{ranking.fencer}}</td>
                 <td>{{ranking.points}}</td>
                 <td ng-repeat="comp in competitions | orderBy: 'Instance().date'">
