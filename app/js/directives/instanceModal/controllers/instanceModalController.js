@@ -21,7 +21,9 @@ angular.module('RankingsApp')
             }
             else
             {
-                $scope.instance = {};
+                $scope.instance = {
+                    competition: competition
+                };
             }
 
 
