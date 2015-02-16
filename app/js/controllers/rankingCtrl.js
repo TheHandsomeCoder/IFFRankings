@@ -44,10 +44,9 @@ angular.module('RankingsApp')
                 });
 
                 return ranking;
-            }
-            else{
+            } else {
                 return null;
-            }    
+            }
 
 
         }
@@ -106,14 +105,20 @@ angular.module('RankingsApp')
                     instance.date
                 }).reverse());
 
-                var comp = _.find($scope.competitions, function(x) {
-                    return x.id === latestInstance.links.competition;
-                });
+                var monthsSinceCompRan = moment().diff(moment(latestInstance.date), 'months', true);
 
-                comp.Instance(latestInstance);
-                instances[latestInstance.id] = true;
+                if (monthsSinceCompRan < 13) {
+                    var comp = _.find($scope.competitions, function(x) {
+                        return x.id === latestInstance.links.competition;
+                    });
+
+                    comp.Instance(latestInstance);
+                    instances[latestInstance.id] = true;
+                }
 
             });
+
+
 
             Restangular.all('fencers').getList().then(function(fencers) {
 

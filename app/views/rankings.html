@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="overflow y: scroll;">
     <h2 class="title-bar">Rankings</h2>
 
     <table ng-show="rankingsComplete">
@@ -7,7 +7,9 @@
                 <td>Rank</td>
                 <td>Fencer</td>
                 <td>Points</td>
-                <td ng-repeat="comp in competitions | orderBy: 'Instance().date'">{{comp.shortName}}</td>
+                <td ng-repeat="comp in competitions | orderBy: 'Instance().date'">
+                {{comp.shortName}} {{comp.Instance().date | date}}
+                </td>
             </tr>
         </thead>
         <tbody>
