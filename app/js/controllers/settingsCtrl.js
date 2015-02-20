@@ -1,5 +1,25 @@
 angular.module('RankingsApp')
-    .controller('SettingsModalController', function($scope, $modalInstance, Restangular) {
+    .controller('SettingsController', function($scope, Restangular, $window) {
+
+        $scope.seasonSectionVisible = false;
+        $scope.competitionSectionVisible = true;
+
+        $scope.resetView = function() {
+            $scope.seasonSectionVisible = false;
+            $scope.competitionSectionVisible = false;
+        }
+
+        $scope.showCompetitionSection = function() {
+            $scope.resetView();
+            $scope.competitionSectionVisible = true;
+
+
+        }
+        $scope.showSeasonSection = function() {
+            $scope.resetView();
+            $scope.seasonSectionVisible = true;
+
+        }
 
         Restangular.all("competitions").getList().then(function(response) {
             $scope.comps = response;
@@ -19,8 +39,9 @@ angular.module('RankingsApp')
                 var competitionInArray = _.find($scope.comps, function(x) {
                     return x.id = respone;
                 });
-                angular.copy(respone, competitionInArray);
-                $scope.reset();
+                return angular.copy(respone, competitionInArray);
+            }).then(function() {
+               $window.location.reload();
             });
 
         }

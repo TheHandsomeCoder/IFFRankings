@@ -1,24 +1,34 @@
 <div class="row">
-<div class="row">
-    <tabset vertical="true" type="navType">
-        <!--  <tab heading="Load Sample Data">
-            <h3>Select text file</h3>
-            <input type="file" accept=".apl" on-read-file="processFile($fileContent)" />
-            <div ng-if="content">
-                <h2>File content is:</h2>
-                <pre>{{ content }}</pre>
-            </div>
-        </tab>
-        <tab heading="Export Database">This will contaib the ability to export the database</tab> -->
-        <tab heading="Competitions">
-            <h3>Competitions</h3>
+
+
+    <div class="large-3 medium-4 columns">
+
+        <div class="sidebar">
+            <h5>Settings</h5>
+
+
+            <nav>
+                <ul class="side-nav">
+                    <li class="heading">Setup</li>
+                    <li ng-click="showCompetitionSection()"><a>Competitions</a> </li>
+                    <li ng-click="showSeasonSection()"><a>Seasons</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="large-9 medium-8 columns">
+        <section ng-show="competitionSectionVisible">
+            <h3 style="padding-top:30px;">Competitions</h3>
             <hr>
             <div class="row">
 
                 <div class="large-6 columns">
                     <select ng-options="competition.name for competition in comps" ng-model="selectedCompetition">
                         <option value="">Please Choose
-                            <option>
+                        </option>
                     </select>
                 </div>
                 <div class="large-3 columns">
@@ -50,7 +60,7 @@
 
 
             </div>
-            
+
 
             <div ng-show="newCompetition" class="row">
 
@@ -66,17 +76,11 @@
                     </label>
 
                 </div>
-
-
-
             </div>
-        </tab>
-        <tab heading="Seasons">
-            <h3>Seasons</h3>
+        </section>
+        <section ng-show="seasonSectionVisible">
+            <h3 style="padding-top:30px;">Seasons</h3>
             <hr>
-        </tab>
-    </tabset>
+        </section>
+    </div>
 </div>
-
-
-<a class="close-reveal-modal" ng-click="cancel()"><i class="fa fa-times"></i></a>
