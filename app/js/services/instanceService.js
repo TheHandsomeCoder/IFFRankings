@@ -21,10 +21,10 @@ angular.module('RankingsApp')
 		Season: function(season) {
 			if (season) {
 				angular.extend(this, {
-					'season': season
+					'_season': season
 				});
 			}
-			return this.season;
+			return this._season;
 		}
 	};
 

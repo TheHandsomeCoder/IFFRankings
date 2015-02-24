@@ -7,12 +7,14 @@ angular.module('RankingsApp')
             scope: {
                 competition: '=competition',
                 instances: '=instances',
+                instance: '=instance',
+                edit: "=edit",
                 class: '@'
             },
             replace: true,
             transclude: true,
             template: '<a class="button {{class}}" ng-click="openInstanceModel()"><ng-transclude></ng-transclude></a>',
-            controller: function($scope, $element, $modal) {
+            controller: function($scope, $element, $modal, $route) {
 
                 $scope.openInstanceModel = function() {
 
@@ -21,15 +23,21 @@ angular.module('RankingsApp')
                         controller: 'InstanceModalController',
                         windowClass: 'small',
                         resolve: {
-                            competition: function() {
-                                return $scope.competition
-                            },
-
+                            competition: function() {return $scope.competition},
+                            instance: function(){return angular.copy($scope.instance)},
+                            edit: function(){return $scope.edit}
                         }
                     });
 
                     modalInstance.result.then(function(instance) {
-                        $scope.instances.push(instance);
+                        if($scope.edit)
+                        {
+                            $route.reload();
+                        }
+                        else
+                        {
+                            $scope.instances.push(instance);
+                        }
                     });
                 };
             }
