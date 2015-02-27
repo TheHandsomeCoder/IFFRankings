@@ -1,86 +1,83 @@
-<div class="row">
+<div class="settings-row row ">
 
+    <tabset vertical="true" type="navType">
+        <tab heading="Competitions">
+            <section>
+                <h4 style="padding-top:7px;">Competitions</h4>
+                <hr>
+                <div class="row">
 
-    <div class="large-3 medium-4 columns">
+                    <table style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Compentition Name
+                                </th>
+                                <th>
+                                    Compentition ShortCode
+                                </th>
+                                <th>
+                                    Compentition Edit
+                                </th>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="competition in competitions | orderBy: name">
+                                <td>
+                                    <p ng-hide="competition.editable">{{competition.name}}</p>
+                                     <input ng-if="competition.editable"  ng-model="updateForm.name" form="editCompetitionForm" placeholder="Competition Name" class="form-control no-bottom-margin" type="text" focus="{{updateIsFocused}}" ng-blur="updateOnBlur()" />
+                                </td>
+                                <td width="20%">
+                                    <p ng-hide="competition.editable">{{competition.shortName}}</p>
+                                     <input ng-if="competition.editable" form="editCompetitionForm" ng-model="updateForm.shortName" placeholder="ShortCode" class="form-control no-bottom-margin" type="text" />
+                                </td>
+                                <td>
+                                    <button ng-hide="competition.editable" class="no-bottom-margin button tiny radius" ng-disabled="tableInEditState" ng-click="setEditable(competition)">Edit
+                                    </button>
 
-        <div class="sidebar">
-            <h5>Settings</h5>
+                                    <form ng-if="competition.editable" id="editCompetitionForm" novalidate name="editCompetitionForm" ng-submit="updateCompetition(updateForm, competition)"></form>
+                                    <input ng-if="competition.editable" form="editCompetitionForm" type="submit" value="Save" class="button tiny no-bottom-margin radius" />
+                                    <button ng-if="competition.editable" class="button alert tiny no-bottom-margin radius" ng-click="cancelEditable(competition)">Cancel
+                                    </button>
 
+                                </td>
 
-            <nav>
-                <ul class="side-nav">
-                    <li class="heading">Setup</li>
-                    <li ng-click="showCompetitionSection()"><a>Competitions</a> </li>
-                    <li ng-click="showSeasonSection()"><a>Seasons</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+                            </tr>
+                            <tr ng-if="!tableInEditState">
+                                <td>
+                                    <input ng-model="form.name" form="addNewCompetition" placeholder="Competition Name" class="form-control no-bottom-margin" type="text" focus="{{isFocused}}" ng-blur="onBlur()" />
+                                </td>
+                                <td>
+                                    <input form="addNewCompetition" ng-model="form.shortName" placeholder="ShortCode" class="form-control no-bottom-margin" type="text" />
+                                </td>
+                                <td>
+                                    <form id="addNewCompetition" novalidate name="competitionForm" ng-submit="addCompetition(competitionForm)"></form>
 
+                                    <input form="addNewCompetition" class="button tiny no-bottom-margin radius" type="submit" value="Save" />
+                                    </button>
+                                </td>
 
-    <div class="large-9 medium-8 columns">
-        <section ng-show="competitionSectionVisible">
-            <h3 style="padding-top:30px;">Competitions</h3>
-            <hr>
-            <div class="row">
-
-                <div class="large-6 columns">
-                    <select ng-options="competition.name for competition in comps" ng-model="selectedCompetition">
-                        <option value="">Please Choose
-                        </option>
-                    </select>
-                </div>
-                <div class="large-3 columns">
-                    <button ng-click="showEditCompetition(selectedCompetition)" ng-hide="editCompetition" ng-disabled="!selectedCompetition" class="button prefix">Edit</button>
-                    <button ng-click="reset()" ng-show="editCompetition" class="button prefix">Cancel</button>
-
-                </div>
-                <div class="large-3 columns">
-                    <button ng-hide="editCompetition" class="button prefix">New</button>
-                    <button ng-show="editCompetition" ng-click="saveEdit()" class="button prefix">Save</button>
-
-                </div>
-
-            </div>
-            <div ng-show="editCompetition" class="row">
-
-                <div class="large-6 columns">
-                    <label>Name
-                        <input type="text" ng-model="competitionToEdit.name" />
-                    </label>
-
-                </div>
-                <div class="large-6 columns">
-                    <label>Short name
-                        <input type="text" ng-model="competitionToEdit.shortName" />
-                    </label>
-
-                </div>
-
-
-            </div>
-
-
-            <div ng-show="newCompetition" class="row">
-
-                <div class="large-6 columns">
-                    <label>Name
-                        <input type="text" ng-model="comp.name" />
-                    </label>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
-                <div class="large-6 columns">
-                    <label>Short name
-                        <input type="text" ng-model="comp.shortName" />
-                    </label>
+            </section>
+        </tab>
+        <tab heading="Seasons">
+            <section>
+                <h4 style="padding-top:7px;">Seasons</h4>
+                <hr>
+                <div class="row">
 
                 </div>
-            </div>
-        </section>
-        <section ng-show="seasonSectionVisible">
-            <h3 style="padding-top:30px;">Seasons</h3>
-            <hr>
-        </section>
-    </div>
+            </section>
+        </tab>
+
+    </tabset>
+
+
+
+
 </div>

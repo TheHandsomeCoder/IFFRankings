@@ -3,6 +3,69 @@ angular.module('RankingsApp')
 
         $scope.seasonSectionVisible = false;
         $scope.competitionSectionVisible = true;
+        $scope.form = {};
+        $scope.updateForm = {};
+        $scope.isFocused = true;
+
+        $scope.onBlur = function() {
+            $scope.isFocused = false;
+        };
+
+        $scope.updateOnBlur = function() {
+            $scope.updateIsFocused = false;
+        };
+
+        $scope.addCompetition = function(form) {
+            if ($scope.form.name && $scope.form.shortName) {
+
+                var competition = Restangular.one('competitions');
+                competition.name = $scope.form.name;
+                competition.shortName = $scope.form.shortName;
+
+                Restangular.service('competitions').post(competition).then(function(response) {
+                    $scope.competitions.push(response);
+                    $scope.form = {};
+
+                    $scope.isFocused = true;
+                });
+            };
+        }
+
+        $scope.cancelEditable = function(competition)
+        {
+            competition.editable = false;
+            $scope.tableInEditState = false;
+            $scope.updateForm = {
+
+            };
+            $scope.onBlur();
+        };
+
+         $scope.updateCompetition = function(form, competition) {
+
+            //TODO: some kind of form validation
+
+            competition.name = form.name
+            competition.shortName = form.shortName;
+            Restangular.copy(competition).save().then(function(response)
+            {                
+                $scope.cancelEditable(competition);
+            });
+
+
+        };
+
+        $scope.setEditable = function(competition)
+        {
+            $scope.updateForm.name = competition.name;
+            $scope.updateForm.shortName = competition.shortName;          
+            $scope.tableInEditState = true;            
+            competition.editable = true;
+            $scope.updateIsFocused = true;
+
+        };
+
+
 
         $scope.resetView = function() {
             $scope.seasonSectionVisible = false;
@@ -41,7 +104,7 @@ angular.module('RankingsApp')
                 });
                 return angular.copy(respone, competitionInArray);
             }).then(function() {
-               $window.location.reload();
+                $window.location.reload();
             });
 
         }
