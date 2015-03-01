@@ -38,7 +38,7 @@
                       <select style='margin: 4px 0' ng-model="selectedWeapon" ng-options="weapon.code as weapon.displayName for weapon in weaponCatagories" ng-change="changedValue(selectedWeapon)"></select>
                   </li>
                   <li>
-                    <settings-modal><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i>
+                    <a href="#/settings"><i class="fa fa-inverse fa-cogs fa-lg fa-2x"></i></a>
                 </settings-modal>
             </li> 
 
@@ -83,6 +83,7 @@
 <script src="js/vendor/lodash/lodash.min.js"></script>
 <script src="js/vendor/angular-foundation/mm-foundation-tpls.js"></script>
 <script src="js/vendor/restangular/dist/restangular.js"></script>
+<script src="js/vendor/momentjs/min/moment.min.js"></script>
 
 
 
@@ -103,6 +104,7 @@
 <script src="js/controllers/navCtrl.js"></script>
 <script src="js/controllers/fencerCtrl.js"></script>
 <script src="js/controllers/rankingCtrl.js"></script>
+<script src="js/controllers/settingsCtrl.js"></script>
 
 
 

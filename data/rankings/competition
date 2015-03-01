@@ -1,21 +1,30 @@
-{"name":"Northern Ireland Open","shortName":"NIO","_id":"1d9Wt301CLfPgvwa","instances":["t849WKH616Gu8bQ6"]}
-{"name":"West of Ireland Open","shortName":"WOI","_id":"5LdN9gyFESTBqAmM","instances":["D1JwltkDBFwHIZ0N"]}
-{"name":"Irish National Championships","shortName":"NAT","_id":"FafjLzT7XfDTO0fc","instances":["9DTo6gH2gRK9fEwN"]}
-{"name":"Intermediates","shortName":"INT","_id":"GG8tbj8Z77Jzq511"}
-{"name":"Belfast Open","shortName":"BO","_id":"HStoXpM551sjLOYS","instances":["fMRpsoqweq9unT5w"]}
-{"name":"North West Open","shortName":"NWO","_id":"U66Dc0iUPcLMSo1I","instances":["fq3xLgghCSvsnzmp"]}
-{"name":"Cadet Nationals","shortName":"CAD","_id":"WccpJ54cOAPT8nKW","instances":["0UW0ttXQ1hUMGgMW"]}
-{"name":"East of Ireland Open","shortName":"EOI","_id":"YXIzqjANGPo5Xlhh","instances":["KEhAIEjnHSAExRoX"]}
-{"name":"Irish Open","shortName":"IO","_id":"qccwfdn2arE5671k","instances":["vyQxottWhuz1Uyar"]}
-{"name":"Derry Open","shortName":"DRY","_id":"sIIMgqtjAxaKIDhw","instances":["AXo4KaKOA6emuwD0"]}
-{"name":"Merseyside Open","shortName":"MO","_id":"sx8A2GNzkYKa6il2","instances":["THhMeCUOUWnZXcv5"]}
-{"name":"South of Ireland Open","shortName":"SOI","_id":"tRFAOccrQrtkhO4V","instances":["g1O6kZaEYHeakug2"]}
-{"name":"Student Individual","shortName":"SI","_id":"xGvCWZFYY1KX2qdC","instances":["zD5dMHKSGJwxtP71"]}
-{"name":"Stockholm","shortName":"S","_id":"uSni0OaOEISNn4T9"}
-{"name":"Stockholm","shortName":"S","_id":"uSni0OaOEISNn4T9","instances":["0TpuFX5nApYNzEBG"]}
-{"name":"Intermediates","shortName":"INT","_id":"GG8tbj8Z77Jzq511","instances":["gy7jzgx1gQXVgiKZ"]}
-{"name":"Cadet Nationals","shortName":"CAD","_id":"WccpJ54cOAPT8nKW","instances":[]}
-{"name":"Cadet Nationals","shortName":"CAD","_id":"WccpJ54cOAPT8nKW","instances":["0UW0ttXQ1hUMGgMW"]}
-{"name":"Merseyside Open","shortName":"MO","_id":"sx8A2GNzkYKa6il2","instances":[]}
-{"name":"Merseyside Open","shortName":"MO","_id":"sx8A2GNzkYKa6il2","instances":["THhMeCUOUWnZXcv5"]}
-{"name":"Derry Open","shortName":"DO","_id":"sIIMgqtjAxaKIDhw","instances":["AXo4KaKOA6emuwD0"]}
+{"name":"Gand","shortName":"GAN","_id":"2gixh9CDbvkFsB5i","instances":["b4ABmVlrRglRU83N"]}
+{"name":"Merseyside Open","shortName":"MO","_id":"4WXlVQZl8k6e4T9u","instances":["BInXuWciMAtJw0mN"]}
+{"name":"Hamlet Open","shortName":"HO","_id":"AbVmav8gN6dyNoZC","instances":["aahhEO60GtI53nQK"]}
+{"name":"Bristol Open","shortName":"BRI","_id":"EsI3j3jw36YPCTgI","instances":["byYfTj9j9wlIs5ZY"]}
+{"name":"Derry Open","shortName":"DO","_id":"NzoQEmK0lFgRYpZs","instances":["1XrjB13mO8zKYVJi"]}
+{"name":"Birmingham","shortName":"BIR","_id":"SGeUKoG67n6saPrk","instances":["gSz9EeMYQWfhnOP6"]}
+{"name":"Student Individuals","shortName":"SI","_id":"VsYAiXTSxHvnT2FZ","instances":["Q5DHRRBgNCbqzloG"]}
+{"name":"Welsh Open","shortName":"WO","_id":"XEILL9wArtc3ksiV","instances":["v6AQrFRI8xqwr5ZY"]}
+{"name":"Compenhagen","shortName":"COP","_id":"YwHAmJkjhCBdQN1Y","instances":["12Pukpgb7n5rt3qm"]}
+{"name":"Cadet Nationals","shortName":"CAD","_id":"ZhZ8yVEkH2ArbZcW","instances":["VUL4gFDz1F0iCkgQ"]}
+{"name":"Belfast Open","shortName":"BO","_id":"bNZBU9nXoAHSiMiM","instances":["ST3UuvN6NxU7lV7a"]}
+{"name":"Vinny Duffy","shortName":"VD","_id":"fXaxGzeQsgGBYE92","instances":["0HooPIwkx0Cj3d1M"]}
+{"name":"Intermediates","shortName":"INT","_id":"gvqEdOBwWVXsfWzj","instances":["WU6nuT1Sfb2UWfmp"]}
+{"name":"North West Open","shortName":"NW","_id":"i3yDEUsRgMriCma2","instances":["4lWGspYo4KFewl34"]}
+{"name":"Bursa","shortName":"BUR","_id":"iNpxGGsgkUZU1cU7","instances":["UhPWBsjyOLKG8qKk"]}
+{"name":"Reykjavik","shortName":"REY","_id":"kwLlFtruedeYUXTg","instances":["Y7N5DNA0w0svdL8n"]}
+{"name":"Northern Irish Open","shortName":"NIO","_id":"nZ8mojVoOSGoBRtV","instances":["lCUBNrCeOvC8s8we"]}
+{"name":"Irish Nationals","shortName":"NAT","_id":"pIalLLlPN7enJKgL","instances":["yoZxG7JqPBXbMwM1"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy","HV1eYVUOtYDbKZDL"]}
+{"name":"South of Ireland Open","shortName":"SOI","_id":"qiZX23JLXw9UJ4yD","instances":["gvNTKxNQHBgKb95j"]}
+{"name":"Amsterdam","shortName":"AMS","_id":"vghVX4IchdNBBImQ","instances":["x1BLIJ3rtDKmi4Ec"]}
+{"name":"West of Ireland Open","shortName":"WOI","_id":"xNIOeFpfQxsMp3a8","instances":["KGfddhDcgN3NF3Hb"]}
+{"name":"Irish Open","shortName":"IO","_id":"xaB1xG21eH01ikUw","instances":["6wE3DZbjk8YBgBAr"]}
+{"name":"Istanbul","shortName":"IST","_id":"z0tZHzSIsEjxLcLf","instances":["LdsuUW5lQD7cLkV8"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy","HV1eYVUOtYDbKZDL"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy","HV1eYVUOtYDbKZDL"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"qBGJYulAKAzIIEm2","instances":["TFPBrOaa0Tfa26Xy","HV1eYVUOtYDbKZDL"]}

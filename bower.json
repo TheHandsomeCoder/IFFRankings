@@ -8,7 +8,8 @@
     "underscore": "master",
     "restangular": "master",
     "angular-resource": "master",
-    "font-awesome": "master"
+    "font-awesome": "master",
+    "momentjs": "~2.9.0"
   },
   "resolutions": {
     "angular": ">=1.3",
