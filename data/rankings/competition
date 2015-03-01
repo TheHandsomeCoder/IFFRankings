@@ -1,15 +1,35 @@
-{"name":"Intermediates","shortName":"INT","_id":"MMFMtyilS4ma92AF"}
-{"name":"West of Ireland","shortName":"WOI","_id":"kMmjsVYrHLuGtWrD"}
-{"name":"Irish Open","shortName":"IO","_id":"3Z4xpzYyeHBWK0vo"}
-{"name":"North West Open","shortName":"NWO","_id":"ZQMJjnzXyNPxLPXU"}
-{"name":"Derry Open","shortName":"DO","_id":"7HvGYmzLufnP7TVJ"}
-{"name":"Northern Ireland Open","shortName":"NIO","_id":"AeApypIZxoQrD3ta"}
-{"name":"Irish National Championships","shortName":"NAT","_id":"rQVm2RxbDWWjvWBH"}
-{"name":"Student Individuals","shortName":"SI","_id":"5TcojjwYpvYSKk6X"}
-{"name":"Cadet Nationals","shortName":"CAD","_id":"894Thzic2BnRRupy"}
-{"name":"Merseyside Open","shortName":"MOFT","_id":"ZxSjv63ETA2KEhez"}
-{"name":"South of Ireland","shortName":"SOI","_id":"ds5romYSBzMrMd4p"}
-{"name":"East of Ireland","shortName":"EOI","_id":"A8XX1ch93IL6nSwK"}
-{"name":"Stockholm","shortName":"S","_id":"BASh1BEuBlZMf2Nk"}
-{"name":"Split","shortName":"SP","_id":"o1g7RcCNeyJXnroG"}
-{"name":"Split","shortName":"SP","_id":"o1g7RcCNeyJXnroG","instances":["cHHILz3ErmA6F8FK"]}
+{"name":"South of Ireland Open","shortName":"SOI","_id":"gix1USCXKXU7pve1"}
+{"name":"Intermediates","shortName":"INT","_id":"ivhhCwtsSEJtFExi"}
+{"name":"West of Ireland Open","shortName":"WOI","_id":"X9Sj8h7fWhjgm3US"}
+{"name":"North West Open","shortName":"NWO","_id":"Zk0kvOdWffziFb9t"}
+{"name":"Derry Open","shortName":"DO","_id":"kvQVcAsk3UaLwir7"}
+{"name":"Irish Open","shortName":"IO","_id":"ePxrIeMhgs07DIzk"}
+{"name":"Northern Ireland Open","shortName":"NIO","_id":"9ovElxVQ49jbpKCi"}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"0KgNvIURKoskG4Lq"}
+{"name":"Dublin Epee","shortName":"DE","_id":"QZKmawTMarBQYKN5"}
+{"name":"Irish National Championships","shortName":"NAT","_id":"Uk32Xqbd77LxMjHq"}
+{"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn"}
+{"name":"Merseyside Open","shortName":"MOFT","_id":"qWxd2Al2KtCdpG83"}
+{"name":"Belfast Open","shortName":"BO","_id":"GyFsWdPWYGEi4ixW"}
+{"name":"Merseyside Open","shortName":"MS","_id":"qWxd2Al2KtCdpG83"}
+{"name":"South of Ireland Open","shortName":"SOI","_id":"gix1USCXKXU7pve1","instances":["3tDmXHnBl7JGxRyj"]}
+{"name":"Intermediates","shortName":"INT","_id":"ivhhCwtsSEJtFExi","instances":["UlcBgwEuAWKSimYm"]}
+{"name":"West of Ireland Open","shortName":"WOI","_id":"X9Sj8h7fWhjgm3US","instances":["d4fkCGi50ulDzcOq"]}
+{"name":"North West Open","shortName":"NWO","_id":"Zk0kvOdWffziFb9t","instances":["QvQIxOJmQl3xpEti"]}
+{"name":"Derry Open","shortName":"DO","_id":"kvQVcAsk3UaLwir7","instances":["Un4ozjTlKU9YQSnt"]}
+{"name":"Irish Open","shortName":"IO","_id":"ePxrIeMhgs07DIzk","instances":["KitXECUBE5bjFHO0"]}
+{"name":"Northern Ireland Open","shortName":"NIO","_id":"9ovElxVQ49jbpKCi","instances":["gP7A4Pmw19DAlx38"]}
+{"name":"East of Ireland Open","shortName":"EOI","_id":"0KgNvIURKoskG4Lq","instances":["SwcTHNgMTeTzDBCT"]}
+{"name":"Dublin Epee","shortName":"DE","_id":"QZKmawTMarBQYKN5","instances":["FflMNtC7Xkv2SJfe"]}
+{"name":"Merseyside Open","shortName":"MS","_id":"qWxd2Al2KtCdpG83","instances":["xx79lYCsC8ncSThN"]}
+{"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn","instances":["V9Ie0JodVACayBf4"]}
+{"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn","instances":[]}
+{"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn","instances":["V9Ie0JodVACayBf4"]}
+{"name":"Irish National Championships","shortName":"NAT","_id":"Uk32Xqbd77LxMjHq","instances":["VetlWMA4bhAnGK4r"]}
+{"name":"Belfast Open","shortName":"BO","_id":"GyFsWdPWYGEi4ixW","instances":["ejbiDvMe4x3urwPO"]}
+{"name":"Stockholm","shortName":"S","_id":"0OZ1JtSDtjwafkbP"}
+{"name":"Student Individuals","shortName":"SI","_id":"zYk9b28cIKFpZFgk"}
+{"name":"Stockholm","shortName":"S","_id":"0OZ1JtSDtjwafkbP","instances":["9V0KbrsXwfxpdW5W"]}
+{"name":"Student Individuals","shortName":"SI","_id":"zYk9b28cIKFpZFgk","instances":["X9aPKF1TGu0vZNA7"]}
+{"name":"Split","shortName":"SPL","_id":"oEr3CmDxwRXwvQqC"}
+{"name":"Split","shortName":"SPL","_id":"oEr3CmDxwRXwvQqC","instances":["A9Y2w1s6rUuUWGv3"]}
