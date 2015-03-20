@@ -1,422 +1,119 @@
-{"firstName":"David","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"fGioYHIbLIHOsi3E"}
-{"firstName":"Paul","lastName":"Fitzpatrick","gender":"Male","club":"Blexley","_id":"A1QWdDkzKaGTNg70"}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea"}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P"}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh"}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH"}
-{"firstName":"Patrick","lastName":"Dight","gender":"Male","club":"Munster Blades","_id":"Is6tTFhngbAyrQQQ"}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm"}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf"}
-{"firstName":"Matthew","lastName":"Tracey","gender":"Male","club":"UCD","_id":"NnClGlSj3mL2WZeE"}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H"}
-{"firstName":"Killian","lastName":"Hanlon","gender":"Male","club":"DUFC","_id":"eoQE8v1Lz8nYOwqb"}
-{"firstName":"Rainer","lastName":"Bolte","gender":"Male","club":"Connaught","_id":"zqbwZs75nyb5Letx"}
-{"firstName":"Thomas","lastName":"Dickson","gender":"Male","club":"Team Newcastle","_id":"faWvofpDc5H4ejYh"}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23"}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf"}
-{"firstName":"Donncdha","lastName":"Carroll","gender":"Male","club":"UCC","_id":"c6BjaklOAGBfm9Id"}
-{"firstName":"Jamie","lastName":"Price","gender":"Male","club":"Foyle","_id":"c1G1FtL51oMB91aF"}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ"}
-{"firstName":"Jeremiah","lastName":"Coffey","gender":"Male","club":"Cyrano","_id":"1h5x8a9FkvCs31Sz"}
-{"firstName":"Simon","lastName":"Egan","gender":"Male","club":"UCC","_id":"gzxgmeCQ6TiTkB6W"}
-{"firstName":"Sean","lastName":"Clarke","gender":"Male","club":"NUIG","_id":"FWVk07mu6so33MvV"}
-{"firstName":"Conor","lastName":"Boyle","gender":"Male","club":"NUIM","_id":"99iBXGjIGqmb54zl"}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ"}
-{"firstName":"Colin","lastName":"Hogan","gender":"Male","club":"UCC","_id":"jk9FAjn3xSTJ3puy"}
-{"firstName":"John","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"gdJddSCMlo6u0Rrs"}
-{"firstName":"Conor","lastName":"Daly","gender":"Male","club":"NUIG","_id":"43SoZjckTadPnIKt"}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh"}
-{"firstName":"David","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"fGioYHIbLIHOsi3E","results":["eAxZYHa2pf6F6Lg6"]}
-{"firstName":"Paul","lastName":"Fitzpatrick","gender":"Male","club":"Blexley","_id":"A1QWdDkzKaGTNg70","results":["SOYL5K8rdVvVnTYi"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd"]}
-{"firstName":"Patrick","lastName":"Dight","gender":"Male","club":"Munster Blades","_id":"Is6tTFhngbAyrQQQ","results":["oCibxSsXKId6ROLq"]}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f"]}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf","results":["HUQQ2OZoguD4J4pb"]}
-{"firstName":"Matthew","lastName":"Tracey","gender":"Male","club":"UCD","_id":"NnClGlSj3mL2WZeE","results":["yVqcmKoJIz2ekSWb"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz"]}
-{"firstName":"Rainer","lastName":"Bolte","gender":"Male","club":"Connaught","_id":"zqbwZs75nyb5Letx","results":["pL6uUHmTp2ymR0dW"]}
-{"firstName":"Thomas","lastName":"Dickson","gender":"Male","club":"Team Newcastle","_id":"faWvofpDc5H4ejYh","results":["KSphqBNLojpFPOWa"]}
-{"firstName":"Killian","lastName":"Hanlon","gender":"Male","club":"DUFC","_id":"eoQE8v1Lz8nYOwqb","results":["U9hmZytTzTpJrfeK"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2"]}
-{"firstName":"Donncdha","lastName":"Carroll","gender":"Male","club":"UCC","_id":"c6BjaklOAGBfm9Id","results":["iwELfw4lQ5YHIZBF"]}
-{"firstName":"Jamie","lastName":"Price","gender":"Male","club":"Foyle","_id":"c1G1FtL51oMB91aF","results":["kMvL2ep1kPV6G9of"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b"]}
-{"firstName":"Jeremiah","lastName":"Coffey","gender":"Male","club":"Cyrano","_id":"1h5x8a9FkvCs31Sz","results":["nCuFF0WvC5I110Lb"]}
-{"firstName":"Simon","lastName":"Egan","gender":"Male","club":"UCC","_id":"gzxgmeCQ6TiTkB6W","results":["9UTmgOYwArskUk7m"]}
-{"firstName":"Sean","lastName":"Clarke","gender":"Male","club":"NUIG","_id":"FWVk07mu6so33MvV","results":["MZkqze4yTRRSoKEi"]}
-{"firstName":"Conor","lastName":"Boyle","gender":"Male","club":"NUIM","_id":"99iBXGjIGqmb54zl","results":["3pwCDjte7tes5jBZ"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU"]}
-{"firstName":"Colin","lastName":"Hogan","gender":"Male","club":"UCC","_id":"jk9FAjn3xSTJ3puy","results":["zHmesRnF8C6hZv2W"]}
-{"firstName":"John","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"gdJddSCMlo6u0Rrs","results":["vcBWX0TbmpiSmZHg"]}
-{"firstName":"Conor","lastName":"Daly","gender":"Male","club":"NUIG","_id":"43SoZjckTadPnIKt","results":["OknF99RWSJ9yMVxV"]}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh","results":["ujLGLLXOXX7HJ1PO"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5"}
-{"firstName":"Mark","lastName":"Loughnane","gender":"Male","club":"Connaught","_id":"MRfLtnKHXSpvKJip"}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB"}
-{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"2dZAMlr0kP6mbcfJ"}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE"}
-{"firstName":"Tim Anton","lastName":"Mangold","gender":"Male","club":"DUFC","_id":"oN10L1PTzQ0EyUWo"}
-{"firstName":"Stephen","lastName":"Friel","gender":"Male","club":"NUIM","_id":"s1FjzjWqHNTheFXh"}
-{"firstName":"Stegan","lastName":"Chiesa","gender":"Male","club":"Salle Dublin","_id":"9rG5x6KlbXwBPSWM"}
-{"firstName":"Daniel","lastName":"Barry","gender":"Male","club":"Pembroke","_id":"TOvLOjoTLVoFRMrr"}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt"}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f","ocitPcRLtU8ToZlQ"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga"]}
-{"firstName":"Mark","lastName":"Loughnane","gender":"Male","club":"Connaught","_id":"MRfLtnKHXSpvKJip","results":["Rblmy2q7mveOx3CQ"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2","wa4QpZaFnIddZa83"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6"]}
-{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"2dZAMlr0kP6mbcfJ","results":["9ttR0YOggFGjGJ5A"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU","zHrHGAoWXjzgiSAY"]}
-{"firstName":"Tim Anton","lastName":"Mangold","gender":"Male","club":"DUFC","_id":"oN10L1PTzQ0EyUWo","results":["jPmdMn5fUHkfW5d2"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R"]}
-{"firstName":"Stephen","lastName":"Friel","gender":"Male","club":"NUIM","_id":"s1FjzjWqHNTheFXh","results":["0dHBPFR2MLOPFrxr"]}
-{"firstName":"Stegan","lastName":"Chiesa","gender":"Male","club":"Salle Dublin","_id":"9rG5x6KlbXwBPSWM","results":["Rnx9AAp5jJnDTzgT"]}
-{"firstName":"Matthew","lastName":"Tracey","gender":"Male","club":"UCD","_id":"NnClGlSj3mL2WZeE","results":["yVqcmKoJIz2ekSWb","iSRd8VpzWxiD1VYR"]}
-{"firstName":"Daniel","lastName":"Barry","gender":"Male","club":"Pembroke","_id":"TOvLOjoTLVoFRMrr","results":["XkWXQ8iOtRJq0vf0"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS"}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm"}
-{"firstName":"Chance","lastName":"Kinney","gender":"Male","club":"UCD","_id":"KcQpEj8gE9qQ9BB3"}
-{"firstName":"Kevin","lastName":"MacSweeney","gender":"Male","club":"UCC","_id":"wUevRDjxqAwevMre"}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3"]}
-{"firstName":"Chance","lastName":"Kinney","gender":"Male","club":"UCD","_id":"KcQpEj8gE9qQ9BB3","results":["wPDVLV8yqdKage1g"]}
-{"firstName":"Killian","lastName":"Hanlon","gender":"Male","club":"DUFC","_id":"eoQE8v1Lz8nYOwqb","results":["U9hmZytTzTpJrfeK","d8T3riTIUFtxA59g"]}
-{"firstName":"Kevin","lastName":"MacSweeney","gender":"Male","club":"UCC","_id":"wUevRDjxqAwevMre","results":["PamIBHmbRqWIqXfB"]}
-{"firstName":"Colin","lastName":"Hogan","gender":"Male","club":"UCC","_id":"jk9FAjn3xSTJ3puy","results":["zHmesRnF8C6hZv2W","AvIzhOIcz4C9QY2V"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b","FqP4CcqWHo6f6uPk"]}
-{"firstName":"Stefan","lastName":"Chiesa","gender":"Male","club":"Salle Dublin","_id":"9rG5x6KlbXwBPSWM","results":["Rnx9AAp5jJnDTzgT"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE"]}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f","ocitPcRLtU8ToZlQ","SGOj19vpzr5LfxEL"]}
-{"firstName":"Mark","lastName":"Loughnane","gender":"Male","club":"Connaught","_id":"MRfLtnKHXSpvKJip","results":["Rblmy2q7mveOx3CQ","T7Fk6I9wRzT6aWvy"]}
-{"firstName":"Patrick","lastName":"Dight","gender":"Male","club":"Munster Blades","_id":"Is6tTFhngbAyrQQQ","results":["oCibxSsXKId6ROLq","hvX1HtkdCpRUWOqc"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO","9D4EQEimBsbnzl2T"]}
-{"firstName":"Donncdha","lastName":"Carroll","gender":"Male","club":"UCC","_id":"c6BjaklOAGBfm9Id","results":["iwELfw4lQ5YHIZBF","dmPOVlUEZDcrRsWR"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA"}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr"]}
-{"firstName":"Rainer","lastName":"Bolte","gender":"Male","club":"Connaught","_id":"zqbwZs75nyb5Letx","results":["pL6uUHmTp2ymR0dW","UTvetJZ9DljAXSHX"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp","sHlogQcvUVmG6zeE"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW","aDmHhmSHiWsCjRNO"]}
-{"firstName":"Conor","lastName":"Daly","gender":"Male","club":"NUIG","_id":"43SoZjckTadPnIKt","results":["OknF99RWSJ9yMVxV","C5MKJ1sEa2O23MBL"]}
-{"firstName":"Conor","lastName":"Hajas","gender":"Male","club":"Connought","_id":"mUyxzq3omc1pr1CZ"}
-{"firstName":"Conor","lastName":"Hajas","gender":"Male","club":"Connought","_id":"mUyxzq3omc1pr1CZ","results":["YQKrpWTE0DMdXmfx"]}
-{"firstName":"Chance","lastName":"Kinney","gender":"Male","club":"UCD","_id":"KcQpEj8gE9qQ9BB3","results":["wPDVLV8yqdKage1g","EEulItUDZzOHP4vc"]}
-{"firstName":"John","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"gdJddSCMlo6u0Rrs","results":["vcBWX0TbmpiSmZHg","zSmll7OwUvqXkWWm"]}
-{"firstName":"Sean","lastName":"Clarke","gender":"Male","club":"NUIG","_id":"FWVk07mu6so33MvV","results":["MZkqze4yTRRSoKEi","rVjIdE95Wt7trZGj"]}
-{"firstName":"Achilleas","lastName":"Floudas","gender":"Male","club":"DUFC","_id":"lzxG8ZmauUxVe8Sx"}
-{"firstName":"Achilleas","lastName":"Floudas","gender":"Male","club":"DUFC","_id":"lzxG8ZmauUxVe8Sx","results":["5Bq0m1zfHRR3ov9L"]}
-{"firstName":"Sean","lastName":"O'Sullican","gender":"Male","club":"DCU","_id":"sRcrvwHTWurcRiDJ"}
-{"firstName":"Sean","lastName":"O'Sullican","gender":"Male","club":"DCU","_id":"sRcrvwHTWurcRiDJ","results":["nHeiIrRTCQJcBN5b"]}
-{"firstName":"Shane","lastName":"Haverty","gender":"Male","club":"DCU","_id":"rKWl3HU0Fiq8Smqe"}
-{"firstName":"Shane","lastName":"Haverty","gender":"Male","club":"DCU","_id":"rKWl3HU0Fiq8Smqe","results":["YQKnUPpIDlJNIebT"]}
-{"firstName":"Andy","lastName":"O'Callaghan","gender":"Male","club":"DCU","_id":"B7C7wsxqjrl1ry9U"}
-{"firstName":"Andy","lastName":"O'Callaghan","gender":"Male","club":"DCU","_id":"B7C7wsxqjrl1ry9U","results":["ZM8DZtuwWk2L8ZNz"]}
-{"firstName":"Peter","lastName":"Mundt","gender":"Male","club":"Connaught","_id":"gywrVFpdnyhVMecr"}
-{"firstName":"Peter","lastName":"Mundt","gender":"Male","club":"Connaught","_id":"gywrVFpdnyhVMecr","results":["GpDwo3n3JDxa4O4X"]}
-{"firstName":"Conor","lastName":"Larkin","gender":"Male","club":"NUIG","_id":"y8gMnv3sfMvCM95W"}
-{"firstName":"Conor","lastName":"Larkin","gender":"Male","club":"NUIG","_id":"y8gMnv3sfMvCM95W","results":["RmujSpvjn6Y1maHl"]}
-{"firstName":"Eike","lastName":"Bogner","gender":"Male","club":"NUIG","_id":"CnRH1mNIOVtinCrN"}
-{"firstName":"Eike","lastName":"Bogner","gender":"Male","club":"NUIG","_id":"CnRH1mNIOVtinCrN","results":["oDn5cGsBiAWFAoCB"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU","S1qxKSJLTx5ukYMr"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z","IiV9BiqDvIZzpX8K"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp"]}
-{"firstName":"Patrick","lastName":"Corr","gender":"Male","club":"UU","_id":"fFRDVKG1RpxVKHkN"}
-{"firstName":"Patrick","lastName":"Corr","gender":"Male","club":"UU","_id":"fFRDVKG1RpxVKHkN","results":["rGcD4ISCNsrcngIC"]}
-{"firstName":"Stephen","lastName":"Friel","gender":"Male","club":"NUIM","_id":"s1FjzjWqHNTheFXh","results":["0dHBPFR2MLOPFrxr","59Xoyx1rRYAXJJUl"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6","KhnkdZsCKGkYKhsR"]}
-{"firstName":"Joel","lastName":"McCafferty","gender":"Male","club":"Foyle","_id":"ywDriPX0Tc8yt1uE"}
-{"firstName":"Joel","lastName":"McCafferty","gender":"Male","club":"Foyle","_id":"ywDriPX0Tc8yt1uE","results":["IsA9DWwbmx8t3cuU"]}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh","results":["ujLGLLXOXX7HJ1PO","A5R8ZanOqLdJbDhL"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3","XlJIq4oITKkuuFnc"]}
-{"firstName":"Mandla","lastName":"Mbondiya","gender":"Male","club":"UU","_id":"Pdgn9CaAmgSV8b7U"}
-{"firstName":"Mandla","lastName":"Mbondiya","gender":"Male","club":"UU","_id":"Pdgn9CaAmgSV8b7U","results":["x5xtTh00QCT5IRlF"]}
-{"firstName":"Clarke","lastName":"Mitchell","gender":"Male","club":"UU","_id":"wR1XAr9a3nQuFGH8"}
-{"firstName":"Clarke","lastName":"Mitchell","gender":"Male","club":"UU","_id":"wR1XAr9a3nQuFGH8","results":["poWOmM7kgX7O30q0"]}
-{"firstName":"Andrew","lastName":"Porter","gender":"Male","club":"Foyle","_id":"xiCv00SIeqRkH9YF"}
-{"firstName":"Andrew","lastName":"Porter","gender":"Male","club":"Foyle","_id":"xiCv00SIeqRkH9YF","results":["TF0D4rlh7sdotRZ3"]}
-{"firstName":"Aneurin","lastName":"Duffin-Murray","gender":"Male","club":"RBAI","_id":"TbSsLlNBeuQb7pcg"}
-{"firstName":"Aneurin","lastName":"Duffin-Murray","gender":"Male","club":"RBAI","_id":"TbSsLlNBeuQb7pcg","results":["bpAmPTcP6ZeaSVRj"]}
-{"firstName":"Mark","lastName":"McEvoy","gender":"Male","club":"U/A","_id":"w6RvmpmyI83AS5Yd"}
-{"firstName":"Mark","lastName":"McEvoy","gender":"Male","club":"U/A","_id":"w6RvmpmyI83AS5Yd","results":["CgDNkeXoP9MgFpGc"]}
-{"firstName":"Andrew","lastName":"Fenwick","gender":"Male","club":"Foyle","_id":"bEr3KvF6OYA1AVlN"}
-{"firstName":"Andrew","lastName":"Fenwick","gender":"Male","club":"Foyle","_id":"bEr3KvF6OYA1AVlN","results":["JgdOoyGAHD3Nrvx9"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU","S1qxKSJLTx5ukYMr","WEPe3c3RADlfrm6Z"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z","IiV9BiqDvIZzpX8K","bKPdTYi80dYEQ7XY"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM"]}
-{"firstName":"David","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"fGioYHIbLIHOsi3E","results":["eAxZYHa2pf6F6Lg6","ilVXmBvNqrZFeAhy"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN","A52VJCQaTv0FjasZ"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6","KhnkdZsCKGkYKhsR","sdnUkb7dghVP3IFQ"]}
-{"firstName":"Andrew","lastName":"Porter","gender":"Male","club":"Foyle","_id":"xiCv00SIeqRkH9YF","results":["TF0D4rlh7sdotRZ3","2peFWkk8Eacigb0M"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3","XlJIq4oITKkuuFnc","PVFzsfridqtk1RNR"]}
-{"firstName":"Patrick","lastName":"Corr","gender":"Male","club":"UU","_id":"fFRDVKG1RpxVKHkN","results":["rGcD4ISCNsrcngIC","mBOwbUgZlRMab6fW"]}
-{"firstName":"Joel","lastName":"McCafferty","gender":"Male","club":"Foyle","_id":"ywDriPX0Tc8yt1uE","results":["IsA9DWwbmx8t3cuU","FLKHYSKUjSOluQ7E"]}
-{"firstName":"Gerard","lastName":"Boyle","gender":"Male","club":"Belfast","_id":"7KiXuWQYeK5Ua5pO"}
-{"firstName":"Gerard","lastName":"Boyle","gender":"Male","club":"Belfast","_id":"7KiXuWQYeK5Ua5pO","results":["zgioZ7cXqPWzXETv"]}
-{"firstName":"Mark","lastName":"McEvoy","gender":"Male","club":"U/A","_id":"w6RvmpmyI83AS5Yd","results":["CgDNkeXoP9MgFpGc","avaw1iDJTOynfEQP"]}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh","results":["ujLGLLXOXX7HJ1PO","A5R8ZanOqLdJbDhL","xPBO71lrQebV9WRk"]}
-{"firstName":"Mandla","lastName":"Mbondiya","gender":"Male","club":"UU","_id":"Pdgn9CaAmgSV8b7U","results":["x5xtTh00QCT5IRlF","l9ZDfY4KhFiV56zg"]}
-{"firstName":"Clarke","lastName":"Mitchell","gender":"Male","club":"UU","_id":"wR1XAr9a3nQuFGH8","results":["poWOmM7kgX7O30q0","jxqMvEj4x6t3BKd7"]}
-{"firstName":"John","lastName":"Wright","gender":"Male","club":"UCD","_id":"UiI08zz2PAVB3EfH"}
-{"firstName":"John","lastName":"Wright","gender":"Male","club":"UCD","_id":"UiI08zz2PAVB3EfH","results":["MkzowvSUoBpVU809"]}
-{"firstName":"Conor","lastName":"Nagle","gender":"Male","club":"Pembroke","_id":"Mz4iNp5vd8Hlz94c"}
-{"firstName":"Conor","lastName":"Nagle","gender":"Male","club":"Pembroke","_id":"Mz4iNp5vd8Hlz94c","results":["YQ9EfGTMPhiD5aZ5"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO","ZfNSXvmOnZQt5fbE"]}
-{"firstName":"Benedict","lastName":"Chambers","gender":"Male","club":"FFF","_id":"pFcCUohLnItTZKxL"}
-{"firstName":"Benedict","lastName":"Chambers","gender":"Male","club":"FFF","_id":"pFcCUohLnItTZKxL","results":["X1OSndvJ5mFyzuxf"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2","wa4QpZaFnIddZa83","YHRZ98RrqTKvPNlK"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO","9D4EQEimBsbnzl2T","GzR8J5ENEMIecfmV"]}
-{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"2dZAMlr0kP6mbcfJ","results":["9ttR0YOggFGjGJ5A","l2DHZM6JbzD8yIyw"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP"]}
-{"firstName":"Timothy","lastName":"Andrews","gender":"Male","club":"Plymouth","_id":"mBJHqbzw7VbyhL8u"}
-{"firstName":"Timothy","lastName":"Andrews","gender":"Male","club":"Plymouth","_id":"mBJHqbzw7VbyhL8u","results":["nri2gpC8wK46VgBB"]}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f","ocitPcRLtU8ToZlQ","SGOj19vpzr5LfxEL","QP5JNhMzlfV15YTv"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK"}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp","sHlogQcvUVmG6zeE","8QH0vMr5zV6ymNQx"]}
-{"firstName":"Tom","lastName":"O'Brien","gender":"Male","club":"MPAI","_id":"3vXRQkB0qbKsdIXj"}
-{"firstName":"William","lastName":"McCartney","gender":"Male","club":"U/A","_id":"mbQ5MWgzKtnPTf3W"}
-{"firstName":"Tom","lastName":"O'Brien","gender":"Male","club":"MPAI","_id":"3vXRQkB0qbKsdIXj","results":["VxmwOD0xW61QZs9D"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b","FqP4CcqWHo6f6uPk","7PXLJkkFalTFPhCn"]}
-{"firstName":"William","lastName":"McCartney","gender":"Male","club":"U/A","_id":"mbQ5MWgzKtnPTf3W","results":["XcidBw6JjaS815G9"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN","A52VJCQaTv0FjasZ","Yjm0AkyLihkx3Xc0"]}
-{"firstName":"Yves","lastName":"Carnec","gender":"Male","club":"Pembroke","_id":"Y0QwwcSubSN1uShS"}
-{"firstName":"Yves","lastName":"Carnec","gender":"Male","club":"Pembroke","_id":"Y0QwwcSubSN1uShS","results":["rsnwFK9yZohV64Se"]}
-{"firstName":"Rainer","lastName":"Bolte","gender":"Male","club":"Connaught","_id":"zqbwZs75nyb5Letx","results":["pL6uUHmTp2ymR0dW","UTvetJZ9DljAXSHX","QNaR9tUJwT3QpwNw"]}
-{"firstName":"Paris","lastName":"Cai","gender":"Male","club":"UCC","_id":"sI4kJVEtyPcHEHng"}
-{"firstName":"Paris","lastName":"Cai","gender":"Male","club":"UCC","_id":"sI4kJVEtyPcHEHng","results":["3vF0if5q6ycOWP5O"]}
-{"firstName":"Peter","lastName":"Mundt","gender":"Male","club":"Connaught","_id":"gywrVFpdnyhVMecr","results":["GpDwo3n3JDxa4O4X","44sHB7FEpsCkQ7X1"]}
-{"firstName":"Conall","lastName":"Cromie","gender":"Male","club":"Truro","_id":"Yv3bpHorZ0jhWUzw"}
-{"firstName":"Conall","lastName":"Cromie","gender":"Male","club":"Truro","_id":"Yv3bpHorZ0jhWUzw","results":["mBOrfGXFgWTCPu4y"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO","ZfNSXvmOnZQt5fbE","brtZLHkJb8eW1xxb"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU","S1qxKSJLTx5ukYMr","WEPe3c3RADlfrm6Z","DcqdHBVjkTOM6Gqt"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6","KhnkdZsCKGkYKhsR","sdnUkb7dghVP3IFQ","xXx8ZctC4quxiD28"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN","A52VJCQaTv0FjasZ","Yjm0AkyLihkx3Xc0","KF6yfppHL7ML44rV"]}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf","results":["HUQQ2OZoguD4J4pb","oVDmPYvuS5jySCFA"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2","wa4QpZaFnIddZa83","YHRZ98RrqTKvPNlK","NBjdTPAXBYKKmPoj"]}
-{"firstName":"Stephen","lastName":"Brown","gender":"Male","club":"Grosvenor","_id":"oUpGTg6EI81zR2vf"}
-{"firstName":"Stephen","lastName":"Brown","gender":"Male","club":"Grosvenor","_id":"oUpGTg6EI81zR2vf","results":["hVpJ7z64QiMCJ0sg"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY","INZjITOioOHFf4TO"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP","OoN05UQQY2U302Ev"]}
-{"firstName":"William","lastName":"McCartney","gender":"Male","club":"U/A","_id":"mbQ5MWgzKtnPTf3W","results":["XcidBw6JjaS815G9","jwNiAyHLzJzsH6n4"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO","9D4EQEimBsbnzl2T","GzR8J5ENEMIecfmV","FN3EhFNAdAyE2jNm"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp","DHFHzcI8URYbpIj2"]}
-{"firstName":"Stewart","lastName":"Duguid","gender":"Male","club":"MDFC","_id":"SCzHsq7AibbLmEaW"}
-{"firstName":"Stewart","lastName":"Duguid","gender":"Male","club":"MDFC","_id":"SCzHsq7AibbLmEaW","results":["f64dhZiiYvcck9Wh"]}
-{"firstName":"Eoghan","lastName":"Cromie","gender":"Male","club":"Truro","_id":"ZOwnfBPBrlcTPKoO"}
-{"firstName":"Eoghan","lastName":"Cromie","gender":"Male","club":"Truro","_id":"ZOwnfBPBrlcTPKoO","results":["k7zXc6si68VgukeG"]}
-{"firstName":"Charles","lastName":"Clements","gender":"Male","club":"UU","_id":"98vLEUFre9g8mwiv"}
-{"firstName":"Charles","lastName":"Clements","gender":"Male","club":"UU","_id":"98vLEUFre9g8mwiv","results":["5ol9xeSZHTtBUlsv"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3","XlJIq4oITKkuuFnc","PVFzsfridqtk1RNR","D1H7mWDEoOZpRGf2"]}
-{"firstName":"Mark","lastName":"McEvoy","gender":"Male","club":"U/A","_id":"w6RvmpmyI83AS5Yd","results":["CgDNkeXoP9MgFpGc","avaw1iDJTOynfEQP","T11kQPKbrvILbJ3d"]}
-{"firstName":"Paul","lastName":"Donnelly","gender":"Male","club":"Wessex Blades","_id":"9Noa73KumC7ON6u6"}
-{"firstName":"Paul","lastName":"Donnelly","gender":"Male","club":"Wessex Blades","_id":"9Noa73KumC7ON6u6","results":["ABtIJSOSDpa9lfHa"]}
-{"firstName":"Gerard","lastName":"Boyle","gender":"Male","club":"Belfast","_id":"7KiXuWQYeK5Ua5pO","results":["zgioZ7cXqPWzXETv","lmWsGuvUEY9Fv6C7"]}
-{"firstName":"William","lastName":"Girvin","gender":"Male","club":"Grosvenor","_id":"JTrCdJrfVC8O0bJX"}
-{"firstName":"William","lastName":"Girvin","gender":"Male","club":"Grosvenor","_id":"JTrCdJrfVC8O0bJX","results":["HqtVbxzHnYDr0rbL"]}
-{"firstName":"William","lastName":"Scott","gender":"Male","club":"UU","_id":"N1Y6byNlrVl2ghO5"}
-{"firstName":"William","lastName":"Scott","gender":"Male","club":"UU","_id":"N1Y6byNlrVl2ghO5","results":["m1TyXHmhhXXaCzhV"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b","FqP4CcqWHo6f6uPk","7PXLJkkFalTFPhCn","AU4K0peUcMDyHezH"]}
-{"firstName":"Conor","lastName":"Daly","gender":"Male","club":"NUIG","_id":"43SoZjckTadPnIKt","results":["OknF99RWSJ9yMVxV","C5MKJ1sEa2O23MBL","7R6uQr6BaPNaStjc"]}
-{"firstName":"Josh","lastName":"Donaghy","gender":"Male","club":"Grosvenor","_id":"UKuMD0ola49C9ePW"}
-{"firstName":"Josh","lastName":"Donaghy","gender":"Male","club":"Grosvenor","_id":"UKuMD0ola49C9ePW","results":["Ji8eZzZNHw0n7rL2"]}
-{"firstName":"John","lastName":"Wright","gender":"Male","club":"UCD","_id":"UiI08zz2PAVB3EfH","results":["MkzowvSUoBpVU809","nw7EiVa7MURiwRgf"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU","zHrHGAoWXjzgiSAY","68yZVWRMSHNPwyNV"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY","INZjITOioOHFf4TO","rDn3bmpkdIlf2Akq"]}
-{"firstName":"Matthew","lastName":"Tracey","gender":"Male","club":"UCD","_id":"NnClGlSj3mL2WZeE","results":["yVqcmKoJIz2ekSWb","iSRd8VpzWxiD1VYR","qoDTS8GDtIpDlJLM"]}
-{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"2dZAMlr0kP6mbcfJ","results":["9ttR0YOggFGjGJ5A","l2DHZM6JbzD8yIyw","N27XXA1bApmTqifC"]}
-{"firstName":"Dawid","lastName":"Kulka","gender":"Male","club":"Pembroke","_id":"d5HCNDTlNFfIePgk"}
-{"firstName":"Dawid","lastName":"Kulka","gender":"Male","club":"Pembroke","_id":"d5HCNDTlNFfIePgk","results":["xOPWOFBZP7uIqgb8"]}
-{"firstName":"David","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"T7O53Em2zvYaKIGS"}
-{"firstName":"David","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"T7O53Em2zvYaKIGS","results":["GmJZCqwbyaJkK4Tg"]}
-{"firstName":"David","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"T7O53Em2zvYaKIGS","results":[]}
-{"firstName":"David","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"T7O53Em2zvYaKIGS","results":["GmJZCqwbyaJkK4Tg"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP","OoN05UQQY2U302Ev","pQTGOfOcP6FVbsz6"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp","DHFHzcI8URYbpIj2","4BRUcnauu0OXd7JY"]}
-{"firstName":"Marco","lastName":"Loriga","gender":"Male","club":"Pembroke","_id":"PhjgXNwYpf2mXtBE"}
-{"firstName":"Marco","lastName":"Loriga","gender":"Male","club":"Pembroke","_id":"PhjgXNwYpf2mXtBE","results":["KRU9IZ8TAGHzQOEq"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS","kp3eWou0PQoNRRld"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z","IiV9BiqDvIZzpX8K","bKPdTYi80dYEQ7XY","t6PKMgFFyoZ6KPQw"]}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf","results":["HUQQ2OZoguD4J4pb","oVDmPYvuS5jySCFA","7iyhdCnFzWpFWeP6"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO","9D4EQEimBsbnzl2T","GzR8J5ENEMIecfmV","FN3EhFNAdAyE2jNm","HevxwOD3xYAKRJjX"]}
-{"firstName":"Joseph","lastName":"Carnec","gender":"Male","club":"Pembroke","_id":"Ld2e0NzvTspTFVRF"}
-{"firstName":"Joseph","lastName":"Carnec","gender":"Male","club":"Pembroke","_id":"Ld2e0NzvTspTFVRF","results":["8RsIu5mzIIfWLxyR"]}
-{"firstName":"Donncdha","lastName":"Carroll","gender":"Male","club":"UCC","_id":"c6BjaklOAGBfm9Id","results":["iwELfw4lQ5YHIZBF","dmPOVlUEZDcrRsWR","Ce8HQZIRHifr9Efu"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2","wa4QpZaFnIddZa83","YHRZ98RrqTKvPNlK","NBjdTPAXBYKKmPoj","NHvR4RTpYzkghwcv"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW","aDmHhmSHiWsCjRNO","JLnVaic0CZNwfKen"]}
-{"firstName":"Achilleas","lastName":"Floudas","gender":"Male","club":"DUFC","_id":"lzxG8ZmauUxVe8Sx","results":["5Bq0m1zfHRR3ov9L","wjGWdf7cKeLJ59R9"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc","RgiWFJWTVn8ABFRB"]}
-{"firstName":"Calvin","lastName":"Wong","gender":"Male","club":"UCD","_id":"nBH98aROVwwrzLjl"}
-{"firstName":"Calvin","lastName":"Wong","gender":"Male","club":"UCD","_id":"nBH98aROVwwrzLjl","results":["3u1ha0sEICVzxH9y"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b","FqP4CcqWHo6f6uPk","7PXLJkkFalTFPhCn","AU4K0peUcMDyHezH","wJlslnYmOfIhmY4h"]}
-{"firstName":"William","lastName":"McCartney","gender":"Male","club":"U/A","_id":"mbQ5MWgzKtnPTf3W","results":["XcidBw6JjaS815G9","jwNiAyHLzJzsH6n4","wgunn2g0IetvIQ7x"]}
-{"firstName":"Kevin","lastName":"Poon","gender":"Male","club":"UCC","_id":"WUe6Xr4OXktC2XOc"}
-{"firstName":"Kevin","lastName":"Poon","gender":"Male","club":"UCC","_id":"WUe6Xr4OXktC2XOc","results":["wGg7yYCqJiVcpJYy"]}
-{"firstName":"Filip","lastName":"Kuczera","gender":"Male","club":"DUFC","_id":"wPp1atI2iOv8jtid"}
-{"firstName":"Filip","lastName":"Kuczera","gender":"Male","club":"DUFC","_id":"wPp1atI2iOv8jtid","results":["OIlgd3anF9VztkrE"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp","sHlogQcvUVmG6zeE","8QH0vMr5zV6ymNQx","knJ96IG9BOPW54uZ"]}
-{"firstName":"Sean","lastName":"Clarke","gender":"Male","club":"NUIG","_id":"FWVk07mu6so33MvV","results":["MZkqze4yTRRSoKEi","rVjIdE95Wt7trZGj","atYZf872U4n2ABQZ"]}
-{"firstName":"Chance","lastName":"Kinney","gender":"Male","club":"UCD","_id":"KcQpEj8gE9qQ9BB3","results":["wPDVLV8yqdKage1g","EEulItUDZzOHP4vc","cSavi71POLDvE2OB"]}
-{"firstName":"Sean","lastName":"Ryan","gender":"Male","club":"UCD","_id":"31op1JXPwvnvmrq3"}
-{"firstName":"Sean","lastName":"Ryan","gender":"Male","club":"UCD","_id":"31op1JXPwvnvmrq3","results":["1G3p4HgMhi22zJGE"]}
-{"firstName":"Myles","lastName":"Doyle","gender":"Male","club":"DUFC","_id":"CRWljzNwICnMD7cs"}
-{"firstName":"Myles","lastName":"Doyle","gender":"Male","club":"DUFC","_id":"CRWljzNwICnMD7cs","results":["B2eKjQuFVuBf6olw"]}
-{"firstName":"Ronan","lastName":"Cranny","gender":"Male","club":"NUIG","_id":"D6eKBgML0z4vodKv"}
-{"firstName":"Ronan","lastName":"Cranny","gender":"Male","club":"NUIG","_id":"D6eKBgML0z4vodKv","results":["3fSyT2InmXDUCMPb"]}
-{"firstName":"Conor","lastName":"Larkin","gender":"Male","club":"NUIG","_id":"y8gMnv3sfMvCM95W","results":["RmujSpvjn6Y1maHl","YUgAxvTXDjhKpjuQ"]}
-{"firstName":"Dylan","lastName":"McCartney","gender":"Male","club":"Salle Dublin","_id":"PKbcM782RSChQH0R"}
-{"firstName":"Dylan","lastName":"McCartney","gender":"Male","club":"Salle Dublin","_id":"PKbcM782RSChQH0R","results":["FbCFwLO6ioaxWO1z"]}
-{"firstName":"Eike","lastName":"Bogner","gender":"Male","club":"NUIG","_id":"CnRH1mNIOVtinCrN","results":["oDn5cGsBiAWFAoCB","DQtrZNk1ouV0lGUL"]}
-{"firstName":"Kieran","lastName":"Hayter","gender":"Male","club":"Blessington","_id":"Vr6oenDEtrU5CEnF"}
-{"firstName":"Kieran","lastName":"Hayter","gender":"Male","club":"Blessington","_id":"Vr6oenDEtrU5CEnF","results":["t9iB3P1OLHBKxISQ"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY","INZjITOioOHFf4TO","rDn3bmpkdIlf2Akq","e3a04sqFBhHbm6Ev"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN","A52VJCQaTv0FjasZ","Yjm0AkyLihkx3Xc0","KF6yfppHL7ML44rV","hDUntRW0bnVmvisA"]}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf","results":["HUQQ2OZoguD4J4pb","oVDmPYvuS5jySCFA","7iyhdCnFzWpFWeP6","GMsnYdQrFornMzAs"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z","IiV9BiqDvIZzpX8K","bKPdTYi80dYEQ7XY","t6PKMgFFyoZ6KPQw","oQQf9Zct27UdlQEZ"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc","RgiWFJWTVn8ABFRB","WphvSbot1bOMXLHc"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc","RgiWFJWTVn8ABFRB"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc","RgiWFJWTVn8ABFRB","WphvSbot1bOMXLHc"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW","aDmHhmSHiWsCjRNO","JLnVaic0CZNwfKen","h16WP9p6uIAZsV0a"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS","kp3eWou0PQoNRRld","dfsSrxbmOmPvHOUO"]}
-{"firstName":"Arran","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"VZy14RugJxefzesd"}
-{"firstName":"Arran","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"VZy14RugJxefzesd","results":["HJkUL3zqrjtMeJxF"]}
-{"firstName":"Yves","lastName":"Carnec","gender":"Male","club":"Pembroke","_id":"Y0QwwcSubSN1uShS","results":["rsnwFK9yZohV64Se","PadAMeBikJfFLjcf"]}
-{"firstName":"Oliver","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"j9Tec4uAyUv9o085"}
-{"firstName":"Oliver","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"j9Tec4uAyUv9o085","results":["VCfpwfatFEMytY4H"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU","zHrHGAoWXjzgiSAY","68yZVWRMSHNPwyNV","sm3qowKutMeGfIHK"]}
-{"firstName":"Blaise","lastName":"Delaney","gender":"Male","club":"DUFC","_id":"cAym15pripQXvW9X"}
-{"firstName":"Blaise","lastName":"Delaney","gender":"Male","club":"DUFC","_id":"cAym15pripQXvW9X","results":["hp3qvAVGki60b1hs"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO","ZfNSXvmOnZQt5fbE","brtZLHkJb8eW1xxb","58kraeIIXGL4JZaP"]}
-{"firstName":"Timothy","lastName":"Andrews","gender":"Male","club":"Plymouth","_id":"mBJHqbzw7VbyhL8u","results":["nri2gpC8wK46VgBB","KM8ECLiYAcmy9jji"]}
-{"firstName":"Arran","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"VZy14RugJxefzesd","results":["HJkUL3zqrjtMeJxF","XAsdW0yzR1Mzak24"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP","OoN05UQQY2U302Ev","pQTGOfOcP6FVbsz6","tOGsxIcTaDM9wxM8"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3","XlJIq4oITKkuuFnc","PVFzsfridqtk1RNR","D1H7mWDEoOZpRGf2","4QdYZzV3zgxCX1PD"]}
-{"firstName":"Oliver","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"j9Tec4uAyUv9o085","results":["VCfpwfatFEMytY4H","jBJntLvdppxukcNy"]}
-{"firstName":"William","lastName":"Girvin","gender":"Male","club":"Grosvenor","_id":"JTrCdJrfVC8O0bJX","results":["HqtVbxzHnYDr0rbL","44O09kxVcoTSNmtz"]}
-{"firstName":"Kieran","lastName":"Hayter","gender":"Male","club":"Blessington","_id":"Vr6oenDEtrU5CEnF","results":["t9iB3P1OLHBKxISQ","Ogjrq8v1giLzlzBN"]}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh","results":["ujLGLLXOXX7HJ1PO","A5R8ZanOqLdJbDhL","xPBO71lrQebV9WRk","1fJjj17t99ZeoIAU"]}
-{"firstName":"Benedict","lastName":"Chambers","gender":"Male","club":"FFF","_id":"pFcCUohLnItTZKxL","results":["X1OSndvJ5mFyzuxf","jmAIcYh3Kas8rc6d"]}
-{"firstName":"Maxton","lastName":"Milner","gender":"Male","club":"DUFC","_id":"ELebf8T2UVzqx5oi"}
-{"firstName":"Maxton","lastName":"Milner","gender":"Male","club":"DUFC","_id":"ELebf8T2UVzqx5oi","results":["EwavpRUMf1kYUZqB"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY","INZjITOioOHFf4TO","rDn3bmpkdIlf2Akq","e3a04sqFBhHbm6Ev","EeaI4uoU2Quta9W1"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO","ZfNSXvmOnZQt5fbE","brtZLHkJb8eW1xxb","58kraeIIXGL4JZaP","xdx4WyTsAUhTzsOW"]}
-{"firstName":"Eamonn","lastName":"McGrattan","gender":"Male","club":"Fence Fit","_id":"mKZCw1BKLMQVX4EN"}
-{"firstName":"Eamonn","lastName":"McGrattan","gender":"Male","club":"Fence Fit","_id":"mKZCw1BKLMQVX4EN","results":["ivvtrPiZNkNuzERJ"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS","kp3eWou0PQoNRRld","dfsSrxbmOmPvHOUO","UD5kstMBnwnU1K6F"]}
-{"firstName":"Conor","lastName":"Nagle","gender":"Male","club":"Pembroke","_id":"Mz4iNp5vd8Hlz94c","results":["YQ9EfGTMPhiD5aZ5","EK5baBX6SpmkQjE0"]}
-{"firstName":"Patrick","lastName":"Dight","gender":"Male","club":"Munster Blades","_id":"Is6tTFhngbAyrQQQ","results":["oCibxSsXKId6ROLq","hvX1HtkdCpRUWOqc","WP5fUNUg4SbthM11"]}
-{"firstName":"Arran","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"VZy14RugJxefzesd","results":["HJkUL3zqrjtMeJxF","XAsdW0yzR1Mzak24","3uO84wdESRyv8KaR"]}
-{"firstName":"Timothy","lastName":"Andrews","gender":"Male","club":"Plymouth","_id":"mBJHqbzw7VbyhL8u","results":["nri2gpC8wK46VgBB","KM8ECLiYAcmy9jji","aD9h4OYhB9kTb5tC"]}
-{"firstName":"Conor","lastName":"Hillick","gender":"Male","club":"MPAI","_id":"8TZRcQeS8bRa2AAp"}
-{"firstName":"Conor","lastName":"Hillick","gender":"Male","club":"MPAI","_id":"8TZRcQeS8bRa2AAp","results":["uG8J4wGjuDpoMyy0"]}
-{"firstName":"Tom","lastName":"O'Brien","gender":"Male","club":"MPAI","_id":"3vXRQkB0qbKsdIXj","results":["VxmwOD0xW61QZs9D","AQ8TiQKUIiAshXZ6"]}
-{"firstName":"Rory","lastName":"Greenan","gender":"Male","club":"DUFC","_id":"wQuTGd0PtdjSRbq8"}
-{"firstName":"Rory","lastName":"Greenan","gender":"Male","club":"DUFC","_id":"wQuTGd0PtdjSRbq8","results":["mrCbqtUt4cDazzfl"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU","S1qxKSJLTx5ukYMr","WEPe3c3RADlfrm6Z","DcqdHBVjkTOM6Gqt","oFNtTUE81r7ZwCkz"]}
-{"firstName":"Jamie","lastName":"Simpson","gender":"Male","club":"Imperial","_id":"4v6iD1xIdd2NecsL"}
-{"firstName":"Jamie","lastName":"Simpson","gender":"Male","club":"Imperial","_id":"4v6iD1xIdd2NecsL","results":["SaZg9a5n0vvRaCBi"]}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f","ocitPcRLtU8ToZlQ","SGOj19vpzr5LfxEL","QP5JNhMzlfV15YTv","RniwIf86wcDAbIax"]}
-{"firstName":"Jamie","lastName":"Price","gender":"Male","club":"Foyle","_id":"c1G1FtL51oMB91aF","results":["kMvL2ep1kPV6G9of","OpsjsWRxHy6jOLwq"]}
-{"firstName":"Conor","lastName":"Boyle","gender":"Male","club":"NUIM","_id":"99iBXGjIGqmb54zl","results":["3pwCDjte7tes5jBZ","Vco6VR1kw1CVZJL5"]}
-{"firstName":"Paddy","lastName":"Brennan","gender":"Male","club":"Pembroke","_id":"jakwuIGPmyuEVWgE","results":["JCa5ScQkHkwZJQnO","9D4EQEimBsbnzl2T","GzR8J5ENEMIecfmV","FN3EhFNAdAyE2jNm","HevxwOD3xYAKRJjX","pmBYC0saJrsoNFTZ"]}
-{"firstName":"Colm","lastName":"Flynn","gender":"Male","club":"DUFC","_id":"UqkPuuAKkPQYgtux"}
-{"firstName":"Colm","lastName":"Flynn","gender":"Male","club":"DUFC","_id":"UqkPuuAKkPQYgtux","results":["mGapfv9tlriHwy4I"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp","DHFHzcI8URYbpIj2","4BRUcnauu0OXd7JY","e2DTmfF7KecGHdxG"]}
-{"firstName":"Oliver","lastName":"Hope","gender":"Male","club":"Kings Canterbury","_id":"j9Tec4uAyUv9o085","results":["VCfpwfatFEMytY4H","jBJntLvdppxukcNy","jplczulpclh2SN5J"]}
-{"firstName":"Denis","lastName":"Callanan","gender":"Male","club":"U/A","_id":"5c8pRrCh3MAkbRWK","results":["vfXltv6bM7aQtsJc","RgiWFJWTVn8ABFRB","WphvSbot1bOMXLHc","FJMcDLriPOWO4oW8"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP","OoN05UQQY2U302Ev","pQTGOfOcP6FVbsz6","tOGsxIcTaDM9wxM8","EqzaEiezanQcev8X"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6","KhnkdZsCKGkYKhsR","sdnUkb7dghVP3IFQ","xXx8ZctC4quxiD28","FWP42jxTTlRt2i40"]}
-{"firstName":"Mark","lastName":"Loughnane","gender":"Male","club":"Connaught","_id":"MRfLtnKHXSpvKJip","results":["Rblmy2q7mveOx3CQ","T7Fk6I9wRzT6aWvy","4oSA5yJDQszpo3kg"]}
-{"firstName":"James","lastName":"Burke","gender":"Male","club":"Pembroke","_id":"OOt8cMvU3ZC5wpYp"}
-{"firstName":"James","lastName":"Burke","gender":"Male","club":"Pembroke","_id":"OOt8cMvU3ZC5wpYp","results":["JVfaebCLKErILTUX"]}
-{"firstName":"Daniel","lastName":"Barry","gender":"Male","club":"Pembroke","_id":"TOvLOjoTLVoFRMrr","results":["XkWXQ8iOtRJq0vf0","UyVIdmvD8cMqBoQu"]}
-{"firstName":"Niall","lastName":"Linden","gender":"Male","club":"Grosvenor","_id":"v1QdUocVnecBpaJC"}
-{"firstName":"Niall","lastName":"Linden","gender":"Male","club":"Grosvenor","_id":"v1QdUocVnecBpaJC","results":["FVprvUTOrzJ3gFs8"]}
-{"firstName":"Gerard","lastName":"Boyle","gender":"Male","club":"Belfast","_id":"7KiXuWQYeK5Ua5pO","results":["zgioZ7cXqPWzXETv","lmWsGuvUEY9Fv6C7","OkFxrrPkHYY99juD"]}
-{"firstName":"Shane","lastName":"Whelan","gender":"Male","club":"Salle Dublin","_id":"fQhgonFqsb8U9Oxh","results":["gFnrpmAGLVRZ6Oc2","wa4QpZaFnIddZa83","YHRZ98RrqTKvPNlK","NBjdTPAXBYKKmPoj","NHvR4RTpYzkghwcv","aakH3d6li1qnBTgy"]}
-{"firstName":"Kieran","lastName":"Hayter","gender":"Male","club":"Blessington","_id":"Vr6oenDEtrU5CEnF","results":["t9iB3P1OLHBKxISQ","Ogjrq8v1giLzlzBN","362D33vvaRbhIunr"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW","aDmHhmSHiWsCjRNO","JLnVaic0CZNwfKen","h16WP9p6uIAZsV0a","EAjDfsilbCdjUewN"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU","zHrHGAoWXjzgiSAY","68yZVWRMSHNPwyNV","sm3qowKutMeGfIHK","tNvdO3RJuObhDcZv"]}
-{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn","_id":"sZ56PC1WuJbYCHhm","results":["K3ShLm1PcXhQ5Nl3","XlJIq4oITKkuuFnc","PVFzsfridqtk1RNR","D1H7mWDEoOZpRGf2","4QdYZzV3zgxCX1PD","6Pa3eAI3k0nsSh99"]}
-{"firstName":"Gianandrea","lastName":"Comande","gender":"Male","club":"Pembroke","_id":"1PG2NFkPyImheFbF"}
-{"firstName":"Gianandrea","lastName":"Comande","gender":"Male","club":"Pembroke","_id":"1PG2NFkPyImheFbF","results":["Ji8BIgaa2o6iEY2Z"]}
-{"firstName":"Conor","lastName":"Coleman","gender":"Male","club":"Salle Dublin","_id":"hPs4qpzEBLnv6G3B"}
-{"firstName":"Conor","lastName":"Coleman","gender":"Male","club":"Salle Dublin","_id":"hPs4qpzEBLnv6G3B","results":["3ZvxpfegyB8IfqIZ"]}
-{"firstName":"William","lastName":"McCartney","gender":"Male","club":"U/A","_id":"mbQ5MWgzKtnPTf3W","results":["XcidBw6JjaS815G9","jwNiAyHLzJzsH6n4","wgunn2g0IetvIQ7x","Za0ebsXmtKoLitXx"]}
-{"firstName":"David","lastName":"Fomin","gender":"Male","club":"Foyle","_id":"hhC0LeOx1XGNeMlh","results":["ujLGLLXOXX7HJ1PO","A5R8ZanOqLdJbDhL","xPBO71lrQebV9WRk","1fJjj17t99ZeoIAU","r5dclSPLYD6uieH4"]}
-{"firstName":"Pat","lastName":"Lynch","gender":"Male","club":"Salle Dublin","_id":"Pl3dNMH5tsV2n9pQ","results":["rlIu2UAZEOxXq71b","FqP4CcqWHo6f6uPk","7PXLJkkFalTFPhCn","AU4K0peUcMDyHezH","wJlslnYmOfIhmY4h","DT7QrF82Rf2wDqm1"]}
-{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"rRxQ6WHd0a8arGWH","results":["wapY5NCOWqx9LnCd","kacMXRt2fWVWehbO","ZfNSXvmOnZQt5fbE","brtZLHkJb8eW1xxb","58kraeIIXGL4JZaP","xdx4WyTsAUhTzsOW","ZXAhAbHbK05XZoXi"]}
-{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"bVbB9KM7luHLekea","results":["3gMZL8RlaSPS4mdU","S1qxKSJLTx5ukYMr","WEPe3c3RADlfrm6Z","DcqdHBVjkTOM6Gqt","oFNtTUE81r7ZwCkz","k7c9wByeDtlTvv0Y"]}
-{"firstName":"Geoffrey","lastName":"Corcoran","gender":"Male","club":"Salle Dublin","_id":"rp32vicmS8E4eA0P","results":["BKtLSUss9gyyqaG3","uIbPubegfmujeLHE","YhE5PzkTZkG1DfXS","LFOHcMO6b8J70JhY","INZjITOioOHFf4TO","rDn3bmpkdIlf2Akq","e3a04sqFBhHbm6Ev","EeaI4uoU2Quta9W1","0as4DS4fS5CFuWub"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp","DHFHzcI8URYbpIj2","4BRUcnauu0OXd7JY","e2DTmfF7KecGHdxG","4lUicLZd7jdKh4lQ"]}
-{"firstName":"Duncan","lastName":"Salter","gender":"Male","club":"Pembroke","_id":"qVaAnpDH8ElhjO0H","results":["qKZeVVIV5VXRGcnz","7bUVtNUUi0ZVkw0R","KQ7Cvdhh4isNqVnr","eW8LmVhQglU4lGfN","A52VJCQaTv0FjasZ","Yjm0AkyLihkx3Xc0","KF6yfppHL7ML44rV","hDUntRW0bnVmvisA","5tGP32FK23FCWb6E"]}
-{"firstName":"Paul","lastName":"McCarron","gender":"Male","club":"QUB","_id":"zL0ubf243jiv3Ul5","results":["PDDeHGOTdGGAVoga","DKyMoE2onEPhxE2z","IiV9BiqDvIZzpX8K","bKPdTYi80dYEQ7XY","t6PKMgFFyoZ6KPQw","oQQf9Zct27UdlQEZ","3DTVrUbU7V7q421s"]}
-{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"Lx9JNpGKVyniwABf","results":["HUQQ2OZoguD4J4pb","oVDmPYvuS5jySCFA","7iyhdCnFzWpFWeP6","GMsnYdQrFornMzAs","spg0PtekaeK5MDfA"]}
-{"firstName":"Jeremy","lastName":"Surgenor","gender":"Male","club":"QUB","_id":"NOpW61snbEWX5uhX"}
-{"firstName":"Jeremy","lastName":"Surgenor","gender":"Male","club":"QUB","_id":"NOpW61snbEWX5uhX","results":["iGwvqEtCwWiev6zS"]}
-{"firstName":"Alastair","lastName":"Houldsworth","gender":"Male","club":"Belfast","_id":"1Kk9OKOEbqmFsGFT"}
-{"firstName":"Alastair","lastName":"Houldsworth","gender":"Male","club":"Belfast","_id":"1Kk9OKOEbqmFsGFT","results":["y1pxOi5hsJqX0GYT"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS","kp3eWou0PQoNRRld","dfsSrxbmOmPvHOUO","UD5kstMBnwnU1K6F","TXzlBdQGMad85NZC"]}
-{"firstName":"Jamie","lastName":"Simpson","gender":"Male","club":"Imperial","_id":"4v6iD1xIdd2NecsL","results":["SaZg9a5n0vvRaCBi","SCGaH5dFmiWpuXCq"]}
-{"firstName":"Niall","lastName":"Linden","gender":"Male","club":"Grosvenor","_id":"v1QdUocVnecBpaJC","results":["FVprvUTOrzJ3gFs8","40FNpNrLhZ7sio07"]}
-{"firstName":"Conor","lastName":"Hillick","gender":"Male","club":"MPAI","_id":"8TZRcQeS8bRa2AAp","results":["uG8J4wGjuDpoMyy0","GRB8VX2vzGPH16js"]}
-{"firstName":"Samuel","lastName":"Gourley","gender":"Male","club":"Grosvenor","_id":"bI71Du1sHDFLDQEB","results":["OBFQS6mlNz6YDwm6","KhnkdZsCKGkYKhsR","sdnUkb7dghVP3IFQ","xXx8ZctC4quxiD28","FWP42jxTTlRt2i40","IBNRbUtKQemVwN9m"]}
-{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"ojG9KmCuOCNnXl23","results":["rFUpvmn08cliu0ej","1kxcpNWnPveTOlGR","MJEI86moPSaFnI6O","9huwx8esTQa80VUM","vL5bzAeQ5nkXxxNP","OoN05UQQY2U302Ev","pQTGOfOcP6FVbsz6","tOGsxIcTaDM9wxM8","EqzaEiezanQcev8X","0BW01PPzNnxk3ysn"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp","sHlogQcvUVmG6zeE","8QH0vMr5zV6ymNQx","knJ96IG9BOPW54uZ","TWoxW8coLbBWpHUl"]}
-{"firstName":"Balazs","lastName":"Barcza","gender":"Male","club":"Pembroke","_id":"uKibKzBXCdjKhmh7"}
-{"firstName":"Balazs","lastName":"Barcza","gender":"Male","club":"Pembroke","_id":"uKibKzBXCdjKhmh7","results":["oCJUI4Tn0ieIppTS"]}
-{"firstName":"Stewart","lastName":"Duguid","gender":"Male","club":"MDFC","_id":"SCzHsq7AibbLmEaW","results":["f64dhZiiYvcck9Wh","C2HR8X0R5EM62kep"]}
-{"firstName":"Jamie","lastName":"Price","gender":"Male","club":"Foyle","_id":"c1G1FtL51oMB91aF","results":["kMvL2ep1kPV6G9of","OpsjsWRxHy6jOLwq","9ejPu71Nv42xI0xI"]}
-{"firstName":"Gerard","lastName":"Boyle","gender":"Male","club":"Belfast","_id":"7KiXuWQYeK5Ua5pO","results":["zgioZ7cXqPWzXETv","lmWsGuvUEY9Fv6C7","OkFxrrPkHYY99juD","XHEPPABsfpi01Bti"]}
-{"firstName":"Aleh","lastName":"Chakhouski","gender":"Male","club":"Grosvenor","_id":"u06txcx7qySkT9Co"}
-{"firstName":"Aleh","lastName":"Chakhouski","gender":"Male","club":"Grosvenor","_id":"u06txcx7qySkT9Co","results":["btE4DHiGgV3M8xTv"]}
-{"firstName":"Paul","lastName":"Moreland","gender":"Male","club":"Grosvenor","_id":"6DkOhk5I7nvvjGlt"}
-{"firstName":"Paul","lastName":"Moreland","gender":"Male","club":"Grosvenor","_id":"6DkOhk5I7nvvjGlt","results":["dbpACW0Bo51Ufzgj"]}
-{"firstName":"Mandla","lastName":"Mbondiya","gender":"Male","club":"UU","_id":"Pdgn9CaAmgSV8b7U","results":["x5xtTh00QCT5IRlF","l9ZDfY4KhFiV56zg","8Uk6skvUSCf3ApJJ"]}
-{"firstName":"Kieran","lastName":"Hayter","gender":"Male","club":"Blessington","_id":"Vr6oenDEtrU5CEnF","results":["t9iB3P1OLHBKxISQ","Ogjrq8v1giLzlzBN","362D33vvaRbhIunr","cCZsOQssuKqIZ131"]}
-{"firstName":"Benedict","lastName":"Chambers","gender":"Male","club":"FFF","_id":"pFcCUohLnItTZKxL","results":["X1OSndvJ5mFyzuxf","jmAIcYh3Kas8rc6d","9C25rw0cNjRG3vJu"]}
-{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"G1McwxNnikw9ZOgA","results":["Ofwct1t3gLyXR2cg","GeQvqcTAEYUmuHMI","OTtvod9QZeIeWvoY","kg4OhA5oEO1EdZpS","kp3eWou0PQoNRRld","dfsSrxbmOmPvHOUO","UD5kstMBnwnU1K6F","TXzlBdQGMad85NZC","kHAcWR6CSRRFiDrG"]}
-{"firstName":"Simon","lastName":"Egan","gender":"Male","club":"UCC","_id":"gzxgmeCQ6TiTkB6W","results":["9UTmgOYwArskUk7m","fHBqwuZdGPbFJLV5"]}
-{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"FrVtQdIib05wOnDm","results":["ksHdtsrnoYVeWu6f","ocitPcRLtU8ToZlQ","SGOj19vpzr5LfxEL","QP5JNhMzlfV15YTv","RniwIf86wcDAbIax","jvu1vRUnw4lFwJE1"]}
-{"firstName":"Timothy","lastName":"Porter","gender":"Male","club":"DUFC","_id":"rJoZ9qYLBeYXzbFf","results":["8EEWSXtXVOe5Ncn2","lDL8zOCa217b1cuW","aDmHhmSHiWsCjRNO","JLnVaic0CZNwfKen","h16WP9p6uIAZsV0a","EAjDfsilbCdjUewN","VSZeOJZe21a8grA8"]}
-{"firstName":"Conor","lastName":"Boyle","gender":"Male","club":"NUIM","_id":"99iBXGjIGqmb54zl","results":["3pwCDjte7tes5jBZ","Vco6VR1kw1CVZJL5","IONr5IwG6YNt8Cj8"]}
-{"firstName":"Gerrard","lastName":"Madden","gender":"Male","club":"QUB","_id":"4eUUxgNVCFTyDElt","results":["ZBKZsjWXaZOFduRi","5qUthGxwcExU2eqp","DHFHzcI8URYbpIj2","4BRUcnauu0OXd7JY","e2DTmfF7KecGHdxG","4lUicLZd7jdKh4lQ","J5KsmiVUNR3GPaL7"]}
-{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"hFtDo8yQ8ArqdUFJ","results":["eHoUQ8ofRre91JQU","zHrHGAoWXjzgiSAY","68yZVWRMSHNPwyNV","sm3qowKutMeGfIHK","tNvdO3RJuObhDcZv","Re1SeZ3ajkekm35q"]}
-{"firstName":"Conor","lastName":"Daly","gender":"Male","club":"NUIG","_id":"43SoZjckTadPnIKt","results":["OknF99RWSJ9yMVxV","C5MKJ1sEa2O23MBL","7R6uQr6BaPNaStjc","hqTxpdpNEEBGxPiG"]}
-{"firstName":"Stephen","lastName":"Friel","gender":"Male","club":"NUIM","_id":"s1FjzjWqHNTheFXh","results":["0dHBPFR2MLOPFrxr","59Xoyx1rRYAXJJUl","5crxo4HI9tDOwrbL"]}
-{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"2dZAMlr0kP6mbcfJ","results":["9ttR0YOggFGjGJ5A","l2DHZM6JbzD8yIyw","N27XXA1bApmTqifC","UO5ttBJGuHWwlUnG"]}
-{"firstName":"Brendan","lastName":"Masterson","gender":"Male","club":"NUIG","_id":"G7WuC0RoxXjZxNNS","results":["synPMut0mjkUCnMp","sHlogQcvUVmG6zeE","8QH0vMr5zV6ymNQx","knJ96IG9BOPW54uZ","TWoxW8coLbBWpHUl","5T42lsO80A81Img6"]}
-{"firstName":"David","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"T7O53Em2zvYaKIGS","results":["GmJZCqwbyaJkK4Tg","0rd8YeujiVG6wcUg"]}
-{"firstName":"Aidan","lastName":"Clarke","gender":"Male","club":"UCD","_id":"pxWaPzi910IZwdL2"}
-{"firstName":"Aidan","lastName":"Clarke","gender":"Male","club":"UCD","_id":"pxWaPzi910IZwdL2","results":["Ku3TNs2sfYQagMJc"]}
-{"firstName":"Cillian","lastName":"Houston","gender":"Male","club":"NUIM","_id":"3tUyU9OtHU6NgK3p"}
-{"firstName":"Cillian","lastName":"Houston","gender":"Male","club":"NUIM","_id":"3tUyU9OtHU6NgK3p","results":["NvVnh0lGQunHsQn6"]}
-{"firstName":"Derick","lastName":"O'Flynn","gender":"Male","club":"NUIG","_id":"uOUII04D9VnxITxt"}
-{"firstName":"Derick","lastName":"O'Flynn","gender":"Male","club":"NUIG","_id":"uOUII04D9VnxITxt","results":["j9OByBn2B2TjspU6"]}
-{"firstName":"John","lastName":"Donnelly","gender":"Male","club":"QUB","_id":"q234pDVYkmgeDQF3"}
-{"firstName":"John","lastName":"Donnelly","gender":"Male","club":"QUB","_id":"q234pDVYkmgeDQF3","results":["QBo4WG1PQqPdCBDr"]}
-{"firstName":"Luke","lastName":"Dowling","gender":"Male","club":"DUFC","_id":"gTJbiFoqT7wovbiA"}
-{"firstName":"Luke","lastName":"Dowling","gender":"Male","club":"DUFC","_id":"gTJbiFoqT7wovbiA","results":["3LXN5CxOwwcjPxhB"]}
-{"firstName":"Chance","lastName":"Kinney","gender":"Male","club":"UCD","_id":"KcQpEj8gE9qQ9BB3","results":["wPDVLV8yqdKage1g","EEulItUDZzOHP4vc","cSavi71POLDvE2OB","TE0VVCmxhaj7hc0n"]}
-{"firstName":"Sean","lastName":"O'Sullican","gender":"Male","club":"DCU","_id":"sRcrvwHTWurcRiDJ","results":["nHeiIrRTCQJcBN5b","TjBI470kQwmDBIYo"]}
-{"firstName":"Shane","lastName":"Keating","gender":"Male","club":"NUIM","_id":"XWaceMBgvDHs1JMo"}
-{"firstName":"Shane","lastName":"Keating","gender":"Male","club":"NUIM","_id":"XWaceMBgvDHs1JMo","results":["KkE7RM8FLLxe5M3j"]}
-{"firstName":"Tim","lastName":"O'Callaghan","gender":"Male","club":"NUIG","_id":"IcEQi7sNzHCE7gRb"}
-{"firstName":"Tim","lastName":"O'Callaghan","gender":"Male","club":"NUIG","_id":"IcEQi7sNzHCE7gRb","results":["wd5c0mfhvhAIrWA9"]}
-{"firstName":"Rory","lastName":"Greenan","gender":"Male","club":"DUFC","_id":"wQuTGd0PtdjSRbq8","results":["mrCbqtUt4cDazzfl","52xwI8ibZT0G6OQP"]}
+{"firstName":"Cian","lastName":"Hendrick","gender":"Male","club":"NUIM","_id":"1BCSWh6hxb783APG","results":["kBTGYGnIJ746c3us","H82kvDzGsKrHTVtx"]}
+{"firstName":"Peter","lastName":"Harahan","gender":"Male","club":"UCD","_id":"3LRTfsMyGfNOBKGC","results":["RBEiIwYE3nRFl6lT"]}
+{"firstName":"Zyginantas","lastName":"Urbietis","gender":"Male","club":"DKIT","_id":"41gNYa18cQCZugXM","results":["cV5w4xgE5gJ4U3Ch"]}
+{"firstName":"Maxton","lastName":"Milner","gender":"Male","club":"DUFC","_id":"581zIHPWZToWXjVC","results":["ANeCCUAaaez1PQfb"]}
+{"firstName":"Ronan","lastName":"Fitzpatrick","gender":"Male","club":"DKIT","_id":"5P9cDvZKoZDwVd0g","results":["WSED7gnqMlkxMQLX","0JQjd0wfh0f4lleV"]}
+{"firstName":"Patrick","lastName":"Corr","gender":"Male","club":"Ulster University","_id":"5RIVdwJKUmeSF6he","results":["inUYbctqnKpeog20"]}
+{"firstName":"Derick","lastName":"O'Flynn","gender":"Male","club":"NUIG","_id":"5URWkO4AyFyXdb6y","results":["JS5nLmeR2iyJLaXh","dI2WHB7glGpBd03X","4ApB0taQSZNrkbG6","S6aXCtUChZ1j2tMV"]}
+{"firstName":"Bobby","lastName":"Aston","gender":"Male","club":"NUIM","_id":"6ELBv6rI7oLkHotF","results":["UoUU6qupMwoBc2bz","i6FycIQf6saavd65","DhPjmPVclihXKTgl"]}
+{"firstName":"Sean","lastName":"Patmore","gender":"Male","club":"DUFC","_id":"6GQ4HYOQTp7TAs7d","results":["BSGbX7hQnds74X9W"]}
+{"firstName":"John","lastName":"McCabe","gender":"Male","club":"Boyne Valley","_id":"6KnOfdS2FOxfNubx","results":["bTYJEw6gdcpl43lf","ls470WXYMM3GIOdl","qUtrzIgDsjHgHxXj","fKAUyh9t1fMDnX1k","B0eoJnjzwRXpMHmZ","MU3AxlqEGEKxoB3v","JM3W5zM6TrqXRd9A","WnKD5B4Tm4GTXYdY","mfcnnYanfQyZNujp","zFAIP9Wwt9Dmufb3"]}
+{"firstName":"Keiran","lastName":"Dowse","gender":"Male","club":"MX Fencing","_id":"7GTYxrnpPKqRzhhU","results":["3mCzsTo9sSoqEjuy","u6anvwccrPkTEJvL"]}
+{"firstName":"Geoffrey","lastName":"Corcorcan","gender":"Male","club":"Salle Dublin","_id":"7IYJvVHcidSppENv","results":["rJaUyUnnqTGDRyzk"]}
+{"firstName":"Colm","lastName":"Kelleher","gender":"Male","club":"DUFC","_id":"7oLoB1X2nEiTHTMl","results":["vIpfTit6zlwlJni6","nBZLOkXik8egadhH","3FKaRmkqEWh1MrFP","MrqQ0ll73w5XrEb8","flrgXNAuROhBKzQo"]}
+{"firstName":"Paul","lastName":"Verdon","gender":"Male","club":"Grosvenor","_id":"84YuPGxsolH3v698","results":["Y63oq8v99f1TYwHK"]}
+{"firstName":"Kevin","lastName":"Thomas","gender":"Male","club":"IT Carlow","_id":"8FetJuWp8qz1zREX","results":["gJSBe05nbhXbQuJV"]}
+{"firstName":"Brian","lastName":"Crinion","gender":"Male","club":"Boyne Valley","_id":"A6AXfae87si7xWpP","results":["kY4JnMMj5USpsa34","N3rgNYMrlg3Cb4uS","kA8dTriysb2Rqxnz","FdFiBsGQeIUa6L46"]}
+{"firstName":"Jake","lastName":"Wylie","gender":"Male","club":"Grosvenor","_id":"ADGNBYPp4IT2oJJ6","results":["sILFcjhjnuRNZZm5","vImbErMktSvqyif0","1kkuHChw20AizHtK","k1EpR16YdJ6Yvsal","Wx0vhQEN08zGAD77","P9wPPftR59TOEcGM","uV0syWtli0b47RBz"]}
+{"firstName":"Hidde","lastName":"Elzinga","gender":"Male","club":"Delft FC","_id":"AW9JoMTqvVdiS6e4","results":["TVffN8yxkGQuHNDh"]}
+{"firstName":"James","lastName":"Allen","gender":"Male","club":"QUB","_id":"AZ6AB5wUbpUiWhzq","results":["P7H9fqSiluwfR88Z"]}
+{"firstName":"Kevin","lastName":"MacSweeney","gender":"Male","club":"UCC","_id":"BzFEVhkpQRydPcgi","results":["GsxyGl8lefJW80VZ","JWP0joExnoEnqLI9","U8FMuYntNLeRRzuQ","hy3cYfah1n49Q6Ek","m7aM2W7mVdWhU8eE","KncbOlm0gGhKl0nY"]}
+{"firstName":"Ross","lastName":"Patton","gender":"Male","club":"Foyle","_id":"CQ9mrDQXsZHr40ff","results":["uLqRN5V757HYik5q","FquRxvvh3zsEZDz1","B61aY3kOolihgL9r","jZalmVBG80QrcXYJ","sPtyq4gpWQIOs6k4","1IXbcdBl2qE8AnfR","Ax25ta5lOyx2ax6I","Wu2wMKoU9a5X7nXr","PKctacbDlvsGXNbH","d5eQDDhhFUwPjUyk"]}
+{"firstName":"Luke","lastName":"Downling","gender":"Male","club":"DUFC","_id":"DA37nH3HYCywXND1","results":["LBYnCBA77RHoX4mJ","XPDHw2SikYaglWj2","aQGqx0FzaEWLEfYb","VWyUdcY3fVm13iNW","8omYePqHwavDQhhE"]}
+{"firstName":"Mark","lastName":"Thomas","gender":"Male","club":"IT Carlow","_id":"DKpdnrFOmL0bvmpg","results":["705gQS4GUJCJWjfL"]}
+{"firstName":"Michalis","lastName":"Kirimilidis","gender":"Male","club":"Salle Dublin","_id":"DaPAlzf5ydP6bRcx","results":["XW2FxJfh7syeUSl2","LOixZ0XtvWEZSg2Y","66Pd2XoY80DNQyvZ","Gnhb9nM2KlmjSJDn","8GzzYHtDYlUHYSYm","h41F6suVMgL66nc4","LFpT9TqcRaBARNJj","UBNWBRZ73LFCMZNP","PjtHgrlNZjfLd97v","76wGrTmmxQHM6S1o","qUWv4B8XE3N4iqsL","66xlqgji4e924hFD","ohQVlPZZ8xKxziEl"]}
+{"firstName":"Stephen","lastName":"Concannon","gender":"Male","club":"Salle Dublin","_id":"DhUT82QmKLsFSpb9","results":["snPGHysh5fFmF7ey","9ING8S607hX1n60f","zSxdF3qsTJis0p9V","07R0Yeqk3T5Ntrso","oqNA1zJxjYMYkIN5","NZoaWwTpRRSmLRp7","uzvnthalSOALjQZY","R90liB1WbXNb8Czv","fwmcZxLvIHP05eUK","3cfn8zqzt7D26AJ5","lVMiITNYagvMQ7JF","dzFo68ufOQlTy3ET","FABx2lJUwZLVxHj3","IGWtqPuBs9pddBSF","kwf27Iwa8KC46UPz","qHKirhLlhzY2G8JX","s0XvDxyEUa0qJ0oa"]}
+{"firstName":"Gerard","lastName":"Madden","gender":"Male","club":"QUB","_id":"DqeMHPsCHfcqLljC","results":["ErimFhNLkQcdzG8T","fHtPKxK77TrffUa7","5V6xYSH7RcVxnkuI"]}
+{"firstName":"Rory","lastName":"Hayes","gender":"Male","club":"UCC","_id":"E5wGm4vJFR0VIehe","results":["SlXNoaOktH4F3Kag","dyqFa2H5V9tz3cZM"]}
+{"firstName":"Brian","lastName":"Regan","gender":"Male","club":"NUIG","_id":"EHkyGozHV1VOogf1","results":["VyHCLkZ3fHvTmKrT"]}
+{"firstName":"Mark","lastName":"Smullen","gender":"Male","club":"IT Carlow","_id":"En5SltD2YwV9cmpH","results":["Y5FrlX5edswyzZW7"]}
+{"firstName":"Ciaran","lastName":"Guy","gender":"Male","club":"NUIG","_id":"F37CMqYso74ykkgP","results":["6hIIqepe9lP2GBRh"]}
+{"firstName":"Brian","lastName":"Murray","gender":"Male","club":"Foyle","_id":"FgYZ6U5Y5X7ZNVIq","results":["BTd8slpu7QNo0kEa","fSFmfE1pFY1q8j5r","ux3DdiF1yu9Bci3M","MAeYBl3BCwglro55","6stzVbuor615b3CK","5x1yJYGaUI1uhplC","cMsFGBtbcSrZsXzP","hGsJ1Yygh3VAkcZh","4lpwdXJiueyjemll","B7PlbVfd89oshaN2"]}
+{"firstName":"David","lastName":"Downey","gender":"Male","club":"Foyle","_id":"Gm5AHkIYdBnk3a9e","results":["ym02d1Y0eCFItKGf","Ym9mzCaudQzTbDpv"]}
+{"firstName":"Aidan","lastName":"Clarke","gender":"Male","club":"Salle Dublin","_id":"GmhkcKjFQaDQBgof","results":["Hkm7ZbgfDM8ICNku","v9hONJn3DYzcN5Gx","1d7cxLVXHAAFlFgl","ZtOkkewU4d43kjj9","Pje1R6DOy9OMmTxO","N9enyCOmsjSU4HWo","bcBRpw4YMx5hRhFE","G60vT5gYUKLT03CM","rpFfYFprJXDTNhBj","UCPC1DXl6CxCumxA","jqq9djrwhZXCWME8","sI6akwwuZvlBSvoz","Gv0uUVm4MPcsrOwx","SaCXhFGHkOIcS8RC","nXub0UBzV9qP2Fzb","SMRIrlfsAo1EQSJv","A7xv5Fppy7hx4lL9"]}
+{"firstName":"Tadhg","lastName":"Underwood","gender":"Male","club":"Boyne Valley","_id":"Hn3mLp14s4bRZOAJ","results":["ZSbL4e0x17oYkVs7","mfeNmqTYjWxAUk81","WUt1zQoD1WC9Bp9z","SJsYkbaW9SJdJysA","ee2a1ezlyeZj0rm8"]}
+{"firstName":"Chris","lastName":"Mooney","gender":"Male","club":"Salle Dublin","_id":"Jlq4uCCjyYkBF28o","results":["0Vl8IW6xdfHuz5Qx"]}
+{"firstName":"Alastair","lastName":"McIlwee","gender":"Male","club":"Lisburn Gladiators","_id":"KSDsivw7ZmFwLePv","results":["we3o6OZif9Yxemov"]}
+{"firstName":"Thomas","lastName":"Thompson","gender":"Male","club":"QUB","_id":"KdYep4ILHZ3XCMEy","results":["LD9iSsvel9k366SF","2V98mfkWyocCqGrP","rHlAEFrGKuHAM8zg","2hnqECcU7tr7OZ0H"]}
+{"firstName":"Matthew","lastName":"Crinion","gender":"Male","club":"Boyne Valley","_id":"Kft0dH6rlWhovYvg","results":["160ea2Yc6znVAG59"]}
+{"firstName":"Tristan","lastName":"Jezequel","gender":"Male","club":"UCC","_id":"KroV35NUvKyubDpw","results":["MRr2fc69jH2AapBR","Ru8aihNwzSBTsxm3","Yx1aNrFxhygDGtlZ"]}
+{"firstName":"Fionn","lastName":"O'Connor","gender":"Male","club":"DUFC","_id":"Ku0nkgNw4mc6vGBD","results":["q8XhzpcJJYdAOBxj","92T1uGQckIsV4bem","ERIAPz79yoS3kIkT"]}
+{"firstName":"Declan","lastName":"Ashley","gender":"Male","club":"U/A","_id":"LGDUUpCMK4OOwEEx","results":["T5mXBlaHvh3br0uD"]}
+{"firstName":"Alex","lastName":"Leech","gender":"Male","club":"Boyne valley","_id":"LVIZiRubMoBlQrgS","results":["fjmODnsoPM5bIRC2"]}
+{"firstName":"Morgan","lastName":"Vondee","gender":"Male","club":"City","_id":"Lm6KvG8v22JtpcQC","results":["t2e6K3KRTIypLhXi"]}
+{"firstName":"James","lastName":"McDaid","gender":"Male","club":"IT Carlow","_id":"MOkRgm806VK0skgq","results":["ZdJemHTqOlQAYQgH","FtsMEeNcXtUdVY5b","juNcAyubZXROfqkk","4BfVVvoRMfaxEiUk","LBzYCXHv25rVXe6p"]}
+{"firstName":"Laurence","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"Md0KH28voiOd7P3e","results":["Lqbon7RBeAhle75x","ECArR7iJFgbBLYu9","Iidj8GQOYfPFEfA6","HTefmlPSxpceP9nB","PmzTiIlqzUsRGEcv","lp7UglhAYLCROEEF"]}
+{"firstName":"Owen","lastName":"McNamee","gender":"Male","club":"US Metro","_id":"N1CfSr0B8aqiysSP","results":["kvlZkNvlvhWq8n0o"]}
+{"firstName":"Sean","lastName":"Denny","gender":"Male","club":"Ulster","_id":"NgjGKMydCrIVjAAO","results":["MSwpfvOgUEx1orAc","CaM1Br21j9cwCUKn"]}
+{"firstName":"Evert Jan","lastName":"Smit","gender":"Male","club":"S. V. Pallos","_id":"NoysKIrf39h00xrl","results":["OjW0r2wrkK7r6h9J"]}
+{"firstName":"Ronan","lastName":"O'Brien","gender":"Male","club":"IT Carlow","_id":"NpzGXWLxKZ9ZEp0M","results":["WeYJCx3FmnMLAP2R"]}
+{"firstName":"Tomas","lastName":"Phelan","gender":"Male","club":"IT Carlow","_id":"NtU6pJv6Dweygi8v","results":["TrKAqqq3j2vZnWzr","vVPyAM7vnuOOj5el"]}
+{"firstName":"David","lastName":"Brandon","gender":"Male","club":"UCD","_id":"OJ4AFVxDSqQhVcIz","results":["yRj7LokKh6BQZngK"]}
+{"firstName":"David","lastName":"Connolly","gender":"Male","club":"Foyle","_id":"OO5Zorsnr94NAOXP","results":["7AwJiBYrAe8LF5m5","qZDf8WIb9WP3XbJi","Ie0DSg1nINADZrxn","KBgzG82skJI8N5qG","cGbkSjYJAfAeT2OT","sKPdKJWOduIR4kHl","R3Lck3QmZL7R03Xr","CnvBUmvGlm7cOsoH","kkctgK6ASsEwcFoi"]}
+{"firstName":"Alexander","lastName":"Leighton-Jones","gender":"Male","club":"Plymouth University","_id":"OPEVTgptQpfPUs38","results":["7JeNCQEZgdLrhAxp"]}
+{"firstName":"James","lastName":"Heneghan","gender":"Male","club":"IT Carlow","_id":"QVji4H8jVG7ZjCRB","results":["DTURJnICNYH32YhM"]}
+{"firstName":"Tom","lastName":"Nicholls","gender":"Male","club":"Chilwell Blades","_id":"QhIttO6IrO0QbqKW","results":["weDYNnS57b9GgzWd"]}
+{"firstName":"Ayman","lastName":"Elsayed","gender":"Male","club":"Foyle","_id":"QsLAioErU1yz83u9","results":["WUN5aEvE8Ps8FNSS"]}
+{"firstName":"Paddy","lastName":"Halpenny","gender":"Male","club":"DKIT","_id":"RQfrbjIfNakIgAnA","results":["MvKalqWCfUobqLnj","MUbhhLOOZlfHJWzF","5Q7xqZCQSvQe8m7M","R4GLEw3IHUgM64sK"]}
+{"firstName":"Danny","lastName":"Schustow","gender":"Male","club":"UCC","_id":"RR214XoTABHTgm25","results":["0FljzeSO7ywyQPW6","CJrXWArmSZxmIHuv"]}
+{"firstName":"Jean-Charles","lastName":"Cadoret","gender":"Male","club":"US Metro","_id":"SFS6NJXQwkJtg7jQ","results":["ypVrgqs93XUdMqDJ"]}
+{"firstName":"Micael","lastName":"Koza","gender":"Male","club":"DKIT","_id":"SJZJ9EWZpZ1JzWpo","results":["0kUb7lbnsCWnjtF9"]}
+{"firstName":"Jonathan","lastName":"Burnside","gender":"Male","club":"Foyle","_id":"SN8zbaV6G1gfRR8H","results":["NwNCsML4V9W2tXqU"]}
+{"firstName":"Niall","lastName":"Dowse","gender":"Male","club":"MX Fencing","_id":"Sl3UOTAGtsWorvsV","results":["T9HhkXDh7TWRbASD"]}
+{"firstName":"Christian","lastName":"Hegarty","gender":"Male","club":"Foyle","_id":"TE101RJGNvzt20kz","results":["RueO7BvwlipLyYTQ","xYFAb81sJPBMTF7s","NTxVPniDXJ4lL3VW","r302HLebogmoG8c0","b3bzc7xrf43tZsk1"]}
+{"firstName":"Matthew","lastName":"Shannon","gender":"Male","club":"QUB","_id":"THFllRrUYRv3Kl0i","results":["o52Z9oAWZbecfbCJ","xoqQfkxSU3MgDOTK","sDhca9cA1BY3js4G"]}
+{"firstName":"Kevin","lastName":"Alexander","gender":"Male","club":"North London Sabre","_id":"XUnBhfL5znK3iczX","results":["5p8rPLvvG3jWoBzK"]}
+{"firstName":"Juris","lastName":"Ziemelis","gender":"Male","club":"UCD","_id":"XjJLWdEmKi73GR7h","results":["8zf3kjX7Z37MCnOn","ywjCaHvjhDxKQi0q","ybfLSg2fcZPX2EIg","nHN1vuiY9urfn5gV"]}
+{"firstName":"Conor","lastName":"Coleman","gender":"Male","club":"Salle Dublin","_id":"aCxU5VvHRNIJYCLz","results":["TZ0QsvLXpwIPeutj","wza3QY7aWUxl8gcT"]}
+{"firstName":"Padraic","lastName":"Rowley","gender":"Male","club":"DUFC","_id":"aJdqINiCI3ugiM85","results":["icxpqhuM8BrGBhkO","BQ28oR1Dgq788sYC","Zi6WbeIeSEuDjHPL"]}
+{"firstName":"Sean","lastName":"Healy","gender":"Male","club":"DUFC","_id":"ac1Pq6kyl9md2lTX","results":["rDkTzG6oCSL105Eg","hYRQJXdHpxJc0TVm","50mfpZnxW4LppdfW","27n5Y9x2JMyrqvnv","LfkVVqkxQ9AKpNnM"]}
+{"firstName":"Daithi","lastName":"Harkin","gender":"Male","club":"Foyle","_id":"b6FPjNlGuwmDcTw8","results":["gjcf0VDMPYRtkfNw"]}
+{"firstName":"Daniel","lastName":"Valentan","gender":"Male","club":"DKIT","_id":"bRdXe9cps5d3CyLT","results":["TgvIDBX3dnTinKCL"]}
+{"firstName":"Dan","lastName":"Daly","gender":"Male","club":"U/A","_id":"bTkHth0Tn52UGaur","results":["HMTq8cwX8i59Jw6H"]}
+{"firstName":"John","lastName":"Cooney","gender":"Male","club":"IT Carlow","_id":"bi1X1duzxJUEyQEd","results":["BLY2xnMap3NzZHhT","aEtDQhnDcahcfWqZ","fTKXOetTxRMP5HXQ"]}
+{"firstName":"Matthiew","lastName":"Francois-Dainville","gender":"Male","club":"US Metro","_id":"c0nfq3OBMahWm3bv","results":["Rwb9Dar1rsDfGsPa"]}
+{"firstName":"Rudolf","lastName":"Hellmuth","gender":"Male","club":"NUIG","_id":"c9zk6ygxnMr4exCs","results":["W8sYbkEdbklHG1Ga"]}
+{"firstName":"Barry","lastName":"Quigley","gender":"Male","club":"Foyle","_id":"cOVyQtr7NQ3SaVab","results":["Dp7tah5LYBlaEflJ"]}
+{"firstName":"Scott","lastName":"O'Malley","gender":"Male","club":"Salle Dublin","_id":"cY6PY83aAkeBsCMe","results":["DZx3fFC2yclu9WcA"]}
+{"firstName":"Raphael","lastName":"Gilmas","gender":"Male","club":"US Metro","_id":"cosdiwORrW4Ik7QX","results":["8ut5WbUFaohqajck"]}
+{"firstName":"Richard","lastName":"Adams","gender":"Male","club":"QUB","_id":"dJNBdslEWYXHAi9e","results":["rAiHxcVDvFLERWcl","kTZ7sjTpbVYsR8jB"]}
+{"firstName":"Jorden","lastName":"Williams","gender":"Male","club":"Grosvenor","_id":"dmLTCQs2SDqeIhuk","results":["40gpp1k6nquQaEf2"]}
+{"firstName":"David","lastName":"Lucas","gender":"Male","club":"Swindon","_id":"ewOm3y6XAkXZWyG2","results":["yMN4ZybblQoOFCFg"]}
+{"firstName":"Jonathan","lastName":"Donnelly","gender":"Male","club":"QUB","_id":"fMevuueFSDqWbckE","results":["FBFZBiFyTazwu2yD","i0C2eIwSjArgtG5S","b65I7so0S5NWY0Fh","UKZkTI7R5IdIWsUu","mZF1Nbfgk3B67yBA","M2WpZiPL3Tmn1i3Z","mb2A3X36FOvAmZii"]}
+{"firstName":"Niall","lastName":"McCafferty","gender":"Male","club":"Foyle","_id":"fNdN24pMUFDuv2SI","results":["IS2OjvL9c8FglVdJ","uJZ4IKOY026EksPJ","gfPQ4QBTMQ3husSh","TU7qs3BJJpn3luVi","5Hl4zonKAhKAeVgb","7lSLWgNtaabHl4I0","LEzkRBgH809I5eG4","ek7E1LclPsyABHK1"]}
+{"firstName":"Alastair","lastName":"Davidson","gender":"Male","club":"Ulster University","_id":"fSDLVzh7gsU6T27O","results":["UTTKg4hqyW4bhQ4B"]}
+{"firstName":"Shane","lastName":"Keating","gender":"Male","club":"U/A","_id":"fqGb5AcZOvGV2vdG","results":["c2TxPxW6iu0TdAdw"]}
+{"firstName":"Kyle","lastName":"Greene","gender":"Male","club":"NUIG","_id":"g2nJXOawVhtVMdok","results":["PSH2dhEOz8HKSYcg"]}
+{"firstName":"Igor","lastName":"Brigadir","gender":"Male","club":"UCD","_id":"gTVVyq67PxtbZ2Xq","results":["Ps8Y5HIZJuuJw4sD","dDOfoGL69gzbZ9cY","UaHII6S2DfInTZ80","H2Rgxm4D8HqaRM5E","x6ZlVg8zibNjvjZF","3v9tjtWyGqPdO9Gk","YXbvqmeIHnBs7Cl5","S6FK6JIEtjYrzCp6","GuIGpNnWoix5uegq"]}
+{"firstName":"Jason","lastName":"O'Grady","gender":"Male","club":"NUIM","_id":"gwGSKQVkzsQtHU7a","results":["F6ISho4Wjs6P62ki"]}
+{"firstName":"Ricardoo","lastName":"Candeias","gender":"Male","club":"Bussola","_id":"gxJLQ4RhKieJyR4J","results":["g6Exkp81iVDiB7gf"]}
+{"firstName":"Fionn","lastName":"Flynn","gender":"Male","club":"DKIT","_id":"i8334911RPRmibPS","results":["nAodaBCmuOgvuyBw","KEe1yTF8VxQMYS45","UulyUMtNCRsJ0nOz","LPsjKMqYbNQaQtHd","S3kylnT1Z8yuIJNU","GBXYIlLshrr5HcWT","BuQuVzLYhsnF2Ulc","V4bD7zx4OYcJwmIm","iWm3uT8kp28u0UUJ","i4tlASYb9SG1areJ","PlXcluJProfukawO"]}
+{"firstName":"Georgis","lastName":"Halkiadakus","gender":"Male","club":"Boyne Valley","_id":"i9xwQshgwsyRTlQ9","results":["NmhYH3IDaEjEqXny","dbkXpSmBxipyrjkJ","EbCr890gJSFy9Km7","U3zzJfWTXOYmiQ85"]}
+{"firstName":"Frank","lastName":"Lawlor","gender":"Male","club":"IT Carlow","_id":"iNscvXQl8i0nSkUe","results":["vv4cOUNqlA3qxhPn","K7uDefsu5CylakvR"]}
+{"firstName":"Bob","lastName":"Holmes","gender":"Male","club":"Boyne Valley","_id":"kZC40lmosXWf4MHW","results":["gMFnT2emRnro3M3m","Yg4bjJ8rOz4WsGRT","msFqlFwO7heqs9R4","xvIlfKoFaSQB02IU"]}
+{"firstName":"Ross","lastName":"Byrne","gender":"Male","club":"DUFC","_id":"knE0tI5jnKh4Do7z","results":["VUK4kLRxQ54UhXoD"]}
+{"firstName":"Daulet","lastName":"Nurmukhanov","gender":"Male","club":"DKIT","_id":"lEj2jkY5wwAv1cHQ","results":["MxpCVpl4uTCUWzvh"]}
+{"firstName":"James","lastName":"Nicholl","gender":"Male","club":"Foyle","_id":"lZqzw6Lin6Z1YL4D","results":["qlOc0UxLIMupIfb9","PO91645hjGvWYWBU","AABuozQsUi5Oblum","BwOzlPyLMh7S04bN","F4YlmigqWwH6sQFQ","PuFGo57DU7ThvH9M"]}
+{"firstName":"Philip","lastName":"Slater","gender":"Male","club":"Lisburn Gladiators","_id":"mQpo1tlx1lhye5b5","results":["4JbuRy3rNSMC4Brh"]}
+{"firstName":"Hugh","lastName":"Tobin","gender":"Male","club":"UCC","_id":"n7ycR6K64COAOmGq","results":["cSjTLcrXZqvXqPYg","MS8IpbcRDd0z8BwS","5a65G3NSL9b6umEb","VpV4c7uaP4b7rsOQ"]}
+{"firstName":"Ronan","lastName":"Cranny","gender":"Male","club":"NUIG","_id":"oPzTe1xCU6Iuh2dT","results":["uddBQjV8WhzRrDCL","a9z0ngewx76uvkhC","XRqVoenKy6lRPLC7"]}
+{"firstName":"Jamie","lastName":"Simpson","gender":"Male","club":"Haverstock","_id":"oUXB9t7JID8QMgcF","results":["lDD8aES2H61ek8pl","v4Bx3MKZje0mtxKx","Ey9kxr3nlbFCTsrz"]}
+{"firstName":"Tim","lastName":"Callaghan","gender":"Male","club":"U/A","_id":"oYS9uy9hipGlnHrG","results":["muyS7v53ArpXeaIi"]}
+{"firstName":"Ethan","lastName":"McLoaughlin","gender":"Male","club":"QUB","_id":"p52HWfSpj4s4x3Vk","results":["heDSUFD1tKcltytX"]}
+{"firstName":"Francis","lastName":"Lawlor","gender":"Male","club":"IT Carlow","_id":"pmLVuh8ncBLEUpNc","results":["jTX0wXpOumSSypx7","YYPhPh9R81cAXg3i"]}
+{"firstName":"Morgan","lastName":"Durand","gender":"Male","club":"DKIT","_id":"q15Ab28ApO8eMbgr","results":["QMa9n2bWD2bMwDfH"]}
+{"firstName":"Connor","lastName":"Boyle","gender":"Male","club":"NUIG","_id":"qK2ALFxbwxdbJ3OV","results":["zQO5GZw6hPp4sYJH","lLw9BcwXggIGqLFW"]}
+{"firstName":"Janic","lastName":"Schulte","gender":"Male","club":"NUIG","_id":"qariHM1jyNTuIA9R","results":["mnlShjp54ftNR0YT","5WTBkDsW9Om08ZKk"]}
+{"firstName":"Daniel","lastName":"Jarnagin","gender":"Male","club":"UCD","_id":"rLiG4t0J0T4RNt5T","results":["Kv7VwHS4smfaAS4e"]}
+{"firstName":"Rob","lastName":"McLaughlin","gender":"Male","club":"IT Carlow","_id":"s8BJIyZbYeJxBMbH","results":["3rXImbvRZInmHWzx"]}
+{"firstName":"David","lastName":"Barker","gender":"Male","club":"DUFC","_id":"sfiR4LU0q11rgQ1U","results":["DflzA1OSKhRZM44H"]}
+{"firstName":"Paul","lastName":"McGowan","gender":"Male","club":"NUIG","_id":"tnSNw97DqhYUtpOU","results":["JdGTVdpq9DVwHlUE","0XTJFzsj6Xn2Or7N","30QRFMnHgxuoAJ8r"]}
+{"firstName":"Owen","lastName":"Jarnagin","gender":"Male","club":"UCD","_id":"uGkzxTvnGBPyE32H","results":["fsM67O38nXnOtjPQ","fQtJfXjEZCkRry0U"]}
+{"firstName":"Stephen","lastName":"Condren","gender":"Male","club":"DKIT","_id":"xk9YqSouMgiixObg","results":["JH7QH3xrahbZAk8h","uON51fOzAZZAs8dH","dQ3oiIMRQKxhagIU","AH9Mhr2hboUggdTM"]}
+{"firstName":"Sylvester","lastName":"Phelan","gender":"Male","club":"UCD","_id":"xlwbddJoe40pjMAb","results":["Y2sFhaa1uNyfeyfL","Px1gJIc5L4Tf0fuM","byy5jpPpWBcaj7dq"]}
+{"firstName":"David","lastName":"Frey","gender":"Male","club":"QUB","_id":"xrf8JFdWcDoR8VDQ","results":["vIMhnuX8l3Yx3w8W"]}
+{"firstName":"Matthre","lastName":"Coalter","gender":"Male","club":"DUFC","_id":"y277Gq5vcXfTR4D2","results":["Z5YOGTIAeyNpgddO"]}
+{"firstName":"Tadhg","lastName":"Garton","gender":"Male","club":"DUFC","_id":"zV8CJmGs0xnzlJ4v","results":["3vNgEtvCLXdQbScp","n0h9pZjQfK3cRLFK","5hglZRzJd2L6ba6S","A3d7lfeONK1fcAW0"]}
+{"firstName":"Stephen","lastName":"Concannon","gender":"Male","club":"Salle Dublin","_id":"DhUT82QmKLsFSpb9","results":["snPGHysh5fFmF7ey","9ING8S607hX1n60f","zSxdF3qsTJis0p9V","07R0Yeqk3T5Ntrso","oqNA1zJxjYMYkIN5","NZoaWwTpRRSmLRp7","uzvnthalSOALjQZY","R90liB1WbXNb8Czv","fwmcZxLvIHP05eUK","3cfn8zqzt7D26AJ5","lVMiITNYagvMQ7JF","dzFo68ufOQlTy3ET","FABx2lJUwZLVxHj3","IGWtqPuBs9pddBSF","kwf27Iwa8KC46UPz","qHKirhLlhzY2G8JX","s0XvDxyEUa0qJ0oa","8NBSl5TvNPgG9OKS"]}
+{"firstName":"Aidan","lastName":"Clarke","gender":"Male","club":"Salle Dublin","_id":"GmhkcKjFQaDQBgof","results":["Hkm7ZbgfDM8ICNku","v9hONJn3DYzcN5Gx","1d7cxLVXHAAFlFgl","ZtOkkewU4d43kjj9","Pje1R6DOy9OMmTxO","N9enyCOmsjSU4HWo","bcBRpw4YMx5hRhFE","G60vT5gYUKLT03CM","rpFfYFprJXDTNhBj","UCPC1DXl6CxCumxA","jqq9djrwhZXCWME8","sI6akwwuZvlBSvoz","Gv0uUVm4MPcsrOwx","SaCXhFGHkOIcS8RC","nXub0UBzV9qP2Fzb","SMRIrlfsAo1EQSJv","A7xv5Fppy7hx4lL9","F5mdjDqGhU6y0JCc"]}
+{"firstName":"Michalis","lastName":"Kirimilidis","gender":"Male","club":"Salle Dublin","_id":"DaPAlzf5ydP6bRcx","results":["XW2FxJfh7syeUSl2","LOixZ0XtvWEZSg2Y","66Pd2XoY80DNQyvZ","Gnhb9nM2KlmjSJDn","8GzzYHtDYlUHYSYm","h41F6suVMgL66nc4","LFpT9TqcRaBARNJj","UBNWBRZ73LFCMZNP","PjtHgrlNZjfLd97v","76wGrTmmxQHM6S1o","qUWv4B8XE3N4iqsL","66xlqgji4e924hFD","ohQVlPZZ8xKxziEl","bWdVGK0COL3af4oW"]}
