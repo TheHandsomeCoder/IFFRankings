@@ -149,7 +149,14 @@ angular.module('RankingsApp')
             $scope.competitions = competitions;
 
             _.each($scope.competitions, function(competition) {
-                promises.push(competition.getList('instances'));
+                 if(competition.excluded === true)
+                {
+                   
+                }
+                else
+                {
+                  promises.push(competition.getList('instances'));
+                }
             });
 
         }).then(function() {

@@ -27,7 +27,8 @@ var rankingsAPI = fortune({
     name: String,
     shortName: String,
     results: ['result'],
-    instances: ['instance']
+    instances: ['instance'],
+    excluded: Boolean
 })
 
 .resource('result', {

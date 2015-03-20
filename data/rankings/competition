@@ -20,7 +20,7 @@
 {"name":"Irish Open","shortName":"IO","_id":"ePxrIeMhgs07DIzk","instances":["KitXECUBE5bjFHO0"]}
 {"name":"Northern Ireland Open","shortName":"NIO","_id":"9ovElxVQ49jbpKCi","instances":["gP7A4Pmw19DAlx38"]}
 {"name":"East of Ireland Open","shortName":"EOI","_id":"0KgNvIURKoskG4Lq","instances":["SwcTHNgMTeTzDBCT"]}
-{"name":"Dublin Epee","shortName":"DE","_id":"QZKmawTMarBQYKN5","instances":["FflMNtC7Xkv2SJfe"]}
+{"name":"Dublin Epee","shortName":"DE","_id":"QZKmawTMarBQYKN5","instances":["FflMNtC7Xkv2SJfe"], excluded:true}
 {"name":"Merseyside Open","shortName":"MS","_id":"qWxd2Al2KtCdpG83","instances":["xx79lYCsC8ncSThN"]}
 {"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn","instances":["V9Ie0JodVACayBf4"]}
 {"name":"Cadet Nationals","shortName":"CAD","_id":"wBH5bGMOYl1o2mAn","instances":[]}
