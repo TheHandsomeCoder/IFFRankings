@@ -100,7 +100,8 @@ angular.module('RankingsApp')
 
             var instances = [];
 
-            _.each(promiseResults, function(x) {
+            _.each(promiseResults, function(x) {               
+
                 var latestInstance = _.first(_.sortBy(x, function(instance) {
                     return instance.date
                 }).reverse());
@@ -121,6 +122,7 @@ angular.module('RankingsApp')
                         return x.id === latestInstance.links.competition;
                     });
                 }
+            
             });
 
 
@@ -149,7 +151,14 @@ angular.module('RankingsApp')
             $scope.competitions = competitions;
 
             _.each($scope.competitions, function(competition) {
-                promises.push(competition.getList('instances'));
+                if(competition.excluded === true)
+                {
+                   
+                }
+                else
+                {
+                  promises.push(competition.getList('instances'));
+                }
             });
 
         }).then(function() {
