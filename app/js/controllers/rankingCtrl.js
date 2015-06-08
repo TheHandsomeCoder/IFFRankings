@@ -105,7 +105,7 @@ angular.module('RankingsApp')
                     return instance.date
                 }).reverse());
 
-                var monthsSinceCompRan = moment().diff(moment(latestInstance.date), 'months', true);
+                var monthsSinceCompRan = Math.round(moment().diff(moment(latestInstance.date), 'months', true));
 
                 if (monthsSinceCompRan < 13) {
                     var comp = _.find($scope.competitions, function(x) {
@@ -149,14 +149,7 @@ angular.module('RankingsApp')
             $scope.competitions = competitions;
 
             _.each($scope.competitions, function(competition) {
-                 if(competition.excluded === true)
-                {
-                   
-                }
-                else
-                {
-                  promises.push(competition.getList('instances'));
-                }
+                promises.push(competition.getList('instances'));
             });
 
         }).then(function() {

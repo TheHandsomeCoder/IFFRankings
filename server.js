@@ -12,7 +12,8 @@ var container = express(),
 
 var rankingsAPI = fortune({
     db: 'rankings',
-    path: osenv.home() + '/.rankings'
+   // path: osenv.home() + '/.rankings'
+     path: './data/'
 })
 
 .resource('fencer', {
