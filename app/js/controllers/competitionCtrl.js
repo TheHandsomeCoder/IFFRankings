@@ -5,6 +5,7 @@ angular.module('RankingsApp')
 
         $scope.results = [];
         $scope.fencers = [];
+        $scope.instances = [];
         $scope.isFocused = false;
         $scope.updateIsFocused = false;
         $scope.tableInEditState = false;

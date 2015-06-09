@@ -29,6 +29,10 @@ angular.module('RankingsApp', [
                 templateUrl: 'views/fencers.html',
                 controller: 'FencerController'
             })
+            .when('/settings', {
+                templateUrl: 'views/settings.html',
+                controller: 'SettingsController'
+            })
             .otherwise({
                 redirectTo: '/'
             });

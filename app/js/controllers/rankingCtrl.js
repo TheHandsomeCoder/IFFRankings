@@ -44,10 +44,9 @@ angular.module('RankingsApp')
                 });
 
                 return ranking;
-            }
-            else{
+            } else {
                 return null;
-            }    
+            }
 
 
         }
@@ -103,22 +102,32 @@ angular.module('RankingsApp')
 
             _.each(promiseResults, function(x) {
                 var latestInstance = _.first(_.sortBy(x, function(instance) {
-                    instance.date
+                    return instance.date
                 }).reverse());
 
-                var comp = _.find($scope.competitions, function(x) {
-                    return x.id === latestInstance.links.competition;
-                });
+                var monthsSinceCompRan = Math.round(moment().diff(moment(latestInstance.date), 'months', true));
 
-                comp.Instance(latestInstance);
-                instances[latestInstance.id] = true;
+                if (monthsSinceCompRan < 13) {
+                    var comp = _.find($scope.competitions, function(x) {
+                        return x.id === latestInstance.links.competition;
+                    });
 
+                    comp.Instance(latestInstance);
+                    instances[latestInstance.id] = true;
+                }
+                else
+                {
+                    _.remove($scope.competitions, function(x) {
+                        return x.id === latestInstance.links.competition;
+                    });
+                }
             });
+
+
 
             Restangular.all('fencers').getList().then(function(fencers) {
 
-                var rankings = [];
-                var fencerResultsPromises = [];
+               var fencerResultsPromises = [];
 
                 _.each(fencers, function(fencer) {
                     fencerResultsPromises.push(fencer.getList('results'));
@@ -126,7 +135,7 @@ angular.module('RankingsApp')
 
                 var all = $q.all(fencerResultsPromises);
                 all.then(function(response) {
-                    $scope.rankings = createRankingsFromResults(instances, fencers, response)
+                    $scope.rankings = createRankingsFromResults(instances, fencers, response);
                     $scope.rankingsComplete = true;
                 });
             });

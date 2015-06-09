@@ -4,30 +4,22 @@ table tr th, table tr td {
     color: #222;
     text-align: left;
 }
-
-
-
-.f-dropdown li:hover, .f-dropdown li:focus, li.active{
+.f-dropdown li:hover, .f-dropdown li:focus, li.active {
     background-color: #008cba !important;
     border-color: #007095 !important;
     color: #fff !important;
-   
 }
-
-.f-dropdown li:hover, .f-dropdown li:focus, li.active a{
-    
+.f-dropdown li:hover, .f-dropdown li:focus, li.active a {
     color: #fff !important;
-   
 }
-
-body, html {  	
+body, html {
     background-color: #ddd;
 }
 .top {
     margin-top: 10px !important;
 }
-.main-page{
-	height: 100%
+.main-page {
+    height: 100%
 }
 .competition {
     max-width: 80rem;
@@ -77,6 +69,9 @@ body, html {
     border-bottom: 1px #999999 solid;
 }
 .fa-plus {
+    padding-top: 12px;
+}
+.fa-pencil-square-o {
     padding-top: 12px;
 }
 .title-bar {
@@ -137,12 +132,27 @@ h1 {
 .fencer-modal-button {
     line-height: 2.355rem !important;
 }
+dd {
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
+}
+dd.active {
+    border-right: none;
+    border-bottom: 1px solid #666;
+    border-top: none;
 
+}
 
+.settings-row{
+    max-width: 80rem !important;
+}
+
+dl.tabs dd.active[]
 
 @media only screen and (min-width: 40.063em) {
     h1, h2, h3, h4, h5, h6 {
-        line-height: 1.4;
+        line-height: 1.4;        
     }
     h1 {
         font-size: 2.44444rem;
@@ -154,7 +164,7 @@ h1 {
         font-size: 1.5rem;
     }
     h4 {
-        font-size: 1.27778rem;
+        font-size: 1.27778rem;        
     }
     h5 {
         font-size: 1rem;
@@ -162,4 +172,12 @@ h1 {
     h6 {
         font-size: 1rem;
     }
+}
+
+section h4{
+    margin-bottom: -4px;
+}
+
+.tabs-content.vertical{
+    padding-right: 1rem;
 }

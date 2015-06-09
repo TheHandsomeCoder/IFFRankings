@@ -1,16 +1,71 @@
-
-
+<div class="row">
 <div class="row">
     <tabset vertical="true" type="navType">
-        <tab heading="Load Sample Data">
-            <h3>Select text file</h3>
-            <input type="file" accept=".apl" on-read-file="processFile($fileContent)" />
-            <div ng-if="content">
-                <h2>File content is:</h2>
-                <pre>{{ content }}</pre>
+         <tab heading="Competitions">
+            <h3>Competitions</h3>
+            <hr>
+            <div class="row">
+
+                <div class="large-6 columns">
+                    <select ng-options="competition.name for competition in comps" ng-model="selectedCompetition">
+                        <option value="">Please Choose
+                            <option>
+                    </select>
+                </div>
+                <div class="large-3 columns">
+                    <button ng-click="showEditCompetition(selectedCompetition)" ng-hide="editCompetition" ng-disabled="!selectedCompetition" class="button prefix">Edit</button>
+                    <button ng-click="reset()" ng-show="editCompetition" class="button prefix">Cancel</button>
+
+                </div>
+                <div class="large-3 columns">
+                    <button ng-hide="editCompetition" class="button prefix">New</button>
+                    <button ng-show="editCompetition" ng-click="saveEdit()" class="button prefix">Save</button>
+
+                </div>
+
+            </div>
+            <div ng-show="editCompetition" class="row">
+
+                <div class="large-6 columns">
+                    <label>Name
+                        <input type="text" ng-model="competitionToEdit.name" />
+                    </label>
+
+                </div>
+                <div class="large-6 columns">
+                    <label>Short name
+                        <input type="text" ng-model="competitionToEdit.shortName" />
+                    </label>
+
+                </div>
+
+
+            </div>
+            
+
+            <div ng-show="newCompetition" class="row">
+
+                <div class="large-6 columns">
+                    <label>Name
+                        <input type="text" ng-model="comp.name" />
+                    </label>
+
+                </div>
+                <div class="large-6 columns">
+                    <label>Short name
+                        <input type="text" ng-model="comp.shortName" />
+                    </label>
+
+                </div>
+
+
+
             </div>
         </tab>
-        <tab heading="Export Database">This will contaib the ability to export the database</tab>
+        <tab heading="Seasons">
+            <h3>Seasons</h3>
+            <hr>
+        </tab>
     </tabset>
 </div>
 
